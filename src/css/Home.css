@@ -5,6 +5,48 @@
 .hero {
     width: 100%;
     position: relative;
+    background: linear-gradient(270deg, rgba(0,0,0,0.9) 19%, rgba(59,59,59,0.9) 54%, rgba(107,107,107,0.9) 100%);
+}
+
+.hero-img {
+    opacity: 0.8;
+}
+
+.hero-overlay {
+    background: rgb(47,47,47);
+    background: linear-gradient(0deg, rgba(0,17,34,1) 22%, rgba(0,35,70,1) 75%, rgba(0,41,82,0.7) 100%);
+
+    position: absolute;
+    top: 50%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 40%;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.38);
+    border-radius: 5px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.overlay-button {
+    min-width: 10em !important;
+    background-image: linear-gradient(to right, rgba(228,162,56,1), #ec008c, rgba(223,75,47,1));
+    background-size: 300% 100%;
+    transition: all .4s ease-in-out !important;
+}
+
+.overlay-button:hover {
+    background-position: 100% 0;
+}
+
+.arrow-down-overlay {
+    background: white !important;
+    position: absolute !important;
+    color: black !important;
+    bottom: -20px;
 }
 
 .wave {
@@ -39,32 +81,17 @@
 
 .layered-waves {
     background-image: url("../assets/layered-waves-haikei.svg");
+    -webkit-filter: drop-shadow( 3px 3px 2px rgba(0, 0, 0, .7));
+    filter: drop-shadow( 3px 3px 2px rgba(0, 0, 0, .7));
 }
 
-.hero-img {
-    opacity: 0.6;
-}
 
-.hero-overlay {
-    background: rgb(47,47,47);
-    /*background: linear-gradient(90deg, rgba(47,47,47,0.9) 19%, rgba(59,59,59,0.9) 54%, rgba(107,107,107,0.9) 100%);*/
-    background: linear-gradient(90deg, rgba(0,17,34,0.7) 22%, rgba(0,35,70,0.7) 75%, rgba(0,41,82,0.7) 100%);
-
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 2;
-    width: 50%;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.38);
-    border-radius: 5px;
-    padding: 20px;
-}
-
-@media (max-width: 768px) {
+@media (max-width: 1224px) {
     .hero-overlay {
-        width: 80%;
+        width: 95%;
+        top: 60%;
+        left: 50%;
+        background: linear-gradient(90deg, rgba(0,17,34,0.8) 22%, rgba(0,35,70,0.8) 75%, rgba(0,41,82,0.7) 100%);
     }
     .wave svg {
         width: calc(100% + 1.3px);

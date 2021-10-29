@@ -1,6 +1,6 @@
 .nav {
     position: fixed;
-    background: #2a2e35;
+    background: rgba(0,17,34,1) 22%;
     box-shadow: 4px 0 10px -3px #010101;
     display: flex;
     flex-direction: row;
@@ -12,6 +12,10 @@
     height: 4em;
     overflow-x: auto;
     overflow-y: hidden;
+}
+
+.nav:hover {
+    top: 0 !important;
 }
 
 .nav-logo-container {

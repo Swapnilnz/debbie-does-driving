@@ -7,7 +7,7 @@ export const LogoOnly = (props) =>
                     <stop stopColor="#F95738" offset="1"/>
                 </linearGradient>
             </defs>
-            <g transform="matrix(1.0526315789473684,0,0,1.0526315789473684,82.36842105263158,-24.631578545821338)"
+            <g
                fill="url(#SvgjsLinearGradient1011)">
                 <g xmlns="http://www.w3.org/2000/svg">
                     <path
