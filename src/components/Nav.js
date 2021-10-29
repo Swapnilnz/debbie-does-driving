@@ -24,7 +24,7 @@ function Nav() {
                 </a>
                 <a href="/book" className="nav-links-item nav-links-item-text" aria-label="book">
                     <EventTwoToneIcon/>
-                    {isNotMobile && 'BOOK'}
+                    {isNotMobile && 'BOOK NOW'}
                 </a>
                 <a href="/contact" className="nav-links-item nav-links-item-text" aria-label="contact">
                     <PermPhoneMsgTwoToneIcon/>
