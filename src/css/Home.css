@@ -1,0 +1,37 @@
+.home-wrapper {
+    position: relative;
+}
+
+.hero {
+    max-height: 80vh;
+    width: 100%;
+    position: relative;
+}
+
+.hero-img {
+    filter: blur(3px);
+    -webkit-filter: blur(3px);
+    opacity: 0.6;
+    background-color: black;
+}
+
+.hero-overlay {
+    background: rgb(47,47,47);
+    background: linear-gradient(90deg, rgba(47,47,47,0.8) 19%, rgba(59,59,59,0.8) 54%, rgba(107,107,107,0.8) 100%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 50%;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.38);
+    border-radius: 5px;
+    padding: 20px;
+}
+
+@media (max-width: 768px) {
+    .hero-overlay {
+        width: 80%;
+    }
+}

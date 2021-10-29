@@ -15,10 +15,12 @@ import {
     Route,
     Redirect
 } from "react-router-dom";
+import Nav from "./components/Nav";
 
 
 ReactDOM.render(
   <React.StrictMode>
+      <Nav/>
       <Router>
           <Switch>
               <Route path="/home">
