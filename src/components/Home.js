@@ -38,9 +38,9 @@ function Home() {
                         Book
                     </Button>
                 </div>
-                <IconButton className="arrow-down-overlay">
+                {isDesktopOrLaptop && <IconButton className="arrow-down-overlay">
                     <KeyboardArrowDownIcon color="white"/>
-                </IconButton>
+                </IconButton>}
             </div>
         </div>
 
