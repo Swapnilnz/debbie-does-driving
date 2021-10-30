@@ -1,7 +1,7 @@
 import "../css/Home.css"
 import {LogoAndWord} from './LogoSVG';
-import HeroImgCropped from '../assets/hero_cropped.jpg';
-import HeroImg from '../assets/hero.jpg';
+import HeroImgCropped from '../assets/hero_cropped.webp';
+import HeroImg from '../assets/hero.webp';
 import { useMediaQuery } from 'react-responsive';
 import Button from '@mui/material/Button';
 import LocalLibraryTwoToneIcon from '@mui/icons-material/LocalLibraryTwoTone';
