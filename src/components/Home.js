@@ -26,8 +26,13 @@ function Home() {
                 </svg>
             </div>
             <div className="hero-overlay">
-                {isDesktopOrLaptop && <LogoAndWord width="450" height="300" className="hero-logo"/>}
-                {isTabletOrMobile && <LogoAndWord width="300" height="200" className="hero-logo"/>}
+                <div className="mt-5">
+                    {isDesktopOrLaptop && <LogoAndWord width="450" height="150"/>}
+                    {isTabletOrMobile && <LogoAndWord width="300" height="140" />}
+                </div>
+                <div className="has-text-white my-5">
+                    debbiedoesdriving@gmail.com · 0223544184
+                </div>
                 <div>
                     <Button variant="contained" size="large"
                             className="overlay-button mx-2 mb-5 has-text-weight-bold" startIcon={<LocalLibraryTwoToneIcon />}>

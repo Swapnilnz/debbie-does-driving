@@ -16,20 +16,18 @@
     top: 50%;
     left: 75%;
     transform: translate(-50%, -50%);
-    z-index: 2;
     width: 40%;
-    text-align: center;
     box-shadow: 0 4px 8px rgba(0,0,0,0.38);
     border-radius: 5px;
-    padding: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-block: 3rem;
 }
 
 .overlay-button {
     min-width: 10em !important;
-    background-image: linear-gradient(to right, rgba(228,162,56,1), #ec008c, rgba(223,75,47,1));
+    background-image: linear-gradient(to right, rgba(228,162,56,1), rgba(223,75,47,1));
     background-size: 300% 100%;
     transition: all .4s ease-in-out !important;
 }
@@ -43,6 +41,7 @@
     position: absolute !important;
     color: black !important;
     bottom: -20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.38);
 }
 
 .wave {
@@ -88,6 +87,7 @@
         top: 60%;
         left: 50%;
         background: linear-gradient(90deg, rgba(0,17,34,0.8) 22%, rgba(0,35,70,0.8) 75%, rgba(0,41,82,0.7) 100%);
+        padding-block: unset;
     }
     .wave svg {
         width: calc(100% + 1.3px);
