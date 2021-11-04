@@ -1,5 +1,6 @@
 .home-wrapper {
     position: relative;
+    background: #001220;
 }
 
 .hero {
@@ -25,9 +26,15 @@
     padding-block: 3rem;
 }
 
+.overlay-contact {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5vw;
+}
+
 .overlay-button {
     min-width: 10em !important;
-    background-image: linear-gradient(to right, rgba(228,162,56,1), rgba(223,75,47,1));
+    background-image: linear-gradient(to right, #f7770f, rgb(229, 48, 13));
     background-size: 300% 100%;
     transition: all .4s ease-in-out !important;
 }
@@ -67,18 +74,57 @@
 }
 
 .spacer {
-    aspect-ratio: 960/300;
+    aspect-ratio: 960/100;
     width: 100%;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 
-.layered-waves {
-    background-image: url("../assets/layered-waves-haikei.svg");
-    -webkit-filter: drop-shadow( 3px 3px 2px rgba(0, 0, 0, .7));
-    filter: drop-shadow( 3px 3px 2px rgba(0, 0, 0, .7));
+.layered-waves-1 {
+    background-image: url("../assets/layered-waves-1.svg");
 }
+
+.meet-debbie-wrapper {
+    gap: 5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.meet-debbie-header {
+    letter-spacing: 0.1rem;
+    font-size: 2.5vw;
+    gap: 1rem;
+}
+
+.meet-debbie-image {
+    border-radius: 5px;
+}
+
+.meet-debbie-body {
+    max-width: 40%;
+}
+
+.meet-debbie-text {
+    letter-spacing: 0.05rem;
+}
+
+.text-bg {
+    color: white;
+    background-image: linear-gradient(90deg,#f7770f, #8a2c67);
+    padding: 0 4px;
+    border-radius: 3px;
+}
+
+.layered-waves-2 {
+    background-image: url("../assets/layered-waves-2.svg");
+}
+
+.flip {
+    transform: rotate(180deg);
+}
+
 
 
 @media (max-width: 1224px) {
@@ -89,8 +135,26 @@
         background: linear-gradient(90deg, rgba(0,17,34,0.8) 22%, rgba(0,35,70,0.8) 75%, rgba(0,41,82,0.7) 100%);
         padding-block: unset;
     }
+
+    .overlay-contact {
+        flex-direction: column;
+    }
+
     .wave svg {
         width: calc(100% + 1.3px);
         height: 53px;
+    }
+
+    .meet-debbie-wrapper {
+        flex-direction: column;
+    }
+
+    .meet-debbie-header {
+        justify-content: center;
+        font-size: 5vw;
+    }
+
+    .meet-debbie-body {
+        max-width: unset;
     }
 }

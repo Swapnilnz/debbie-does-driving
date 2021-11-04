@@ -27,7 +27,7 @@ function Nav() {
     }, [prevScrollPos, visible, handleScroll]);
 
     return (
-        <nav className="nav" style={{ top: visible ? '0' : '-60px' }}>
+        <nav className="nav" style={{ top: visible || !isNotMobile ? '0' : '-60px' }}>
             <div className="nav-logo-container">
                 <a href="/">
                     <LogoOnly width="250" height="70"/>
@@ -48,7 +48,6 @@ function Nav() {
                 </a>
             </div>
             {isNotMobile && <div className="profile-logo is-flex is-align-items-center is-justify-content-end">
-                {/*TODO*/}
                 <a className="nav-links-item" href="/">
                     <img src={avatar} alt="avatar" className="avatar-img"/>
                 </a>

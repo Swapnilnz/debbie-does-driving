@@ -1,7 +1,8 @@
 import "../css/Home.css"
 import {LogoAndWord} from './LogoSVG';
-import HeroImgCropped from '../assets/hero_cropped.webp';
-import HeroImg from '../assets/hero.webp';
+import HeroImgCropped from '../assets/hero_cropped.png';
+import HeroImg from '../assets/hero.png';
+import RoadSample from '../assets/road-sample.jpg'
 import { useMediaQuery } from 'react-responsive';
 import Button from '@mui/material/Button';
 import LocalLibraryTwoToneIcon from '@mui/icons-material/LocalLibraryTwoTone';
@@ -26,19 +27,21 @@ function Home() {
                 </svg>
             </div>
             <div className="hero-overlay">
-                <div className="mt-5">
+                <div>
                     {isDesktopOrLaptop && <LogoAndWord width="450" height="150"/>}
-                    {isTabletOrMobile && <LogoAndWord width="300" height="140" />}
+                    {isTabletOrMobile && <LogoAndWord width="200" height="90" />}
                 </div>
-                <div className="has-text-white my-5">
-                    debbiedoesdriving@gmail.com · 0223544184
+                <div className="has-text-white my-3 has-text-centered overlay-contact">
+                    <p>debbiedoesdriving@gmail.com</p>
+                    {isDesktopOrLaptop && <p>·</p>}
+                    <p>0223544184</p>
                 </div>
                 <div>
-                    <Button variant="contained" size="large"
+                    <Button variant="contained" size={isDesktopOrLaptop ? 'large' : 'small'}
                             className="overlay-button mx-2 mb-5 has-text-weight-bold" startIcon={<LocalLibraryTwoToneIcon />}>
                         Lessons
                     </Button>
-                    <Button variant="contained" size="large"
+                    <Button variant="contained" size={isDesktopOrLaptop ? 'large' : 'small'}
                             className="overlay-button mx-2 mb-5 has-text-weight-bold" startIcon={<EventTwoToneIcon />}>
                         Book
                     </Button>
@@ -49,7 +52,33 @@ function Home() {
             </div>
         </div>
 
-        <div className="spacer layered-waves"/>
+        <div className="spacer layered-waves-1"/>
+        <div className="meet-debbie-wrapper">
+            {isDesktopOrLaptop && <div className="p-4">
+                <img src={RoadSample} width={300} height={900} className="meet-debbie-image" alt="road"/>
+            </div>}
+            <div className="meet-debbie-body p-4">
+                <div className="has-text-weight-bold has-text-white meet-debbie-header is-flex is-flex-direction-row">
+                    MEET <p className="text-bg">DEBBIE</p>
+                </div>
+                <p className="has-text-white meet-debbie-text mt-3">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Animi autem debitis eligendi, incidunt ipsam officia? Aliquid assumenda atque consectetur
+                    distinctio eius hic, neque officiis optio repellendus rerum temporibus veritatis! Dignissimos?
+                    <br/>
+                    <br/>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, minus, velit! A
+                    dipisci aliquam autem delectus, eveniet explicabo impedit maiores nostrum placeat,
+                    provident quae sed tempore vitae. Aliquid distinctio est officiis?
+                    <br/>
+                    <br/>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid architecto autem, beatae
+                    consequatur debitis dolor dolorem est labore mollitia odit optio veritatis? Cumque dicta est iusto
+                    laborum quas, voluptates.
+                </p>
+            </div>
+        </div>
+        <div className="spacer layered-waves-2"/>
     </div>
   );
 }
