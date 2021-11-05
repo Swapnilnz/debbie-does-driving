@@ -1,0 +1,25 @@
+.mot-lesson-body {
+    gap: 1rem;
+    flex-direction: row;
+}
+
+.mot-lesson-card-wrapper {
+    border: 1rem solid rgba(0, 18, 32, 0.85);
+    transition: transform .3s;
+}
+
+.mot-lesson-card-wrapper:hover {
+    transition: transform .3s;
+    transform: translateY(-3px);
+}
+
+.mot-lesson-card-body {
+    background: rgba(0, 18, 32, 0.85);;
+    color: white;
+}
+
+@media (max-width: 1224px) {
+    .mot-lesson-body {
+        flex-direction: column !important;
+    }
+}

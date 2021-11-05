@@ -9,6 +9,9 @@ import Button from "@mui/material/Button";
 import LocalLibraryTwoToneIcon from "@mui/icons-material/LocalLibraryTwoTone";
 import EventTwoToneIcon from "@mui/icons-material/EventTwoTone";
 import {useMediaQuery} from "react-responsive";
+import IconButton from '@mui/material/IconButton';
+import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
+import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 function Hero() {
     const isDesktopOrLaptop = useMediaQuery({query: '(min-width: 1224px)'});
@@ -42,6 +45,12 @@ function Hero() {
                         Book
                     </Button>
                 </div>
+                {isDesktopOrLaptop &&
+                <AnchorLink href='#meet-debbie'>
+                    <IconButton className="arrow-down-overlay" href="/home#meet-debbie">
+                        <KeyboardArrowDownIcon color="white"/>
+                    </IconButton>
+                </AnchorLink>}
             </div>
         </div>
     )

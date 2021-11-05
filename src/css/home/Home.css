@@ -18,3 +18,27 @@
 .layered-waves-2 {
     background-image: url("../../assets/layered-waves-2.svg");
 }
+
+.flip {
+    transform: rotate(180deg);
+}
+
+.home-section-header {
+    letter-spacing: 0.1rem;
+    font-size: 2.5vw;
+    gap: 1rem;
+}
+
+.home-section-subtitle {
+    color: #b2becd;
+    letter-spacing: .1rem;
+}
+
+
+@media (max-width: 1224px) {
+
+    .home-section-header {
+        justify-content: center;
+        font-size: 5vw;
+    }
+}
