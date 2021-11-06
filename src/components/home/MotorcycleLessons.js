@@ -10,7 +10,7 @@ function MotorcycleLessons() {
     return (
         <div className="is-flex is-flex-direction-column is-align-items-center">
             <div className="has-text-weight-bold has-text-white is-flex is-flex-direction-row mt-5 home-section-header">
-                MOTORCYCLE LESSONS
+                MOTORCYCLE
             </div>
             <div className="home-section-subtitle mb-5">
                 · FROM START TO FINISH ·
@@ -25,10 +25,11 @@ function MotorcycleLessons() {
                             alt="learners"
                         />
                         <CardContent className="mot-lesson-card-body">
-                            <Typography gutterBottom fontWeight={"bold"} align={"center"} variant="h5" component="div">
+                            <div className="mot-lesson-card-gradient-background" />
+                            <Typography gutterBottom fontWeight={"bold"} align={"center"} variant="h5" component="div" letterSpacing={2} zIndex={2} position={"relative"}>
                                 LEARNERS
                             </Typography>
-                            <Typography variant="body2" color={"#b2becd"}>
+                            <Typography variant="body2" zIndex={2} position={"relative"} className="mot-lesson-card-p">
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab commodi consectetur eum ex explicabo, hic ipsum iure magni natus, nemo odit perferendis similique. Cupiditate doloremque incidunt quae sed veniam voluptatem.
                             </Typography>
                         </CardContent>
@@ -43,10 +44,11 @@ function MotorcycleLessons() {
                             alt="learners"
                         />
                         <CardContent className="mot-lesson-card-body">
-                            <Typography gutterBottom fontWeight={"bold"} align={"center"} variant="h5" component="div">
+                            <div className="mot-lesson-card-gradient-background" />
+                            <Typography gutterBottom fontWeight={"bold"} align={"center"} variant="h5" component="div" letterSpacing={2} zIndex={2} position={"relative"}>
                                 RESTRICTED
                             </Typography>
-                            <Typography variant="body2" color={"#b2becd"}>
+                            <Typography variant="body2" zIndex={2} position={"relative"} className="mot-lesson-card-p">
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab commodi consectetur eum ex explicabo, hic ipsum iure magni natus, nemo odit perferendis similique. Cupiditate doloremque incidunt quae sed veniam voluptatem.
                             </Typography>
                         </CardContent>
@@ -61,15 +63,17 @@ function MotorcycleLessons() {
                             alt="learners"
                         />
                         <CardContent className="mot-lesson-card-body">
-                            <Typography gutterBottom fontWeight={"bold"} align={"center"} variant="h5" component="div">
+                            <div className="mot-lesson-card-gradient-background" />
+                            <Typography gutterBottom fontWeight={"bold"} align={"center"} variant="h5" component="div" letterSpacing={2} zIndex={2} position={"relative"}>
                                 FULL
                             </Typography>
-                            <Typography variant="body2" color={"#b2becd"}>
+                            <Typography variant="body2" zIndex={2} position={"relative"} className="mot-lesson-card-p">
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab commodi consectetur eum ex explicabo, hic ipsum iure magni natus, nemo odit perferendis similique. Cupiditate doloremque incidunt quae sed veniam voluptatem.
                             </Typography>
                         </CardContent>
                     </CardActionArea>
                 </Card>
+
             </div>
         </div>
     )

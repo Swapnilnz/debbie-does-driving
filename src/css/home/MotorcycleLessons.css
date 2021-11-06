@@ -4,7 +4,6 @@
 }
 
 .mot-lesson-card-wrapper {
-    border: 1rem solid rgba(0, 18, 32, 0.85);
     transition: transform .3s;
 }
 
@@ -14,7 +13,33 @@
 }
 
 .mot-lesson-card-body {
+    position: relative;
     background: rgba(0, 18, 32, 0.85);;
+    color: white;
+}
+
+.mot-lesson-card-p {
+    color: #b2becd;
+    transition: color 0.3s ease;
+}
+
+.mot-lesson-card-gradient-background {
+    z-index:1;
+    position:absolute;
+    top:calc(100% - 5px);
+    height:100%;
+    width:100%;
+    left:0;
+    background:linear-gradient(90deg,#f7770f, #913d72);
+    transition:0.5s;
+}
+
+.mot-lesson-card-wrapper:hover .mot-lesson-card-gradient-background {
+    top:0;
+}
+
+.mot-lesson-card-wrapper:hover .mot-lesson-card-p {
+    transition: color 0.3s ease;
     color: white;
 }
 
