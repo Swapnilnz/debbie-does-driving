@@ -1,6 +1,5 @@
 import '../css/Nav.css';
-import avatar from '../assets/avatar.png';
-import { LogoOnly } from './LogoSVG';
+import FacebookRoundedIcon from '@mui/icons-material/FacebookRounded';import { LogoOnly } from './LogoSVG';
 import React, { useState, useEffect } from 'react';
 import { debounce } from "../utilities/helpers";
 import { useMediaQuery } from 'react-responsive';
@@ -47,11 +46,11 @@ function Nav() {
                     {isNotMobile && 'CONTACT'}
                 </a>
             </div>
-            {isNotMobile && <div className="profile-logo is-flex is-align-items-center is-justify-content-end">
-                <a className="nav-links-item" href="/">
-                    <img src={avatar} alt="avatar" className="avatar-img"/>
+            <div className="profile-logo is-flex is-align-items-center is-justify-content-end">
+                <a className="nav-links-item" href="https://www.facebook.com/DebbieDriverTrainer/" target="_blank">
+                    <FacebookRoundedIcon fontSize={"large"}/>
                 </a>
-            </div>}
+            </div>
         </nav>
     );
 }

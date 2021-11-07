@@ -33,17 +33,6 @@
     gap: 0.5vw;
 }
 
-.overlay-button {
-    min-width: 10em !important;
-    background-image: linear-gradient(to right, #f7770f, rgb(229, 48, 13));
-    background-size: 300% 100%;
-    transition: all .4s ease-in-out !important;
-}
-
-.overlay-button:hover {
-    background-position: 100% 0;
-}
-
 .wave {
     position: absolute;
     bottom: 0;

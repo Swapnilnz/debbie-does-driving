@@ -1,0 +1,36 @@
+.ddc-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 4rem;
+}
+
+.ddc-body {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    max-width: 40%;
+    text-align: end;
+}
+
+.ddc-image {
+    max-width: 22rem;
+}
+
+@media (max-width: 1224px) {
+    .ddc-wrapper {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .ddc-body {
+        max-width: 89%;
+        align-items: center;
+        text-align: left;
+    }
+
+    .ddc-image {
+        max-width: 100%;
+    }
+}
