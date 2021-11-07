@@ -3,6 +3,7 @@ import Hero from "../components/home/Hero";
 import MeetDebbie from "../components/home/MeetDebbie";
 import MotorcycleLessons from "../components/home/MotorcycleLessons";
 import DDC from "../components/home/DDC";
+import GetInTouch from "../components/home/GetInTouch";
 
 
 function Home() {
@@ -17,7 +18,7 @@ function Home() {
         <div className="spacer layered-waves-2" />
         <DDC/>
         <div className="spacer layered-waves-2" />
-
+        <GetInTouch/>
     </div>
   );
 }
