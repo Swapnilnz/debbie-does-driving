@@ -1,4 +1,5 @@
 import '../css/Nav.css';
+import '../css/index.css';
 import FacebookRoundedIcon from '@mui/icons-material/FacebookRounded';import { LogoOnly } from './LogoSVG';
 import React, { useState, useEffect } from 'react';
 import { debounce } from "../utilities/helpers";
@@ -12,8 +13,11 @@ function Nav() {
         query: '(min-width: 768px)'
     });
 
+    const [path] = useState(window.location.pathname)
     const [prevScrollPos, setPrevScrollPos] = useState(0);
     const [visible, setVisible] = useState(true);
+
+
     const handleScroll = debounce(() => {
         const currentScrollPos = window.pageYOffset;
         setVisible((prevScrollPos > currentScrollPos && prevScrollPos - currentScrollPos > 70) || currentScrollPos < 10);
@@ -33,15 +37,21 @@ function Nav() {
                 </a>
             </div>
             <div className="nav-links is-flex is-align-items-center is-justify-content-center">
-                <a href="/lessons" className="nav-links-item nav-links-item-text" aria-label="lessons">
+                <a href="/lessons"
+                   className={"nav-links-item nav-links-item-text" + (path === '/lessons' ? ' orange-color-text' : '')}
+                   aria-label="lessons">
                     <LocalLibraryTwoToneIcon/>
                     {isNotMobile && 'LESSONS'}
                 </a>
-                <a href="/book" className="nav-links-item nav-links-item-text" aria-label="book">
+                <a href="/book"
+                   className={"nav-links-item nav-links-item-text" + (path === '/book' ? ' orange-color-text' : '')}
+                   aria-label="book">
                     <EventTwoToneIcon/>
                     {isNotMobile && 'BOOK NOW'}
                 </a>
-                <a href="/contact" className="nav-links-item nav-links-item-text" aria-label="contact">
+                <a href="/contact"
+                   className={"nav-links-item nav-links-item-text" + (path === '/contact' ? ' orange-color-text' : '')}
+                   aria-label="contact">
                     <PermPhoneMsgTwoToneIcon/>
                     {isNotMobile && 'CONTACT'}
                 </a>
