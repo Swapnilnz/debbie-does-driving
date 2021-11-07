@@ -31,9 +31,9 @@ function Hero() {
                     {isTabletOrMobile && <LogoAndWord width="200" height="150" />}
                 </div>
                 <div className="has-text-white my-3 has-text-centered overlay-contact">
-                    <p>debbiedoesdriving@gmail.com</p>
+                    <p>{process.env.REACT_APP_EMAIL}</p>
                     {isDesktopOrLaptop && <p>·</p>}
-                    <p>0223544184</p>
+                    <p>{process.env.REACT_APP_PHONE_NUMBER}</p>
                 </div>
                 <div>
                     <Button variant="contained" size={isDesktopOrLaptop ? 'large' : 'small'}

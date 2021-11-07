@@ -24,24 +24,14 @@ function GetInTouch(props) {
                 · GOT A QUESTION? ·
             </div>
             <div className="is-flex is-flex-direction-column git-body">
-                <div className="is-flex is-justify-content-space-between">
-                    <TextField
-                        style={{width: "49%"}}
-                        InputProps={{ className: classes.input }}
-                        required
-                        color={"warning"}
-                        focused
-                        label="First Name"
-                    />
-                    <TextField
-                        style={{width: "49%"}}
-                        InputProps={{ className: classes.input }}
-                        required
-                        color={"warning"}
-                        focused
-                        label="Last Name"
-                    />
-                </div>
+                <TextField
+                    fullWidth
+                    InputProps={{ className: classes.input }}
+                    required
+                    color={"warning"}
+                    focused
+                    label="Name"
+                />
                 <TextField
                     fullWidth
                     InputProps={{
