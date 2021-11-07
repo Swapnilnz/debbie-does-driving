@@ -47,7 +47,7 @@ function Nav() {
                 </a>
             </div>
             <div className="profile-logo is-flex is-align-items-center is-justify-content-end">
-                <a className="nav-links-item" href="https://www.facebook.com/DebbieDriverTrainer/" target="_blank">
+                <a className="nav-links-item" href="https://www.facebook.com/DebbieDriverTrainer/" target="_blank" rel="noreferrer">
                     <FacebookRoundedIcon fontSize={"large"}/>
                 </a>
             </div>
