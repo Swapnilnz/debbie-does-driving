@@ -3,6 +3,7 @@
 body {
   margin: 0;
   background: #001220;
+  min-height: 100vh;
 
   font-family: 'Poppins', sans-serif !important;
   -webkit-font-smoothing: antialiased;
