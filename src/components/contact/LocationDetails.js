@@ -14,22 +14,18 @@ function GetInTouch() {
     return (
         <div className="is-flex is-flex-direction-column is-align-items-left">
             <div className="has-text-weight-bold has-text-white is-flex is-flex-direction-row mt-5 home-section-header">
-                CONTACT INFO
+                OUR LOCATIONS
             </div>
-            <div>
-                <a className="has-text-white"
-                   href={"tel:" + process.env.REACT_APP_PHONE_NUMBER}>
-                    <PhoneIcon className="has-text-white mr-1 pt-2"/>
-                    {process.env.REACT_APP_PHONE_NUMBER}
-                </a>
+            <div className="home-section-subtitle mb-1">
+                DEFENSIVE DRIVER COURSE
             </div>
-            <div>
-                <a className="has-text-white ver"
-                   href={"mailto: " + process.env.REACT_APP_EMAIL}>
-                    <EmailIcon className="has-text-white mr-1 pt-2"/>
-                    {process.env.REACT_APP_EMAIL}
-                </a>
+            <div>Invercargill</div>
+            <div>Hamilton</div>
+            <div className="home-section-subtitle mb-1">
+                MOTORCYCLE TRAINING
             </div>
+            <div>Invercargill</div>
+
         </div>
     )
 }
