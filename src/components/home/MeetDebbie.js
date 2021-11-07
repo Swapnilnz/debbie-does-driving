@@ -12,7 +12,7 @@ function MeetDebbie() {
             <BlurImageLoader src={RoadSample} preview={BlurredRoadSample} fullCover={true} transitionTime={100}/>
         </div>}
         <div className="meet-debbie-body p-4">
-            <div className="has-text-weight-bold has-text-white meet-debbie-header is-flex is-flex-direction-row">
+            <div className="has-text-weight-bold has-text-white is-flex is-flex-direction-row home-section-header">
                 MEET <p className="text-bg">DEBBIE</p>
             </div>
             <p className="has-text-white meet-debbie-text mt-3">

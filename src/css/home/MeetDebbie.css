@@ -1,16 +1,9 @@
 .meet-debbie-wrapper {
-    gap: 5rem;
+    gap: 4rem;
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
-
-.meet-debbie-header {
-    letter-spacing: 0.1rem;
-    font-size: 2.5vw;
-    gap: 1rem;
-}
-
 
 .meet-debbie-body {
     max-width: 40%;
@@ -30,14 +23,10 @@
 @media (max-width: 1224px) {
     .meet-debbie-wrapper {
         flex-direction: column;
-    }
-
-    .meet-debbie-header {
-        justify-content: center;
-        font-size: 5vw;
+        align-items: center;
     }
 
     .meet-debbie-body {
-        max-width: unset;
+        max-width: 89%;
     }
 }

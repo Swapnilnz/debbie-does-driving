@@ -33,17 +33,6 @@
     gap: 0.5vw;
 }
 
-.overlay-button {
-    min-width: 10em !important;
-    background-image: linear-gradient(to right, #f7770f, rgb(229, 48, 13));
-    background-size: 300% 100%;
-    transition: all .4s ease-in-out !important;
-}
-
-.overlay-button:hover {
-    background-position: 100% 0;
-}
-
 .wave {
     position: absolute;
     bottom: 0;
@@ -66,6 +55,14 @@
     fill: #001122;
 }
 
+.arrow-down-overlay {
+    background: white !important;
+    position: absolute !important;
+    color: black !important;
+    bottom: -20px;
+    left: 47%;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.38);
+}
 
 @media (max-width: 1224px) {
     .hero {
