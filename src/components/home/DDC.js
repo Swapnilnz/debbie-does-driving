@@ -9,7 +9,7 @@ function DDC() {
 
     return (
         <div className="ddc-wrapper">
-            <div className="ddc-body p-4">
+            <div className="ddc-body pt-0 pb-4 px-4">
                 <div className="has-text-weight-bold has-text-white home-section-header">
                     DEFENSIVE DRIVING
                 </div>
@@ -27,7 +27,7 @@ function DDC() {
                     Book
                 </Button>
             </div>
-            <div className="p-4 is-flex is-justify-content-center">
+            <div className="p-4 is-flex is-justify-content-center home-image-wrapper">
                 <img className="ddc-image" src={DDCImage} alt={"ddc"}/>
             </div>
         </div>

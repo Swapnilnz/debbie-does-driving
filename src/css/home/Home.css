@@ -45,6 +45,10 @@
     background-position: 100% 0;
 }
 
+.home-image-wrapper {
+    border: 1px solid #f7770f;
+}
+
 @media (max-width: 1224px) {
 
     .home-section-header {

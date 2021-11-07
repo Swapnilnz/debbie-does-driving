@@ -7,11 +7,12 @@ import {useMediaQuery} from "react-responsive";
 function MeetDebbie() {
     const isDesktopOrLaptop = useMediaQuery({query: '(min-width: 1224px)'});
 
-    return (<div className="meet-debbie-wrapper" >
-        {isDesktopOrLaptop && <div className="p-4">
+    return (
+        <div className="meet-debbie-wrapper" >
+        {isDesktopOrLaptop && <div className="p-4 home-image-wrapper">
             <BlurImageLoader src={RoadSample} preview={BlurredRoadSample} fullCover={true} transitionTime={100}/>
         </div>}
-        <div className="meet-debbie-body p-4">
+        <div className="meet-debbie-body pt-0 pb-4 px-4">
             <div className="has-text-weight-bold has-text-white is-flex is-flex-direction-row home-section-header">
                 MEET <p className="text-bg">DEBBIE</p>
             </div>
