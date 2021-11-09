@@ -1,12 +1,14 @@
 import '../css/Nav.css';
 import '../css/index.css';
-import FacebookRoundedIcon from '@mui/icons-material/FacebookRounded';import { LogoOnly } from './LogoSVG';
-import React, { useState, useEffect } from 'react';
-import { debounce } from "../utilities/helpers";
-import { useMediaQuery } from 'react-responsive';
+import FacebookRoundedIcon from '@mui/icons-material/FacebookRounded';
+import {LogoOnly} from './LogoSVG';
+import React, {useEffect, useState} from 'react';
+import {debounce} from "../utilities/helpers";
+import {useMediaQuery} from 'react-responsive';
 import LocalLibraryTwoToneIcon from '@mui/icons-material/LocalLibraryTwoTone';
 import EventTwoToneIcon from '@mui/icons-material/EventTwoTone';
 import PermPhoneMsgTwoToneIcon from '@mui/icons-material/PermPhoneMsgTwoTone';
+import {LiveHelpTwoTone} from "@mui/icons-material";
 
 function Nav() {
     const isNotMobile = useMediaQuery({
@@ -40,20 +42,26 @@ function Nav() {
                 <a href="/lessons"
                    className={"nav-links-item nav-links-item-text" + (path === '/lessons' ? ' orange-color-text' : '')}
                    aria-label="lessons">
-                    <LocalLibraryTwoToneIcon/>
+                    <LocalLibraryTwoToneIcon fontSize={"small"}/>
                     {isNotMobile && 'LESSONS'}
                 </a>
                 <a href="/book"
                    className={"nav-links-item nav-links-item-text" + (path === '/book' ? ' orange-color-text' : '')}
                    aria-label="book">
-                    <EventTwoToneIcon/>
+                    <EventTwoToneIcon fontSize={"small"}/>
                     {isNotMobile && 'BOOK NOW'}
                 </a>
                 <a href="/contact"
                    className={"nav-links-item nav-links-item-text" + (path === '/contact' ? ' orange-color-text' : '')}
                    aria-label="contact">
-                    <PermPhoneMsgTwoToneIcon/>
+                    <PermPhoneMsgTwoToneIcon fontSize={"small"}/>
                     {isNotMobile && 'CONTACT'}
+                </a>
+                <a href="/faq"
+                   className={"nav-links-item nav-links-item-text" + (path === '/faq' ? ' orange-color-text' : '')}
+                   aria-label="contact">
+                    <LiveHelpTwoTone fontSize={"small"}/>
+                    {isNotMobile && 'FAQ'}
                 </a>
             </div>
             <div className="profile-logo is-flex is-align-items-center is-justify-content-end">
