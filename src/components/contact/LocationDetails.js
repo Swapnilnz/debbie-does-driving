@@ -1,7 +1,5 @@
 import '../../css/home/GetInTouch.css'
-import { withStyles } from "@material-ui/core/styles";
-import EmailIcon from '@mui/icons-material/Email';
-import PhoneIcon from '@mui/icons-material/Phone';
+import {withStyles} from "@material-ui/core/styles";
 
 const styles = {
     input: {
