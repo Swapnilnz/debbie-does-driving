@@ -11,26 +11,24 @@ import '@fontsource/roboto/700.css';
 import 'bulma/css/bulma.min.css';
 
 import {
-    BrowserRouter as Router,
+    BrowserRouter,
     Switch,
     Route,
     Redirect
 } from "react-router-dom";
+import Footer from "./components/Footer";
 
 ReactDOM.render(
   <React.StrictMode>
       <Nav/>
-      <Router>
+      <BrowserRouter>
           <Switch>
-              <Route path="/home">
-                  <Home/>
-              </Route>
-              <Route path="/contact">
-                  <Contact/>
-              </Route>
+              <Route path="/home" component={Home}/>
+              <Route path="/contact" component={Contact}/>
               <Redirect to="/home"/>
         </Switch>
-      </Router>
+      </BrowserRouter>
+      <Footer/>
   </React.StrictMode>,
   document.getElementById('root')
 );

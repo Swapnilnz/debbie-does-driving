@@ -3,6 +3,7 @@
     flex-direction: row;
     justify-content: center;
     gap: 4rem;
+    margin-bottom: 2rem;
 }
 
 .ddc-body {
@@ -31,6 +32,6 @@
     }
 
     .ddc-image {
-        max-width: 100%;
+        max-width: 20rem;
     }
 }

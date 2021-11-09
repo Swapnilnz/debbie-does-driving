@@ -1,7 +1,7 @@
 .git-body {
     min-width: 50%;
     gap: 1rem;
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
 }
 
 @media (max-width: 1224px) {

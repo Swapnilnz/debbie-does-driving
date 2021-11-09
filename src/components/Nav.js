@@ -13,7 +13,7 @@ function Nav() {
         query: '(min-width: 768px)'
     });
 
-    const [path] = useState(window.location.pathname)
+    const path = window.location.pathname
     const [prevScrollPos, setPrevScrollPos] = useState(0);
     const [visible, setVisible] = useState(true);
 

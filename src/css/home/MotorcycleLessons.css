@@ -1,6 +1,7 @@
 .mot-lesson-body {
     gap: 2rem;
     flex-direction: row;
+    margin-bottom: 2rem;
 }
 
 .mot-lesson-card-wrapper {
