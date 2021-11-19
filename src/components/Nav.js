@@ -5,10 +5,10 @@ import {LogoOnly} from './LogoSVG';
 import React, {useEffect, useState} from 'react';
 import {debounce} from "../utilities/helpers";
 import {useMediaQuery} from 'react-responsive';
-import LocalLibraryTwoToneIcon from '@mui/icons-material/LocalLibraryTwoTone';
-import EventTwoToneIcon from '@mui/icons-material/EventTwoTone';
 import PermPhoneMsgTwoToneIcon from '@mui/icons-material/PermPhoneMsgTwoTone';
 import {LiveHelpTwoTone} from "@mui/icons-material";
+import SportsMotorsportsTwoToneIcon from '@mui/icons-material/SportsMotorsportsTwoTone';
+import DriveEtaTwoToneIcon from '@mui/icons-material/DriveEtaTwoTone';
 
 function Nav() {
     const isNotMobile = useMediaQuery({
@@ -39,28 +39,28 @@ function Nav() {
                 </a>
             </div>
             <div className="nav-links is-flex is-align-items-center is-justify-content-center">
-                <a href="/lessons"
+                <a href="/motorcycle"
                    className={"nav-links-item nav-links-item-text" + (path === '/lessons' ? ' orange-color-text' : '')}
                    aria-label="lessons">
-                    <LocalLibraryTwoToneIcon fontSize={"small"}/>
-                    {isNotMobile && 'LESSONS'}
+                    <SportsMotorsportsTwoToneIcon fontSize={"small"} className="mr-1"/>
+                    {isNotMobile && 'MOTORCYCLE'}
                 </a>
-                <a href="/book"
+                <a href="/defensive-driving"
                    className={"nav-links-item nav-links-item-text" + (path === '/book' ? ' orange-color-text' : '')}
                    aria-label="book">
-                    <EventTwoToneIcon fontSize={"small"}/>
-                    {isNotMobile && 'BOOK NOW'}
+                    <DriveEtaTwoToneIcon fontSize={"small"} className="mr-1"/>
+                    {isNotMobile && 'DDC'}
                 </a>
                 <a href="/contact"
                    className={"nav-links-item nav-links-item-text" + (path === '/contact' ? ' orange-color-text' : '')}
                    aria-label="contact">
-                    <PermPhoneMsgTwoToneIcon fontSize={"small"}/>
+                    <PermPhoneMsgTwoToneIcon fontSize={"small"} className="mr-1"/>
                     {isNotMobile && 'CONTACT'}
                 </a>
                 <a href="/faq"
                    className={"nav-links-item nav-links-item-text" + (path === '/faq' ? ' orange-color-text' : '')}
-                   aria-label="contact">
-                    <LiveHelpTwoTone fontSize={"small"}/>
+                   aria-label="faq">
+                    <LiveHelpTwoTone fontSize={"small"} className="mr-1"/>
                     {isNotMobile && 'FAQ'}
                 </a>
             </div>

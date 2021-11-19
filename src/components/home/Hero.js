@@ -6,7 +6,6 @@ import HeroImg from "../../assets/hero.png";
 import BlurredHeroImg from "../../assets/blurred_hero.png";
 import {LogoAndWord} from "../LogoSVG";
 import Button from "@mui/material/Button";
-import LocalLibraryTwoToneIcon from "@mui/icons-material/LocalLibraryTwoTone";
 import EventTwoToneIcon from "@mui/icons-material/EventTwoTone";
 import {useMediaQuery} from "react-responsive";
 import IconButton from '@mui/material/IconButton';
@@ -36,12 +35,8 @@ function Hero() {
                     <p>{process.env.REACT_APP_PHONE_NUMBER}</p>
                 </div>
                 <div>
-                    <Button variant="contained" size={isDesktopOrLaptop ? 'large' : 'small'}
-                            className="overlay-button mx-2 mb-5 has-text-weight-bold" startIcon={<LocalLibraryTwoToneIcon />}>
-                        Lessons
-                    </Button>
-                    <Button variant="contained" size={isDesktopOrLaptop ? 'large' : 'small'}
-                            className="overlay-button mx-2 mb-5 has-text-weight-bold" startIcon={<EventTwoToneIcon />}>
+                    <Button variant="contained" size={'large'}
+                            className="overlay-button mt-4 mb-5 has-text-weight-bold" startIcon={<EventTwoToneIcon />}>
                         Book
                     </Button>
                 </div>
