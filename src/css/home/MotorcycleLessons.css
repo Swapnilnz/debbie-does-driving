@@ -26,21 +26,23 @@
 }
 
 .mot-lesson-card-gradient-background {
-    z-index:1;
-    position:absolute;
-    top:calc(100% - 5px);
-    height:100%;
-    width:100%;
-    left:0;
-    background:linear-gradient(90deg,#f7770f, #913d72);
-    transition:0.5s ease;
+    z-index: 1;
+    position: absolute;
+    top: calc(100% - 5px);
+    height: 100%;
+    width: 100%;
+    left: 0;
+    background: linear-gradient(90deg, #f7770f, #913d72);
+    transition: 0.5s ease;
 }
 
-.mot-lesson-card-wrapper:hover .mot-lesson-card-gradient-background {
-    top:0;
+.mot-lesson-card-wrapper:hover .mot-lesson-card-gradient-background,
+.mc-card-wrapper:hover .mot-lesson-card-gradient-background {
+    top: 0 !important;
 }
 
-.mot-lesson-card-wrapper:hover .mot-lesson-card-p {
+.mot-lesson-card-wrapper:hover .mot-lesson-card-p,
+.mc-card-wrapper:hover .mot-lesson-card-p {
     transition: color 0.3s ease;
     color: white;
 }

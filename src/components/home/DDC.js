@@ -17,13 +17,17 @@ function DDC() {
                     · TAILGATING IS NOT THE ANSWER ·
                 </div>
                 <div className="has-text-white mt-5">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias architecto consequatur earum eveniet fugit, illo impedit in incidunt ipsum modi molestiae necessitatibus provident quaerat quisquam saepe, sapiente temporibus ut, veniam!
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias architecto consequatur earum eveniet
+                    fugit, illo impedit in incidunt ipsum modi molestiae necessitatibus provident quaerat quisquam
+                    saepe, sapiente temporibus ut, veniam!
                     <br/>
                     <br/>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aperiam asperiores consequuntur dolore dolores esse explicabo inventore iure laudantium, maxime neque nobis quo recusandae, rem ut vel veritatis voluptas voluptate!
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aperiam asperiores consequuntur
+                    dolore dolores esse explicabo inventore iure laudantium, maxime neque nobis quo recusandae, rem ut
+                    vel veritatis voluptas voluptate!
                 </div>
                 <Button variant="contained" size={isDesktopOrLaptop ? 'large' : 'small'}
-                        className="overlay-button mt-5 has-text-weight-bold" startIcon={<EventTwoToneIcon />}>
+                        className="orange-button mt-5 has-text-weight-bold" startIcon={<EventTwoToneIcon/>}>
                     Book
                 </Button>
             </div>

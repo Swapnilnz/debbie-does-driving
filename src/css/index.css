@@ -1,23 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap');
 
 html {
-  overflow-y: auto !important;
+    overflow-y: auto !important;
 }
 
 body {
-  margin: 0;
-  background: #001220;
-  min-height: 100vh;
+    margin: 0;
+    background: #001220;
+    min-height: 100vh;
 
-  font-family: 'Poppins', sans-serif !important;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    font-family: 'Poppins', sans-serif !important;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 .pd-7 {
-  padding-top: 4rem !important;
+    padding-top: 6rem !important;
 }
 
 .orange-color-text {
-  color: #f8740c !important;
+    color: #f8740c !important;
 }

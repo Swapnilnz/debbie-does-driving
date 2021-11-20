@@ -32,7 +32,7 @@ function Nav() {
     }, [prevScrollPos, visible, handleScroll]);
 
     return (
-        <nav className="nav" style={{ top: visible || !isNotMobile ? '0' : '-60px' }}>
+        <nav className="nav" style={{top: visible || !isNotMobile ? '0' : '-60px'}}>
             <div className="nav-logo-container">
                 <a href="/">
                     <LogoOnly width="250" height="70"/>
@@ -40,14 +40,14 @@ function Nav() {
             </div>
             <div className="nav-links is-flex is-align-items-center is-justify-content-center">
                 <a href="/motorcycle"
-                   className={"nav-links-item nav-links-item-text" + (path === '/lessons' ? ' orange-color-text' : '')}
-                   aria-label="lessons">
+                   className={"nav-links-item nav-links-item-text" + (path === '/motorcycle' ? ' orange-color-text' : '')}
+                   aria-label="motorcycle">
                     <SportsMotorsportsTwoToneIcon fontSize={"small"} className="mr-1"/>
                     {isNotMobile && 'MOTORCYCLE'}
                 </a>
                 <a href="/defensive-driving"
-                   className={"nav-links-item nav-links-item-text" + (path === '/book' ? ' orange-color-text' : '')}
-                   aria-label="book">
+                   className={"nav-links-item nav-links-item-text" + (path === '/defensive-driving' ? ' orange-color-text' : '')}
+                   aria-label="defensive driving">
                     <DriveEtaTwoToneIcon fontSize={"small"} className="mr-1"/>
                     {isNotMobile && 'DDC'}
                 </a>
@@ -64,11 +64,12 @@ function Nav() {
                     {isNotMobile && 'FAQ'}
                 </a>
             </div>
-            <div className="profile-logo is-flex is-align-items-center is-justify-content-end">
-                <a className="nav-links-item" href="https://www.facebook.com/DebbieDriverTrainer/" target="_blank" rel="noreferrer">
+            {isNotMobile && <div className="profile-logo is-flex is-align-items-center is-justify-content-end">
+                <a className="nav-links-item" href="https://www.facebook.com/DebbieDriverTrainer/" target="_blank"
+                   rel="noreferrer">
                     <FacebookRoundedIcon color={"warning"} fontSize={"large"}/>
                 </a>
-            </div>
+            </div>}
         </nav>
     );
 }

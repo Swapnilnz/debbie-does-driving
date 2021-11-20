@@ -45,14 +45,14 @@
     letter-spacing: .1rem;
 }
 
-.overlay-button {
+.orange-button {
     min-width: 10em !important;
     background-image: linear-gradient(to right, #f7770f, rgb(229, 48, 13));
     background-size: 300% 100%;
     transition: all .4s ease-in-out !important;
 }
 
-.overlay-button:hover {
+.orange-button:hover {
     background-position: 100% 0;
 }
 

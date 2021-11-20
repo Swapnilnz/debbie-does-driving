@@ -1,6 +1,6 @@
 import '../../css/home/GetInTouch.css'
 import {InputAdornment, TextField} from "@mui/material";
-import { withStyles } from "@material-ui/core/styles";
+import {withStyles} from "@material-ui/core/styles";
 import {Email, Send} from "@mui/icons-material";
 import Button from "@mui/material/Button";
 import {useMediaQuery} from "react-responsive";
@@ -26,7 +26,7 @@ function GetInTouch(props) {
             <div className="is-flex is-flex-direction-column git-body">
                 <TextField
                     fullWidth
-                    InputProps={{ className: classes.input }}
+                    InputProps={{className: classes.input}}
                     required
                     color={"warning"}
                     focused
@@ -53,12 +53,12 @@ function GetInTouch(props) {
                     label="Message"
                     multiline
                     rows={4}
-                    InputProps={{ className: classes.input }}
+                    InputProps={{className: classes.input}}
                     color={"warning"}
                     focused
                 />
                 <Button variant="contained" size={isDesktopOrLaptop ? 'large' : 'small'}
-                        className="overlay-button has-text-weight-bold" startIcon={<Send/>}>
+                        className="orange-button has-text-weight-bold" startIcon={<Send/>}>
                     Send
                 </Button>
             </div>

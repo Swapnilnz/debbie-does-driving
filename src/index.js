@@ -15,6 +15,7 @@ import {BrowserRouter, Redirect, Route, Switch} from "react-router-dom";
 import {initializeApp} from "firebase/app";
 import {getAnalytics} from "firebase/analytics";
 import {getPerformance} from "firebase/performance";
+import Motorcycle from "./views/Motorcycle";
 
 const firebaseConfig = {
     apiKey: "AIzaSyDjTrfQQhM0pGY5RGWfzDDfyhGp9IL-wf8",
@@ -37,6 +38,7 @@ ReactDOM.render(
         <BrowserRouter>
             <Switch>
                 <Route path="/home" component={Home}/>
+                <Route path="/motorcycle" component={Motorcycle}/>
                 <Route path="/contact" component={Contact}/>
                 <Redirect to="/home"/>
             </Switch>
