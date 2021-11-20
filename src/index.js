@@ -16,6 +16,7 @@ import {initializeApp} from "firebase/app";
 import {getAnalytics} from "firebase/analytics";
 import {getPerformance} from "firebase/performance";
 import Motorcycle from "./views/Motorcycle";
+import FAQ from "./views/FAQ";
 
 const firebaseConfig = {
     apiKey: "AIzaSyDjTrfQQhM0pGY5RGWfzDDfyhGp9IL-wf8",
@@ -34,12 +35,13 @@ getPerformance(app);
 
 ReactDOM.render(
     <React.StrictMode>
-        <Nav/>
         <BrowserRouter>
+            <Nav/>
             <Switch>
                 <Route path="/home" component={Home}/>
                 <Route path="/motorcycle" component={Motorcycle}/>
                 <Route path="/contact" component={Contact}/>
+                <Route path="/faq" component={FAQ}/>
                 <Redirect to="/home"/>
             </Switch>
         </BrowserRouter>

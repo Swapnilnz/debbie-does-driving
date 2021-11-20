@@ -9,6 +9,7 @@ import PermPhoneMsgTwoToneIcon from '@mui/icons-material/PermPhoneMsgTwoTone';
 import {LiveHelpTwoTone} from "@mui/icons-material";
 import SportsMotorsportsTwoToneIcon from '@mui/icons-material/SportsMotorsportsTwoTone';
 import DriveEtaTwoToneIcon from '@mui/icons-material/DriveEtaTwoTone';
+import {Link} from "react-router-dom";
 
 function Nav() {
     const isNotMobile = useMediaQuery({
@@ -34,35 +35,35 @@ function Nav() {
     return (
         <nav className="nav" style={{top: visible || !isNotMobile ? '0' : '-60px'}}>
             <div className="nav-logo-container">
-                <a href="/">
+                <Link to="/">
                     <LogoOnly width="250" height="70"/>
-                </a>
+                </Link>
             </div>
             <div className="nav-links is-flex is-align-items-center is-justify-content-center">
-                <a href="/motorcycle"
-                   className={"nav-links-item nav-links-item-text" + (path === '/motorcycle' ? ' orange-color-text' : '')}
-                   aria-label="motorcycle">
+                <Link to="/motorcycle"
+                      className={"nav-links-item nav-links-item-text" + (path === '/motorcycle' ? ' orange-color-text' : '')}
+                      aria-label="motorcycle">
                     <SportsMotorsportsTwoToneIcon fontSize={"small"} className="mr-1"/>
                     {isNotMobile && 'MOTORCYCLE'}
-                </a>
-                <a href="/defensive-driving"
-                   className={"nav-links-item nav-links-item-text" + (path === '/defensive-driving' ? ' orange-color-text' : '')}
-                   aria-label="defensive driving">
+                </Link>
+                <Link to="/defensive-driving"
+                      className={"nav-links-item nav-links-item-text" + (path === '/defensive-driving' ? ' orange-color-text' : '')}
+                      aria-label="defensive driving">
                     <DriveEtaTwoToneIcon fontSize={"small"} className="mr-1"/>
                     {isNotMobile && 'DDC'}
-                </a>
-                <a href="/contact"
-                   className={"nav-links-item nav-links-item-text" + (path === '/contact' ? ' orange-color-text' : '')}
-                   aria-label="contact">
+                </Link>
+                <Link to="/contact"
+                      className={"nav-links-item nav-links-item-text" + (path === '/contact' ? ' orange-color-text' : '')}
+                      aria-label="contact">
                     <PermPhoneMsgTwoToneIcon fontSize={"small"} className="mr-1"/>
                     {isNotMobile && 'CONTACT'}
-                </a>
-                <a href="/faq"
-                   className={"nav-links-item nav-links-item-text" + (path === '/faq' ? ' orange-color-text' : '')}
-                   aria-label="faq">
+                </Link>
+                <Link to="/faq"
+                      className={"nav-links-item nav-links-item-text" + (path === '/faq' ? ' orange-color-text' : '')}
+                      aria-label="faq">
                     <LiveHelpTwoTone fontSize={"small"} className="mr-1"/>
                     {isNotMobile && 'FAQ'}
-                </a>
+                </Link>
             </div>
             {isNotMobile && <div className="profile-logo is-flex is-align-items-center is-justify-content-end">
                 <a className="nav-links-item" href="https://www.facebook.com/DebbieDriverTrainer/" target="_blank"

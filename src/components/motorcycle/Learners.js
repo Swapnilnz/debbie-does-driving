@@ -8,12 +8,12 @@ import EventTwoToneIcon from "@mui/icons-material/EventTwoTone";
 
 function Learners() {
     return (
-        <div className="mc-section is-flex is-flex-direction-column py-5">
-            <div className="has-text-weight-bold has-text-white mt-2 mc-header">
+        <div className="mc-section is-flex is-flex-direction-column pb-5">
+            <div className="has-text-weight-bold has-text-white page-header">
                 LEARNERS
             </div>
             <div className="home-section-subtitle">
-                · WHERE EVERYONE STARTS ·
+                · THE STARTING LINE ·
             </div>
             <div className="mc-section-body">
                 <Card className="mc-card-wrapper">

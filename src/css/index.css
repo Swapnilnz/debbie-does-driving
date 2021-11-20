@@ -21,3 +21,8 @@ body {
 .orange-color-text {
     color: #f8740c !important;
 }
+
+.page-header {
+    letter-spacing: 0.1rem;
+    font-size: 3rem !important;
+}

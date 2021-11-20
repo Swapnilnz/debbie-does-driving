@@ -7,8 +7,8 @@ import EventTwoToneIcon from "@mui/icons-material/EventTwoTone";
 
 function Restricted() {
     return (
-        <div className="mc-section is-flex is-flex-direction-column py-5">
-            <div className="has-text-weight-bold has-text-white mt-2 mc-header">
+        <div className="mc-section is-flex is-flex-direction-column pb-5">
+            <div className="has-text-weight-bold has-text-white page-header">
                 RESTRICTED
             </div>
             <div className="home-section-subtitle">
