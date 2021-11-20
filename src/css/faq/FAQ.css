@@ -6,6 +6,10 @@
     color: #9b9b9b;
 }
 
+.faq-body {
+    width: 80%;
+}
+
 .faq-subheader {
     color: #9b9b9b !important;
     font-size: 2rem;

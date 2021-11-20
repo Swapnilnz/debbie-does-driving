@@ -13,7 +13,7 @@ function FAQ() {
             <div className="has-text-weight-bold has-text-white mt-2 mb-5 page-header">
                 FAQ
             </div>
-            <div className="mb-6 mx-4">
+            <div className="mb-6 mx-4 faq-body">
                 {FAQData.map((faq, index) => (
                     <Accordion className="faq-accordion">
                         <AccordionSummary
