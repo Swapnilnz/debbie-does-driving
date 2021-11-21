@@ -13,7 +13,7 @@ function Contact() {
                     <Grid item xs={12} md={8}>
                         <GetInTouch/>
                     </Grid>
-                    <Grid item xs={12} md={3}>
+                    <Grid item xs={12} md={4} className="pl-5">
                         <ContactDetails/>
                         <LocationDetails/>
                     </Grid>

@@ -17,14 +17,14 @@ function GetInTouch() {
                 CONTACT INFO
             </div>
             <div>
-                <a className="address-line"
+                <a className="address-line-hover"
                    href={"tel:" + process.env.REACT_APP_PHONE_NUMBER}>
                     <PhoneIcon className="has-text-white mr-1 pt-2"/>
                     {process.env.REACT_APP_PHONE_NUMBER}
                 </a>
             </div>
             <div>
-                <a className="address-line ver"
+                <a className="address-line-hover"
                    href={"mailto: " + process.env.REACT_APP_EMAIL}>
                     <EmailIcon className="has-text-white mr-1 pt-2"/>
                     {process.env.REACT_APP_EMAIL}
