@@ -38,22 +38,23 @@ function GetInTouch(props) {
     };
 
     // Form functions
-    const { register, handleSubmit, watch, formState: { errors } } = useForm();
+    const { register, handleSubmit } = useForm();
 
     const onSubmit = function (data) {
         try {
             const date = Date().toLocaleString().split(" GMT")[0]; // removes the GMT+1300... bit at the end
+            const message = data.message.replace(/(?:\r\n|\r|\n)/g, '<br>');
             emailjs.send(emailjsService, emailjsTemplateToDebbie, {
                 date: date,
                 name: data.name,
                 email: data.email,
-                message: data.message,
+                message: message,
             });
             emailjs.send(emailjsService, emailjsTemplateToCustomer, {
                 date: date,
                 name: data.name,
                 email: data.email,
-                message: data.message,
+                message: message,
             });
             setSeverity("success");
             setMessage("Contact form submitted");
