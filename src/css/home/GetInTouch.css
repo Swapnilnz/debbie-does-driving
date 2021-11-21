@@ -4,10 +4,16 @@
     margin-bottom: 4rem;
 }
 
-@media (max-width: 1224px) {
+.align-left {}
+
+@media (max-width: 1000px) {
 
     .git-body {
         min-width: 85%;
+    }
+
+    .align-left {
+        align-items: center;
     }
 
 }

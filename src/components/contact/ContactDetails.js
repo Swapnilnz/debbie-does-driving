@@ -12,7 +12,7 @@ const styles = {
 function GetInTouch() {
 
     return (
-        <div className="is-flex is-flex-direction-column is-align-items-left">
+        <div className="is-flex is-flex-direction-column align-left">
             <div className="has-text-weight-bold has-text-white is-flex is-flex-direction-row mt-5 home-section-header">
                 CONTACT INFO
             </div>
