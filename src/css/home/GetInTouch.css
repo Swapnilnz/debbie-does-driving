@@ -12,10 +12,10 @@
 
 }
 
-.address-line {
+.address-line, .address-line-hover {
     color: white
 }
 
-.address-line:hover {
+.address-line-hover:hover {
     color: #a6a6a6;
 }
