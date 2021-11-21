@@ -9,6 +9,10 @@
     color: #a6a6a6;
 }
 
+.footer-text:hover {
+    color: white;
+}
+
 .footer-copyright {
     color: #a6a6a6;
     margin-top: 1rem;
