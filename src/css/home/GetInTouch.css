@@ -11,3 +11,11 @@
     }
 
 }
+
+.address-line {
+    color: white
+}
+
+.address-line:hover {
+    color: #a6a6a6;
+}
