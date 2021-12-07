@@ -17,6 +17,7 @@ import {getAnalytics} from "firebase/analytics";
 import {getPerformance} from "firebase/performance";
 import Motorcycle from "./views/Motorcycle";
 import FAQ from "./views/FAQ";
+import Car from "./views/Car";
 
 const firebaseConfig = {
     apiKey: "AIzaSyDjTrfQQhM0pGY5RGWfzDDfyhGp9IL-wf8",
@@ -40,6 +41,7 @@ ReactDOM.render(
             <Switch>
                 <Route path="/home" component={Home}/>
                 <Route path="/motorcycle" component={Motorcycle}/>
+                <Route path="/car" component={Car}/>
                 <Route path="/contact" component={Contact}/>
                 <Route path="/faq" component={FAQ}/>
                 <Redirect to="/home"/>

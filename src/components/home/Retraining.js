@@ -1,22 +1,28 @@
-import '../../css/home/DDC.css'
-import DDCImage from '../../assets/ddc.png'
+import '../../css/home/Retraining.css';
+import RetrainingImage from "../../assets/retraining.jpg";
 import Button from "@mui/material/Button";
-import EventTwoToneIcon from "@mui/icons-material/EventTwoTone";
-import InfoOutlinedIcon from '@mui/icons-material/InfoOutlined';
-import {useMediaQuery} from "react-responsive";
 import {Link} from "react-router-dom";
+import InfoOutlinedIcon from "@mui/icons-material/InfoOutlined";
+import EventTwoToneIcon from "@mui/icons-material/EventTwoTone";
+import {useMediaQuery} from "react-responsive";
 
-function DDC() {
+function Retraining() {
+
     const isDesktopOrLaptop = useMediaQuery({query: '(min-width: 1224px)'});
 
+
     return (
-        <div className="ddc-wrapper">
-            <div className="ddc-body pt-0 pb-4 px-4">
+        <div className="retraining-wrapper">
+            {isDesktopOrLaptop &&
+            <div className="p-4 is-flex is-justify-content-center home-image-wrapper retraining-image">
+                <img loading={"lazy"} src={RetrainingImage} alt={"retraining"}/>
+            </div>}
+            <div className="retraining-body pt-0 pb-4 px-4">
                 <div className="has-text-weight-bold has-text-white home-section-header">
-                    DEFENSIVE DRIVING
+                    DRIVER RETRAINING
                 </div>
                 <div className="home-section-subtitle">
-                    · TAILGATING IS NOT THE ANSWER ·
+                    · INSIGHT3 ·
                 </div>
                 <div className="has-text-white mt-5">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias architecto consequatur earum eveniet
@@ -28,7 +34,7 @@ function DDC() {
                     dolore dolores esse explicabo inventore iure laudantium, maxime neque nobis quo recusandae, rem ut
                     vel veritatis voluptas voluptate!
                 </div>
-                <div className="ddc-buttons-wrapper mt-5">
+                <div className="retraining-buttons-wrapper mt-5">
                     <Button variant="contained" size={isDesktopOrLaptop ? 'large' : 'small'}
                             component={Link} to="/defensive-driving"
                             className="has-text-weight-bold more-info" startIcon={<InfoOutlinedIcon/>}>
@@ -41,11 +47,8 @@ function DDC() {
                     </Button>
                 </div>
             </div>
-            <div className="p-4 is-flex is-justify-content-center home-image-wrapper">
-                <img className="ddc-image" loading={"lazy"} src={DDCImage} alt={"car"}/>
-            </div>
         </div>
-    )
+    );
 }
 
-export default DDC;
+export default Retraining;

@@ -46,11 +46,11 @@ function Nav() {
                     <SportsMotorsportsTwoToneIcon fontSize={"small"} className="mr-1"/>
                     {isNotMobile && 'MOTORCYCLE'}
                 </Link>
-                <Link to="/defensive-driving"
+                <Link to="/car"
                       className={"nav-links-item nav-links-item-text" + (location.pathname === '/defensive-driving' ? ' orange-color-text' : '')}
-                      aria-label="defensive driving">
+                      aria-label="car">
                     <DriveEtaTwoToneIcon fontSize={"small"} className="mr-1"/>
-                    {isNotMobile && 'DDC'}
+                    {isNotMobile && 'CAR'}
                 </Link>
                 <Link to="/contact"
                       className={"nav-links-item nav-links-item-text" + (location.pathname === '/contact' ? ' orange-color-text' : '')}

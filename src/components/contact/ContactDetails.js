@@ -20,7 +20,7 @@ function GetInTouch() {
                 <a className="address-line-hover"
                    href={"tel:" + process.env.REACT_APP_PHONE_NUMBER}>
                     <PhoneIcon className="has-text-white mr-1 pt-2"/>
-                    0{process.env.REACT_APP_PHONE_NUMBER}
+                    {process.env.REACT_APP_PHONE_NUMBER}
                 </a>
             </div>
             <div>

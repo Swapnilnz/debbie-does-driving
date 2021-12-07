@@ -15,7 +15,7 @@ function GetInTouch() {
             <div className="has-text-weight-bold has-text-white is-flex is-flex-direction-row mt-5 home-section-header">
                 OUR LOCATIONS
             </div>
-            <div className="home-section-subtitle mb-1">
+            <div className="align-left home-section-subtitle mb-1 mt-1">
                 DEFENSIVE DRIVER COURSE
             </div>
             <a className="address-line-hover"
@@ -30,7 +30,7 @@ function GetInTouch() {
 
             <br/>
 
-            <div className="home-section-subtitle mb-1">
+            <div className="align-left home-section-subtitle mb-1">
                 MOTORCYCLE TRAINING
             </div>
             <div className="address-line">
