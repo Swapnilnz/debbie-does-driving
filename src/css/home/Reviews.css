@@ -5,7 +5,6 @@
 }
 
 .reviews-masonry {
-    margin: 2rem 0 4rem 0 !important;
     width: 70% !important;
 }
 
@@ -13,7 +12,7 @@
     padding: 2.5rem 2rem;
     background: rgb(38 53 65);
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.38);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.38);
 }
 
 .reviews-header {

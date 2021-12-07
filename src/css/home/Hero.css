@@ -1,7 +1,7 @@
 .hero {
     height: 100vh;
     position: relative;
-    background: linear-gradient(270deg, rgba(0,0,0,0.9) 19%, rgba(59,59,59,0.9) 54%, rgba(107,107,107,0.9) 100%);
+    background: linear-gradient(270deg, rgba(0, 0, 0, 0.9) 19%, rgba(59, 59, 59, 0.9) 54%, rgba(107, 107, 107, 0.9) 100%);
 }
 
 .hero-img {
@@ -11,15 +11,15 @@
 
 
 .hero-overlay {
-    background: rgb(47,47,47);
-    background: linear-gradient(0deg, rgba(0,17,34,1) 22%, rgba(0,35,70,1) 75%, rgba(0,41,82,0.7) 100%);
+    background: rgb(47, 47, 47);
+    background: linear-gradient(0deg, rgba(0, 17, 34, 1) 22%, rgba(0, 35, 70, 1) 75%, rgba(0, 41, 82, 0.7) 100%);
 
     position: absolute;
     top: 50%;
     left: 75%;
     transform: translate(-50%, -50%);
     width: 40%;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.38);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.38);
     border-radius: 5px;
     display: flex;
     flex-direction: column;
@@ -40,7 +40,6 @@
     width: 100%;
     overflow: hidden;
     line-height: 0;
-    transform: rotate(180deg);
     margin-bottom: -1px;
 }
 
@@ -48,7 +47,7 @@
     position: relative;
     display: block;
     width: calc(100% + 1.3px);
-    height: 150px;
+    height: 60px;
 }
 
 .wave .shape-fill {
@@ -61,7 +60,7 @@
     color: black !important;
     bottom: -20px;
     left: 47%;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.38);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.38);
 }
 
 @media (max-width: 1224px) {
@@ -73,8 +72,8 @@
         width: 95%;
         top: 60%;
         left: 50%;
-        background: linear-gradient(90deg, rgba(0,17,34,0.8) 22%, rgba(0,35,70,0.8) 75%, rgba(0,41,82,0.7) 100%);
-        padding-block: unset;
+        background: linear-gradient(90deg, rgba(0, 17, 34, 0.8) 22%, rgba(0, 35, 70, 0.8) 75%, rgba(0, 41, 82, 0.7) 100%);
+        padding-block: 2rem;
     }
 
     .overlay-contact {
@@ -83,6 +82,6 @@
 
     .wave svg {
         width: calc(100% + 1.3px);
-        height: 53px;
+        height: 20px;
     }
 }

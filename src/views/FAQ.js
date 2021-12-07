@@ -20,7 +20,7 @@ function FAQ() {
                             key={index}
                             expandIcon={<ExpandMoreIcon className="has-text-white"/>}
                         >
-                            <Typography className="has-text-white">{faq.question}</Typography>
+                            <Typography variant={"h6"} className="has-text-white">{faq.question}</Typography>
                         </AccordionSummary>
                         <AccordionDetails className="faq-accordion-text">
                             <Typography>{faq.answer}</Typography>

@@ -10,20 +10,20 @@ import Reviews from "../components/home/Reviews";
 function Home() {
 
     return (
-    <div className="home-wrapper">
-        <Hero/>
-        <div className="spacer layered-waves-1" id="meet-debbie"/>
-        <MeetDebbie/>
-        <div className="spacer layered-waves-2" />
-        <MotorcycleLessons/>
-        <div className="spacer layered-waves-3" />
-        <DDC/>
-        <div className="spacer layered-waves-4" />
-        <Reviews/>
-        <div className="spacer layered-waves-5" />
-        <GetInTouch/>
-    </div>
-  );
+        <div className="home-wrapper">
+            <Hero/>
+            <div className="spacer layered-waves-1" id="meet-debbie"/>
+            <MeetDebbie/>
+            <div className="spacer layered-waves-2"/>
+            <MotorcycleLessons/>
+            <hr/>
+            <DDC/>
+            <div className="spacer layered-waves-4"/>
+            <GetInTouch/>
+            <div className="spacer layered-waves-5"/>
+            <Reviews/>
+        </div>
+    );
 }
 
 export default Home;

@@ -43,6 +43,7 @@
 .home-section-subtitle {
     color: #b2becd;
     letter-spacing: .1rem;
+    text-align: center;
 }
 
 .orange-button {
@@ -58,6 +59,13 @@
 
 .home-image-wrapper {
     border: 1px solid #f7770f;
+}
+
+hr {
+    background-color: unset !important;
+    border: none !important;
+    border-bottom: 2px dashed rgb(38 53 65) !important;
+    margin: 3rem 1rem !important;
 }
 
 @media (max-width: 1224px) {

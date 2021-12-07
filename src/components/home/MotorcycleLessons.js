@@ -1,7 +1,6 @@
 import '../../css/home/MotorcycleLessons.css'
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
 import {CardActionArea} from '@mui/material';
 import Typography from '@mui/material/Typography';
 import {HashLink as Link} from 'react-router-hash-link';
@@ -21,18 +20,12 @@ function MotorcycleLessons() {
                 <Link to="/motorcycle#learners">
                     <Card className="mot-lesson-card-wrapper">
                         <CardActionArea>
-                            <CardMedia
-                                component="img"
-                                height="140"
-                                image="https://socialistmodernism.com/wp-content/uploads/2017/07/placeholder-image.png?w=640"
-                                alt="learners"
-                            />
                             <CardContent className="mot-lesson-card-body">
                                 <div className="mot-lesson-card-gradient-background"/>
                                 <Typography gutterBottom fontWeight={"bold"} align={"center"} variant="h5"
                                             component="div"
                                             letterSpacing={2} zIndex={2} position={"relative"}>
-                                    LEARNERS - BHS
+                                    LEARNERS - BHST
                                 </Typography>
                                 <Typography variant="body2" zIndex={2} position={"relative"}
                                             className="mot-lesson-card-p">
@@ -48,12 +41,6 @@ function MotorcycleLessons() {
                 <Link to="/motorcycle#restricted">
                     <Card className="mot-lesson-card-wrapper">
                         <CardActionArea>
-                            <CardMedia
-                                component="img"
-                                height="140"
-                                image="https://socialistmodernism.com/wp-content/uploads/2017/07/placeholder-image.png?w=640"
-                                alt="learners"
-                            />
                             <CardContent className="mot-lesson-card-body">
                                 <div className="mot-lesson-card-gradient-background"/>
                                 <Typography gutterBottom fontWeight={"bold"} align={"center"} variant="h5"
@@ -75,12 +62,6 @@ function MotorcycleLessons() {
                 <Link to="/motorcycle#full">
                     <Card className="mot-lesson-card-wrapper">
                         <CardActionArea>
-                            <CardMedia
-                                component="img"
-                                height="140"
-                                image="https://socialistmodernism.com/wp-content/uploads/2017/07/placeholder-image.png?w=640"
-                                alt="learners"
-                            />
                             <CardContent className="mot-lesson-card-body">
                                 <div className="mot-lesson-card-gradient-background"/>
                                 <Typography gutterBottom fontWeight={"bold"} align={"center"} variant="h5"
