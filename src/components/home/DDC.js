@@ -18,12 +18,10 @@ function DDC() {
                 <div className="home-section-subtitle">
                     · TAILGATING IS NOT THE ANSWER ·
                 </div>
-                <div className="has-text-white mt-5">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias architecto consequatur earum eveniet
-                    fugit, illo impedit in incidunt ipsum modi molestiae necessitatibus provident quaerat quisquam
-                    saepe, sapiente temporibus ut, veniam!
-                    <br/>
-                    <br/>
+                <div className="has-text-white mt-5 is-flex-grow-1">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aperiam asperiores consequuntur
+                    dolore dolores esse explicabo inventore iure laudantium, maxime neque nobis quo recusandae, rem ut
+                    vel veritatis voluptas voluptate!
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aperiam asperiores consequuntur
                     dolore dolores esse explicabo inventore iure laudantium, maxime neque nobis quo recusandae, rem ut
                     vel veritatis voluptas voluptate!

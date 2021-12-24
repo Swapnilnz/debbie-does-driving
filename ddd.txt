@@ -1,0 +1,9 @@
+Meet debbie:
+ - Change image
+
+DDC:
+ - Add 'more info' button to home page
+ - Agree to terms and conditions before booking
+
+Retraining:
+ - Another section in home page

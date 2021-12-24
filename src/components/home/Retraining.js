@@ -14,9 +14,9 @@ function Retraining() {
     return (
         <div className="retraining-wrapper">
             {isDesktopOrLaptop &&
-            <div className="p-4 is-flex is-justify-content-center home-image-wrapper retraining-image">
-                <img loading={"lazy"} src={RetrainingImage} alt={"retraining"}/>
-            </div>}
+                <div className="p-4 is-flex is-justify-content-center home-image-wrapper retraining-image">
+                    <img loading={"lazy"} src={RetrainingImage} alt={"retraining"}/>
+                </div>}
             <div className="retraining-body pt-0 pb-4 px-4">
                 <div className="has-text-weight-bold has-text-white home-section-header">
                     DRIVER RETRAINING
@@ -24,7 +24,7 @@ function Retraining() {
                 <div className="home-section-subtitle">
                     · INSIGHT3 ·
                 </div>
-                <div className="has-text-white mt-5">
+                <div className="has-text-white mt-5 is-flex-grow-1">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias architecto consequatur earum eveniet
                     fugit, illo impedit in incidunt ipsum modi molestiae necessitatibus provident quaerat quisquam
                     saepe, sapiente temporibus ut, veniam!

@@ -63,6 +63,7 @@
 
 .home-image-wrapper {
     border: 1px solid #f7770f;
+    max-height: 27.3rem;
 }
 
 hr {
