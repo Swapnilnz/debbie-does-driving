@@ -34,6 +34,8 @@ function DDC() {
                     </Button>
 
                     <Button variant="contained" size={isDesktopOrLaptop ? 'large' : 'small'}
+                            href={'https://booking.setmore.com/scheduleappointment/7ce91070-a226-4451-b4a7-574d47cafe44/class/6b44d0ae-b0db-4c7d-86f0-5ff4b55b7d6d?source=easyshare'}
+                            target={"_blank"}
                             className="orange-button has-text-weight-bold" startIcon={<EventTwoToneIcon/>}>
                         Book
                     </Button>

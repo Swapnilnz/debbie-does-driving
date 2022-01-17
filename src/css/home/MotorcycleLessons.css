@@ -24,6 +24,11 @@
     transition: color 0.3s ease;
 }
 
+.card-hr {
+    z-index: 2;
+    border-bottom: 1px dashed #b2becd !important;
+}
+
 .mot-lesson-card-gradient-background {
     z-index: 1;
     position: absolute;
@@ -31,19 +36,32 @@
     height: 100%;
     width: 100%;
     left: 0;
-    background: linear-gradient(90deg, #f7770f, #913d72);
+    background: linear-gradient(90deg, rgba(247, 119, 15, 0.9), rgba(145, 61, 114, 0.9));
     transition: 0.5s ease;
 }
 
 .mot-lesson-card-wrapper:hover .mot-lesson-card-gradient-background,
 .mc-card-wrapper:hover .mot-lesson-card-gradient-background {
-    top: 0 !important;
+    top: 113px !important;
 }
 
 .mot-lesson-card-wrapper:hover .mot-lesson-card-p,
 .mc-card-wrapper:hover .mot-lesson-card-p {
     transition: color 0.3s ease;
     color: white;
+}
+
+.price-tag {
+    color: white;
+    background: #ad3781 none;
+    padding: 0 4px;
+    border-radius: 3px;
+}
+
+.mot-lesson-card-wrapper:hover .price-tag,
+.mc-card-wrapper:hover .price-tag {
+    transition: 0.3s ease;
+    background: #b00d74 none;
 }
 
 @media (max-width: 1224px) {

@@ -10,26 +10,6 @@
     background-position: center;
 }
 
-.layered-waves-1 {
-    background-image: url("../../assets/layered-waves-1.svg");
-}
-
-.layered-waves-2 {
-    background-image: url("../../assets/layered-waves-2.svg");
-}
-
-.layered-waves-3 {
-    background-image: url("../../assets/layered-waves-3.svg");
-}
-
-.layered-waves-4 {
-    background-image: url("../../assets/layered-waves-4.svg");
-}
-
-.layered-waves-5 {
-    background-image: url("../../assets/layered-waves-5.svg");
-}
-
 .flip {
     transform: rotate(180deg);
 }

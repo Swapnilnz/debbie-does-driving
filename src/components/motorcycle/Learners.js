@@ -1,6 +1,5 @@
 import '../../css/home/MotorcycleLessons.css'
 import Card from "@mui/material/Card";
-import CardMedia from "@mui/material/CardMedia";
 import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
@@ -16,22 +15,22 @@ function Learners() {
                 · THE STARTING LINE ·
             </div>
             <div className="mc-section-body">
-                <Card className="mc-card-wrapper">
-                    <CardMedia
-                        component="img"
-                        height="140"
-                        image="https://socialistmodernism.com/wp-content/uploads/2017/07/placeholder-image.png?w=640"
-                        alt="learners training"
-                    />
-                    <CardContent className="mot-lesson-card-body">
+                <Card className="mc-card-wrapper is-flex">
+                    <CardContent
+                        className="mot-lesson-card-body is-flex-grow-1 is-flex is-flex-direction-column is-align-items-center">
                         <div className="mot-lesson-card-gradient-background"/>
                         <Typography gutterBottom fontWeight={"bold"} align={"center"} variant="h5"
                                     component="div"
                                     letterSpacing={2} zIndex={2} position={"relative"}>
-                            NOVICE TRAINING
+                            LESSON
                         </Typography>
+                        <Typography component="div" gutterBottom fontWeight={"bold"} align={"center"} variant="h6"
+                                    letterSpacing={2} zIndex={2}>
+                            <p className={"price-tag"}>$100</p>
+                        </Typography>
+                        <hr className={'full-width my-4 card-hr'}/>
                         <Typography variant="body2" zIndex={2} position={"relative"}
-                                    className="mot-lesson-card-p">
+                                    className="mot-lesson-card-p" flexGrow={1}>
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab commodi consectetur eum
                             ex
                             explicabo, hic ipsum iure magni natus, nemo odit perferendis similique. Cupiditate
@@ -57,22 +56,38 @@ function Learners() {
                         </Button>
                     </CardContent>
                 </Card>
-                <Card className="mc-card-wrapper">
-                    <CardMedia
-                        component="iframe"
-                        height="456"
-                        src="https://www.youtube.com/embed/tqpT2cbTfx8"
-                        alt="learners"
-                    />
-                    <CardContent className="mot-lesson-card-body">
+                <Card className="mc-card-wrapper is-flex">
+                    <CardContent
+                        className="mot-lesson-card-body is-flex-grow-1 is-flex is-flex-direction-column is-align-items-center">
                         <div className="mot-lesson-card-gradient-background"/>
                         <Typography gutterBottom fontWeight={"bold"} align={"center"} variant="h5"
                                     component="div"
                                     letterSpacing={2} zIndex={2} position={"relative"}>
-                            BHS ASSESSMENT
+                            BHST
                         </Typography>
+                        <Typography component="div" gutterBottom fontWeight={"bold"} align={"center"} variant="h6"
+                                    letterSpacing={2} zIndex={2}>
+                            <p className={"price-tag"}>$100</p>
+                        </Typography>
+                        <hr className={'full-width my-4 card-hr'}/>
                         <Typography variant="body2" zIndex={2} position={"relative"}
-                                    className="mot-lesson-card-p">
+                                    className="mot-lesson-card-p" flexGrow={1}>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab commodi consectetur eum
+                            ex
+                            explicabo, hic ipsum iure magni natus, nemo odit perferendis similique. Cupiditate
+                            doloremque incidunt quae sed veniam voluptatem.
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab commodi consectetur eum
+                            ex
+                            explicabo, hic ipsum iure magni natus, nemo odit perferendis similique. Cupiditate
+                            doloremque incidunt quae sed veniam voluptatem.
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab commodi consectetur eum
+                            ex
+                            explicabo, hic ipsum iure magni natus, nemo odit perferendis similique. Cupiditate
+                            doloremque incidunt quae sed veniam voluptatem.
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab commodi consectetur eum
+                            ex
+                            explicabo, hic ipsum iure magni natus, nemo odit perferendis similique. Cupiditate
+                            doloremque incidunt quae sed veniam voluptatem.
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab commodi consectetur eum
                             ex
                             explicabo, hic ipsum iure magni natus, nemo odit perferendis similique. Cupiditate

@@ -1,0 +1,32 @@
+.car-ddc-body {
+    display: flex;
+    flex-direction: column;
+    max-width: 40%;
+    text-align: end;
+}
+
+.car-price-image {
+    float: right;
+    padding-bottom: 2rem;
+    padding-left: 3rem;
+}
+
+@media (max-width: 768px) {
+    .car-price-image {
+        float: none;
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 1224px) {
+    .car-ddc-body {
+        max-width: 89%;
+        text-align: center;
+    }
+
+    .center-mobile {
+        align-self: center;
+    }
+
+
+}

@@ -30,3 +30,11 @@ body {
 .text-align-start {
     text-align: start !important;
 }
+
+.full-width {
+    width: 100%;
+}
+
+.gap-1 {
+    gap: 0.5rem;
+}

@@ -4,14 +4,14 @@ import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import EventTwoToneIcon from "@mui/icons-material/EventTwoTone";
 
-function Restricted() {
+function Training() {
     return (
         <div className="mc-section is-flex is-flex-direction-column pb-5">
             <div className="has-text-weight-bold has-text-white page-header">
-                RESTRICTED
+                CAR TRAINING
             </div>
             <div className="home-section-subtitle">
-                · FOR THE COMMITTED ·
+                · GET PREPARED ·
             </div>
             <div className="mc-section-body">
                 <Card className="mc-card-wrapper is-flex">
@@ -21,15 +21,18 @@ function Restricted() {
                         <Typography gutterBottom fontWeight={"bold"} align={"center"} variant="h5"
                                     component="div"
                                     letterSpacing={2} zIndex={2} position={"relative"}>
-                            6R - LESSON
+                            RESTRICTED
                         </Typography>
                         <Typography component="div" gutterBottom fontWeight={"bold"} align={"center"} variant="h6"
                                     letterSpacing={2} zIndex={2}>
-                            <p className={"price-tag"}>$150</p>
+                            <p className={"price-tag"}>$70</p>
                         </Typography>
                         <hr className={'full-width my-4 card-hr'}/>
-                        <Typography variant="body2" zIndex={2} position={"relative"} flexGrow={1}
-                                    className="mot-lesson-card-p">
+                        <Typography letterSpacing={1} zIndex={2} className={'pb-2'}>
+                            <em>Note: must have 3 months' driving experience on learners</em>
+                        </Typography>
+                        <Typography variant="body2" zIndex={2} position={"relative"}
+                                    className="mot-lesson-card-p" flexGrow={1}>
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab commodi consectetur eum
                             ex
                             explicabo, hic ipsum iure magni natus, nemo odit perferendis similique. Cupiditate
@@ -62,35 +65,31 @@ function Restricted() {
                         <Typography gutterBottom fontWeight={"bold"} align={"center"} variant="h5"
                                     component="div"
                                     letterSpacing={2} zIndex={2} position={"relative"}>
-                            6R - CBTA
+                            FULL
                         </Typography>
-                        <div className='is-flex is-flex-direction-row gap-1'>
-                            <Typography component="div" gutterBottom fontWeight={"bold"} align={"center"} variant="h6"
-                                        letterSpacing={2} zIndex={2}>
-                                <p className={"price-tag"}>$230</p>
-                            </Typography>
-                            <Typography component="div" gutterBottom fontWeight={"lighter"} align={"center"}
-                                        variant="h6"
-                                        letterSpacing={2} zIndex={2}>
-                                (Own Motorcycle)
-                            </Typography>
-                            <Typography component="div" gutterBottom fontWeight={"bold"} align={"center"} variant="h6"
-                                        letterSpacing={2} zIndex={2}>
-                                |
-                            </Typography>
-                            <Typography component="div" gutterBottom fontWeight={"bold"} align={"center"} variant="h6"
-                                        letterSpacing={2} zIndex={2}>
-                                <p className={"price-tag"}>$180</p>
-                            </Typography>
-                            <Typography component="div" gutterBottom fontWeight={"lighter"} align={"center"}
-                                        variant="h6"
-                                        letterSpacing={2} zIndex={2}>
-                                (DDD Motorcycle)
-                            </Typography>
-                        </div>
+                        <Typography component="div" gutterBottom fontWeight={"bold"} align={"center"} variant="h6"
+                                    letterSpacing={2} zIndex={2}>
+                            <p className={"price-tag"}>$70</p>
+                        </Typography>
                         <hr className={'full-width my-4 card-hr'}/>
-                        <Typography variant="body2" zIndex={2} position={"relative"} flexGrow={1}
-                                    className="mot-lesson-card-p">
+                        <Typography variant="body2" zIndex={2} position={"relative"}
+                                    className="mot-lesson-card-p" flexGrow={1}>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab commodi consectetur eum
+                            ex
+                            explicabo, hic ipsum iure magni natus, nemo odit perferendis similique. Cupiditate
+                            doloremque incidunt quae sed veniam voluptatem.
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab commodi consectetur eum
+                            ex
+                            explicabo, hic ipsum iure magni natus, nemo odit perferendis similique. Cupiditate
+                            doloremque incidunt quae sed veniam voluptatem.
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab commodi consectetur eum
+                            ex
+                            explicabo, hic ipsum iure magni natus, nemo odit perferendis similique. Cupiditate
+                            doloremque incidunt quae sed veniam voluptatem.
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab commodi consectetur eum
+                            ex
+                            explicabo, hic ipsum iure magni natus, nemo odit perferendis similique. Cupiditate
+                            doloremque incidunt quae sed veniam voluptatem.
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab commodi consectetur eum
                             ex
                             explicabo, hic ipsum iure magni natus, nemo odit perferendis similique. Cupiditate
@@ -117,7 +116,8 @@ function Restricted() {
                 </Card>
             </div>
         </div>
+
     )
 }
 
-export default Restricted;
+export default Training;

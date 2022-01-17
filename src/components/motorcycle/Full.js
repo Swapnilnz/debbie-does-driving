@@ -1,5 +1,4 @@
 import Card from "@mui/material/Card";
-import CardMedia from "@mui/material/CardMedia";
 import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
@@ -15,21 +14,21 @@ function Full() {
                 · THE END OF THE ROAD ·
             </div>
             <div className="mc-section-body">
-                <Card className="mc-card-wrapper">
-                    <CardMedia
-                        component="img"
-                        height="140"
-                        image="https://socialistmodernism.com/wp-content/uploads/2017/07/placeholder-image.png?w=640"
-                        alt="learners training"
-                    />
-                    <CardContent className="mot-lesson-card-body">
+                <Card className="mc-card-wrapper is-flex">
+                    <CardContent
+                        className="mot-lesson-card-body is-flex-grow-1 is-flex is-flex-direction-column is-align-items-center">
                         <div className="mot-lesson-card-gradient-background"/>
                         <Typography gutterBottom fontWeight={"bold"} align={"center"} variant="h5"
                                     component="div"
                                     letterSpacing={2} zIndex={2} position={"relative"}>
-                            FULL LICENCE TRAINING
+                            6F - LESSON
                         </Typography>
-                        <Typography variant="body2" zIndex={2} position={"relative"}
+                        <Typography component="div" gutterBottom fontWeight={"bold"} align={"center"} variant="h6"
+                                    letterSpacing={2} zIndex={2}>
+                            <p className={"price-tag"}>100</p>
+                        </Typography>
+                        <hr className={'full-width my-4 card-hr'}/>
+                        <Typography variant="body2" zIndex={2} position={"relative"} flexGrow={1}
                                     className="mot-lesson-card-p">
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab commodi consectetur eum
                             ex
@@ -56,21 +55,41 @@ function Full() {
                         </Button>
                     </CardContent>
                 </Card>
-                <Card className="mc-card-wrapper">
-                    <CardMedia
-                        component="img"
-                        height="140"
-                        image="https://socialistmodernism.com/wp-content/uploads/2017/07/placeholder-image.png?w=640"
-                        alt="learners training"
-                    />
-                    <CardContent className="mot-lesson-card-body">
+                <Card className="mc-card-wrapper is-flex">
+                    <CardContent
+                        className="mot-lesson-card-body is-flex-grow-1 is-flex is-flex-direction-column is-align-items-center">
                         <div className="mot-lesson-card-gradient-background"/>
                         <Typography gutterBottom fontWeight={"bold"} align={"center"} variant="h5"
                                     component="div"
                                     letterSpacing={2} zIndex={2} position={"relative"}>
-                            CBTA ASSESSMENT - FULL
+                            6F - CBTA
                         </Typography>
-                        <Typography variant="body2" zIndex={2} position={"relative"}
+                        <div className='is-flex is-flex-direction-row gap-1'>
+                            <Typography component="div" gutterBottom fontWeight={"bold"} align={"center"} variant="h6"
+                                        letterSpacing={2} zIndex={2}>
+                                <p className={"price-tag"}>180</p>
+                            </Typography>
+                            <Typography component="div" gutterBottom fontWeight={"lighter"} align={"center"}
+                                        variant="h6"
+                                        letterSpacing={2} zIndex={2}>
+                                (Own Motorcycle)
+                            </Typography>
+                            <Typography component="div" gutterBottom fontWeight={"bold"} align={"center"} variant="h6"
+                                        letterSpacing={2} zIndex={2}>
+                                |
+                            </Typography>
+                            <Typography component="div" gutterBottom fontWeight={"bold"} align={"center"} variant="h6"
+                                        letterSpacing={2} zIndex={2}>
+                                <p className={"price-tag"}>130</p>
+                            </Typography>
+                            <Typography component="div" gutterBottom fontWeight={"lighter"} align={"center"}
+                                        variant="h6"
+                                        letterSpacing={2} zIndex={2}>
+                                (DDD Motorcycle)
+                            </Typography>
+                        </div>
+                        <hr className={'full-width my-4 card-hr'}/>
+                        <Typography variant="body2" zIndex={2} position={"relative"} flexGrow={1}
                                     className="mot-lesson-card-p">
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab commodi consectetur eum
                             ex

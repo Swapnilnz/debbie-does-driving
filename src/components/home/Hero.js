@@ -18,9 +18,10 @@ function Hero() {
     return (
         <div className="hero">
             {isDesktopOrLaptop &&
-            <BlurImageLoader src={HeroImgCropped} preview={BlurredHeroCropped} fullCover={true} transitionTime={100}/>}
+                <BlurImageLoader src={HeroImgCropped} preview={BlurredHeroCropped} fullCover={true}
+                                 transitionTime={100}/>}
             {isTabletOrMobile &&
-            <BlurImageLoader src={HeroImg} preview={BlurredHeroImg} fullCover={true} transitionTime={100}/>}
+                <BlurImageLoader src={HeroImg} preview={BlurredHeroImg} fullCover={true} transitionTime={100}/>}
             <div className="wave">
                 <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
                      preserveAspectRatio="none">
@@ -41,16 +42,18 @@ function Hero() {
                 </div>
                 <div>
                     <Button variant="contained" size={'large'}
+                            href={'https://debbiedoesdriving.setmore.com/'}
+                            target="_blank"
                             className="orange-button mt-4 mb-5 has-text-weight-bold" startIcon={<EventTwoToneIcon/>}>
                         Book
                     </Button>
                 </div>
                 {isDesktopOrLaptop &&
-                <AnchorLink href='#meet-debbie'>
-                    <IconButton className="arrow-down-overlay" href="/home#meet-debbie">
-                        <KeyboardArrowDownIcon color="white"/>
-                    </IconButton>
-                </AnchorLink>}
+                    <AnchorLink href='#meet-debbie'>
+                        <IconButton className="arrow-down-overlay" href="/home#meet-debbie">
+                            <KeyboardArrowDownIcon color="white"/>
+                        </IconButton>
+                    </AnchorLink>}
             </div>
         </div>
     )
