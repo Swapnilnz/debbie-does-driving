@@ -24,7 +24,7 @@ function Retraining() {
                 </div>
                 <div className="has-text-white mt-5 is-flex-grow-1">
                     <div className="car-price-image">
-                        <img src={Price} height={150} width={150}/>
+                        <img src={Price} height={150} width={150} alt={'price 195'}/>
                     </div>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias architecto consequatur earum eveniet
                     fugit, illo impedit in incidunt ipsum modi molestiae necessitatibus provident quaerat quisquam

@@ -26,7 +26,7 @@ function DDC() {
                 </div>
                 <div className="has-text-white mt-5">
                     <div className="car-price-image">
-                        <img src={Price} height={150} width={150}/>
+                        <img src={Price} height={150} width={150} alt={'price 229'}/>
                     </div>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias architecto consequatur earum eveniet
                     fugit, illo impedit in incidunt ipsum modi molestiae necessitatibus provident quaerat quisquam
