@@ -1,12 +1,11 @@
 import '../../css/home/GetInTouch.css'
 import React, {useState} from 'react';
 
-import {InputAdornment, TextField} from "@mui/material";
+import {Alert, Button, InputAdornment, Snackbar, TextField} from "@mui/material";
 import {withStyles} from "@material-ui/core/styles";
 import {Email, Send} from "@mui/icons-material";
-import {Alert, Button, Snackbar} from "@mui/material";
 import {useMediaQuery} from "react-responsive";
-import { useForm } from "react-hook-form";
+import {useForm} from "react-hook-form";
 import emailjs from "emailjs-com";
 
 
@@ -27,7 +26,7 @@ function GetInTouch(props) {
 
     // Set snackbar variables
     const [openSnackbar, setOpenSnackbar] = useState(false);
-    const [severity, setSeverity] = useState("success");
+    const [severity, setSeverity] = useState("warning");
     const [message, setMessage] = useState("Contact form submitted");
 
     const handleClose = (event, reason) => {
@@ -38,7 +37,7 @@ function GetInTouch(props) {
     };
 
     // Form functions
-    const { register, handleSubmit } = useForm();
+    const {register, handleSubmit, reset} = useForm();
 
     const onSubmit = function (data) {
         try {
@@ -56,9 +55,14 @@ function GetInTouch(props) {
                 email: data.email,
                 message: message,
             });
-            setSeverity("success");
+            setSeverity("warning");
             setMessage("Contact form submitted");
             setOpenSnackbar(true);
+            reset({
+                name: '',
+                email: '',
+                message: ''
+            })
         } catch (err) {
             console.error(err);
             setSeverity("error");
@@ -81,7 +85,7 @@ function GetInTouch(props) {
                 className="is-flex is-flex-direction-column git-body">
                 <TextField
                     fullWidth
-                    {...register("name", { required: true })}
+                    {...register("name", {required: true})}
                     InputProps={{className: classes.input}}
                     required
                     color={"warning"}
@@ -90,7 +94,7 @@ function GetInTouch(props) {
                 />
                 <TextField
                     fullWidth
-                    {...register("email", { required: true })}
+                    {...register("email", {required: true})}
                     InputProps={{
                         className: classes.input,
                         startAdornment: (
@@ -106,7 +110,7 @@ function GetInTouch(props) {
                     label="Email"
                 />
                 <TextField
-                    {...register("message", { required: true })}
+                    {...register("message", {required: true})}
                     label="Message"
                     required
                     multiline
@@ -125,7 +129,8 @@ function GetInTouch(props) {
             <Snackbar
                 open={openSnackbar}
                 autoHideDuration={6000}
-                onClose={handleClose}>
+                onClose={handleClose}
+            >
                 <Alert severity={severity}
                        variant={"filled"}
                        onClose={handleClose}>

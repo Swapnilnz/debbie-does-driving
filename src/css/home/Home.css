@@ -35,6 +35,19 @@
 
 .orange-button:hover {
     background-position: 100% 0;
+    color: white;
+}
+
+.purple-button {
+    min-width: 10em !important;
+    background-image: linear-gradient(to right, #ad3781, rgb(176, 13, 116));
+    background-size: 300% 100%;
+    transition: all .4s ease-in-out !important;
+}
+
+.purple-button:hover {
+    background-position: 100% 0;
+    color: white;
 }
 
 .more-info:hover {
@@ -43,7 +56,7 @@
 
 .home-image-wrapper {
     border: 1px solid #f7770f;
-    max-height: 27.3rem;
+    /*max-height: 27.3rem;*/
 }
 
 hr {

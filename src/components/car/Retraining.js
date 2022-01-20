@@ -24,7 +24,7 @@ function Retraining() {
                 </div>
                 <div className="has-text-white mt-5 is-flex-grow-1">
                     <div className="car-price-image">
-                        <img src={Price} height={150} width={150} alt={'price 195'}/>
+                        <img loading={'lazy'} src={Price} height={150} width={150} alt={'price 195'}/>
                     </div>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias architecto consequatur earum eveniet
                     fugit, illo impedit in incidunt ipsum modi molestiae necessitatibus provident quaerat quisquam
@@ -36,6 +36,8 @@ function Retraining() {
                     vel veritatis voluptas voluptate!
                 </div>
                 <Button variant="contained" size={isDesktopOrLaptop ? 'large' : 'small'}
+                        href={'https://booking.setmore.com/scheduleappointment/7ce91070-a226-4451-b4a7-574d47cafe44/services/f60ce61c-fb3e-4098-9a9b-2d06d550c294'}
+                        target={'_blank'}
                         className="orange-button has-text-weight-bold mt-5" startIcon={<EventTwoToneIcon/>}>
                     Book
                 </Button>

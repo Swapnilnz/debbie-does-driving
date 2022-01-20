@@ -16,7 +16,7 @@ function GetInTouch() {
                 OUR LOCATIONS
             </div>
             <div className="align-left home-section-subtitle mb-1 mt-1">
-                DEFENSIVE DRIVER COURSE
+                DEFENSIVE DRIVING COURSE
             </div>
             <a className="address-line-hover"
                href="https://www.google.com/maps/place/Adventure+Southland+Limited/@-46.3505345,168.3443628,17z/data=!3m1!4b1!4m5!3m4!1s0xa9d2dc89f80adb79:0x8751bd7a03c88adf!8m2!3d-46.3505345!4d168.3465503"
@@ -34,7 +34,7 @@ function GetInTouch() {
                 MOTORCYCLE TRAINING
             </div>
             <div className="address-line">
-                We come to you, Invercargill
+                I come to you, Invercargill
             </div>
             <br/>
 

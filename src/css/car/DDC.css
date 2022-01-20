@@ -11,6 +11,38 @@
     padding-left: 3rem;
 }
 
+.fade-enter {
+    opacity: 0;
+}
+
+.fade-enter-active {
+    opacity: 1;
+    transition: opacity 300ms;
+}
+
+.fade-exit {
+    opacity: 1;
+}
+
+.fade-exit-active {
+    opacity: 0;
+    transition: opacity 300ms;
+}
+
+.tc-title {
+    color: white;
+    background: rgb(18, 18, 18) linear-gradient(rgba(255, 255, 255, 0.16), rgba(255, 255, 255, 0.16));
+}
+
+.tc-buttons {
+    color: rgb(144, 202, 249) !important;
+}
+
+.tc-buttons:hover {
+    text-decoration: none !important;
+    background-color: rgba(144, 202, 249, 0.08) !important;
+}
+
 @media (max-width: 768px) {
     .car-price-image {
         float: none;

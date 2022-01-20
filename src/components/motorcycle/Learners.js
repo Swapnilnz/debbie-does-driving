@@ -12,7 +12,7 @@ function Learners() {
                 LEARNERS
             </div>
             <div className="home-section-subtitle">
-                · THE STARTING LINE ·
+                · the starting line ·
             </div>
             <div className="mc-section-body">
                 <Card className="mc-card-wrapper is-flex">
@@ -26,7 +26,7 @@ function Learners() {
                         </Typography>
                         <Typography component="div" gutterBottom fontWeight={"bold"} align={"center"} variant="h6"
                                     letterSpacing={2} zIndex={2}>
-                            <p className={"price-tag"}>$100</p>
+                            <p className={"price-tag-purple"}>$100</p>
                         </Typography>
                         <hr className={'full-width my-4 card-hr'}/>
                         <Typography variant="body2" zIndex={2} position={"relative"}
@@ -50,7 +50,9 @@ function Learners() {
                         </Typography>
 
                         <Button variant="contained" size={'large'} style={{zIndex: 2}}
-                                className="orange-button mt-4 mb-5 has-text-weight-bold"
+                                className="orange-button mt-6 mb-5 has-text-weight-bold"
+                                href={'https://booking.setmore.com/scheduleappointment/7ce91070-a226-4451-b4a7-574d47cafe44/services/74a0bf09-35e0-4395-b030-b28cab734429'}
+                                target={"_blank"}
                                 startIcon={<EventTwoToneIcon/>}>
                             Book
                         </Button>
@@ -67,7 +69,7 @@ function Learners() {
                         </Typography>
                         <Typography component="div" gutterBottom fontWeight={"bold"} align={"center"} variant="h6"
                                     letterSpacing={2} zIndex={2}>
-                            <p className={"price-tag"}>$100</p>
+                            <p className={"price-tag-purple"}>$100</p>
                         </Typography>
                         <hr className={'full-width my-4 card-hr'}/>
                         <Typography variant="body2" zIndex={2} position={"relative"}
@@ -89,24 +91,11 @@ function Learners() {
                             explicabo, hic ipsum iure magni natus, nemo odit perferendis similique. Cupiditate
                             doloremque incidunt quae sed veniam voluptatem.
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab commodi consectetur eum
-                            ex
-                            explicabo, hic ipsum iure magni natus, nemo odit perferendis similique. Cupiditate
-                            doloremque incidunt quae sed veniam voluptatem.
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab commodi consectetur eum
-                            ex
-                            explicabo, hic ipsum iure magni natus, nemo odit perferendis similique. Cupiditate
-                            doloremque incidunt quae sed veniam voluptatem.
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab commodi consectetur eum
-                            ex
-                            explicabo, hic ipsum iure magni natus, nemo odit perferendis similique. Cupiditate
-                            doloremque incidunt quae sed veniam voluptatem.
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab commodi consectetur eum
-                            ex
-                            explicabo, hic ipsum iure magni natus, nemo odit perferendis similique. Cupiditate
-                            doloremque incidunt quae sed veniam voluptatem.
                         </Typography>
                         <Button variant="contained" size={'large'} style={{zIndex: 2}}
-                                className="orange-button mt-4 mb-5 has-text-weight-bold"
+                                href={'https://booking.setmore.com/scheduleappointment/7ce91070-a226-4451-b4a7-574d47cafe44/services/259109e8-aa54-4cbe-b355-080b5e1028f4'}
+                                target={"_blank"}
+                                className="orange-button mt-6 mb-5 has-text-weight-bold"
                                 startIcon={<EventTwoToneIcon/>}>
                             Book
                         </Button>

@@ -10,12 +10,11 @@ function Motorcycle() {
         <div className="pd-7" id="learners">
             <Learners/>
             <div className="spacer" id="restricted">
-                <img src={L2} width={'100%'} alt={'divider'}/>
-
+                <img loading={'lazy'} src={L2} width={'100%'} alt={'divider'}/>
             </div>
             <Restricted/>
             <div className="spacer" id="full">
-                <img src={L3} width={'100%'} alt={'divider'}/>
+                <img loading={'lazy'} src={L3} width={'100%'} alt={'divider'}/>
             </div>
             <Full/>
         </div>

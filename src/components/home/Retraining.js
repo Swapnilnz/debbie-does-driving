@@ -1,10 +1,10 @@
 import '../../css/home/Retraining.css';
 import RetrainingImage from "../../assets/retraining.jpg";
 import Button from "@mui/material/Button";
-import {Link} from "react-router-dom";
 import InfoOutlinedIcon from "@mui/icons-material/InfoOutlined";
 import EventTwoToneIcon from "@mui/icons-material/EventTwoTone";
 import {useMediaQuery} from "react-responsive";
+import {HashLink as Link} from 'react-router-hash-link';
 
 function Retraining() {
 
@@ -35,12 +35,12 @@ function Retraining() {
                     vel veritatis voluptas voluptate!
                 </div>
                 <div className="retraining-buttons-wrapper mt-5">
-                    <Button variant="contained" size={isDesktopOrLaptop ? 'large' : 'small'}
-                            component={Link} to="/defensive-driving"
-                            className="has-text-weight-bold more-info" startIcon={<InfoOutlinedIcon/>}>
-                        More Info
-                    </Button>
-
+                    <Link to={"/car#retraining"}>
+                        <Button variant="contained" size={isDesktopOrLaptop ? 'large' : 'small'}
+                                className="has-text-weight-bold more-info" startIcon={<InfoOutlinedIcon/>}>
+                            More Info
+                        </Button>
+                    </Link>
                     <Button variant="contained" size={isDesktopOrLaptop ? 'large' : 'small'}
                             href={'https://booking.setmore.com/scheduleappointment/7ce91070-a226-4451-b4a7-574d47cafe44/services/f60ce61c-fb3e-4098-9a9b-2d06d550c294?source=easyshare'}
                             target={"_blank"}
