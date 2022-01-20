@@ -5,11 +5,11 @@ import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import PermPhoneMsgTwoToneIcon from '@mui/icons-material/PermPhoneMsgTwoTone';
 import Button from '@material-ui/core/Button';
-import {Link} from "react-router-dom";
+import {HashLink as Link} from 'react-router-hash-link';
 
 function FAQ() {
     return (
-        <div className="pd-7 is-flex is-flex-direction-column is-align-items-center">
+        <div className="pd-7 is-flex is-flex-direction-column is-align-items-center" id={"questions"}>
             <div className="has-text-weight-bold has-text-white mt-2 mb-5 page-header">
                 FAQ
             </div>
@@ -32,13 +32,13 @@ function FAQ() {
                 QUESTION NOT LISTED?
             </div>
             <div>
-                <Button variant="contained" size={'large'}
-                        component={Link}
-                        to="/contact"
-                        className="orange-button has-text-white mb-6 has-text-weight-bold"
-                        startIcon={<PermPhoneMsgTwoToneIcon/>}>
-                    CONTACT
-                </Button>
+                <Link to={"/contact#get-in-touch"}>
+                    <Button variant="contained" size={'large'}
+                            className="orange-button has-text-white mb-6 has-text-weight-bold"
+                            startIcon={<PermPhoneMsgTwoToneIcon/>}>
+                        CONTACT
+                    </Button>
+                </Link>
             </div>
         </div>
     )

@@ -30,12 +30,12 @@
 }
 
 .tc-title {
-    color: white;
+    color: #f8740c !important;
     background: rgb(18, 18, 18) linear-gradient(rgba(255, 255, 255, 0.16), rgba(255, 255, 255, 0.16));
 }
 
 .tc-buttons {
-    color: rgb(144, 202, 249) !important;
+    color: #f8740c !important;
 }
 
 .tc-buttons:hover {

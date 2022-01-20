@@ -9,7 +9,9 @@ import PermPhoneMsgTwoToneIcon from '@mui/icons-material/PermPhoneMsgTwoTone';
 import {LiveHelpTwoTone} from "@mui/icons-material";
 import SportsMotorsportsTwoToneIcon from '@mui/icons-material/SportsMotorsportsTwoTone';
 import DriveEtaTwoToneIcon from '@mui/icons-material/DriveEtaTwoTone';
-import {Link, useLocation} from "react-router-dom";
+import {useLocation} from "react-router-dom";
+import {HashLink as Link} from 'react-router-hash-link';
+
 
 function Nav() {
     const isNotMobile = useMediaQuery({
@@ -35,30 +37,30 @@ function Nav() {
     return (
         <nav className="nav" style={{top: visible || !isNotMobile ? '0' : '-60px'}}>
             <div className="nav-logo-container">
-                <Link to="/">
+                <Link to="/home#debbie">
                     <LogoOnly width="250" height="70"/>
                 </Link>
             </div>
             <div className="nav-links is-flex is-align-items-center is-justify-content-center">
-                <Link to="/motorcycle"
+                <Link to="/motorcycle#learners"
                       className={"nav-links-item nav-links-item-text" + (location.pathname === '/motorcycle' ? ' orange-color-text' : '')}
                       aria-label="motorcycle">
                     <SportsMotorsportsTwoToneIcon fontSize={"small"} className="mr-1"/>
                     {isNotMobile && 'MOTORCYCLE'}
                 </Link>
-                <Link to="/car"
+                <Link to="/car#training"
                       className={"nav-links-item nav-links-item-text" + (location.pathname === '/car' ? ' orange-color-text' : '')}
                       aria-label="car">
                     <DriveEtaTwoToneIcon fontSize={"small"} className="mr-1"/>
                     {isNotMobile && 'CAR'}
                 </Link>
-                <Link to="/contact"
+                <Link to="/contact#get-in-touch"
                       className={"nav-links-item nav-links-item-text" + (location.pathname === '/contact' ? ' orange-color-text' : '')}
                       aria-label="contact">
                     <PermPhoneMsgTwoToneIcon fontSize={"small"} className="mr-1"/>
                     {isNotMobile && 'CONTACT'}
                 </Link>
-                <Link to="/faq"
+                <Link to="/faq#questions"
                       className={"nav-links-item nav-links-item-text" + (location.pathname === '/faq' ? ' orange-color-text' : '')}
                       aria-label="faq">
                     <LiveHelpTwoTone fontSize={"small"} className="mr-1"/>

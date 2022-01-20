@@ -16,7 +16,7 @@ import CarTraining from "../components/home/CarTraining";
 function Home() {
 
     return (
-        <div className="home-wrapper">
+        <div className="home-wrapper" id="debbie">
             <Hero/>
             <div className="spacer" id="meet-debbie">
                 <img loading={'lazy'} src={L1} width={'100%'} alt={'divider'}/>
