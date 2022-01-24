@@ -39,11 +39,11 @@ function DDC() {
                 <div className="p-4 is-flex is-justify-content-center home-image-wrapper">
                     <img className="ddc-image" loading={"lazy"} src={DDCImage} alt={"car"}/>
                 </div>
-
             }
-            <div className="car-ddc-body is-align-items-start pt-0 pb-4 px-4 has-text-left has-text-centered-mobile">
+            <div
+                className="car-ddc-body pt-0 pb-4 px-4 has-text-centered-mobile">
 
-                <div className="has-text-weight-bold has-text-white home-section-header full-width">
+                <div className="has-text-weight-bold has-text-white home-section-header">
                     <p>
                         DEFENSIVE DRIVING
                     </p>
