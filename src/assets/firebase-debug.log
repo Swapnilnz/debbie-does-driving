@@ -1,0 +1,94 @@
+[debug] [2022-01-24T08:30:04.560Z] ----------------------------------------------------------------------
+[debug] [2022-01-24T08:30:04.562Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Swapnil\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2022-01-24T08:30:04.562Z] CLI Version:   9.20.0
+[debug] [2022-01-24T08:30:04.562Z] Platform:      win32
+[debug] [2022-01-24T08:30:04.562Z] Node Version:  v14.16.1
+[debug] [2022-01-24T08:30:04.563Z] Time:          Mon Jan 24 2022 21:30:04 GMT+1300 (New Zealand Daylight Time)
+[debug] [2022-01-24T08:30:04.563Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-01-24T08:30:04.612Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-01-24T08:30:04.612Z] > authorizing via signed-in user (debbiedoesdriving@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\Swapnil\WebstormProjects\debbie-does-driving
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  .firebaserc already has a default project, using debbie-does-driving-prodd. 
+[debug] [2022-01-24T08:30:32.244Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/debbie-does-driving-prodd [none]
+[debug] [2022-01-24T08:30:33.144Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/debbie-does-driving-prodd 403
+[debug] [2022-01-24T08:30:33.144Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/debbie-does-driving-prodd {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2022-01-24T08:30:33.144Z] HTTP Error: 403, The caller does not have permission
+[debug] [2022-01-24T08:30:33.553Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at module.exports (C:\Users\Swapnil\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:38:12)
+    at Client.doRequest (C:\Users\Swapnil\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:238:23)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async Client.request (C:\Users\Swapnil\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:96:20)
+    at async Object.getFirebaseProject (C:\Users\Swapnil\AppData\Roaming\npm\node_modules\firebase-tools\lib\management\projects.js:290:21)
+    at async Object.doSetup [as project] (C:\Users\Swapnil\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\features\project.js:77:27)
+    at async init (C:\Users\Swapnil\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\index.js:19:9)
+[error] 
+[error] Error: Failed to get Firebase project debbie-does-driving-prodd. Please make sure the project exists and your account has permission to access it.
+[debug] [2022-01-24T08:30:46.315Z] ----------------------------------------------------------------------
+[debug] [2022-01-24T08:30:46.317Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Swapnil\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2022-01-24T08:30:46.317Z] CLI Version:   9.20.0
+[debug] [2022-01-24T08:30:46.318Z] Platform:      win32
+[debug] [2022-01-24T08:30:46.318Z] Node Version:  v14.16.1
+[debug] [2022-01-24T08:30:46.318Z] Time:          Mon Jan 24 2022 21:30:46 GMT+1300 (New Zealand Daylight Time)
+[debug] [2022-01-24T08:30:46.319Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-01-24T08:30:46.367Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-01-24T08:30:46.368Z] > authorizing via signed-in user (debbiedoesdriving@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\Swapnil\WebstormProjects\debbie-does-driving
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  .firebaserc already has a default project, using debbie-does-driving-prod. 
+[debug] [2022-01-24T08:30:53.196Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/debbie-does-driving-prod [none]
+[debug] [2022-01-24T08:30:53.995Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/debbie-does-driving-prod 403
+[debug] [2022-01-24T08:30:53.995Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/debbie-does-driving-prod {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2022-01-24T08:30:53.995Z] HTTP Error: 403, The caller does not have permission
+[debug] [2022-01-24T08:30:54.556Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at module.exports (C:\Users\Swapnil\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:38:12)
+    at Client.doRequest (C:\Users\Swapnil\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:238:23)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async Client.request (C:\Users\Swapnil\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:96:20)
+    at async Object.getFirebaseProject (C:\Users\Swapnil\AppData\Roaming\npm\node_modules\firebase-tools\lib\management\projects.js:290:21)
+    at async Object.doSetup [as project] (C:\Users\Swapnil\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\features\project.js:77:27)
+    at async init (C:\Users\Swapnil\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\index.js:19:9)
+[error] 
+[error] Error: Failed to get Firebase project debbie-does-driving-prod. Please make sure the project exists and your account has permission to access it.

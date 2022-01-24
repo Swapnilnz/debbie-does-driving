@@ -1,0 +1,29 @@
+.git-body {
+    min-width: 50%;
+    gap: 1rem;
+    margin-bottom: 4rem;
+}
+
+.align-left {
+    text-align: left;
+}
+
+@media (max-width: 1000px) {
+
+    .git-body {
+        min-width: 85%;
+    }
+
+    .align-left {
+        align-items: center;
+    }
+
+}
+
+.address-line, .address-line-hover {
+    color: white
+}
+
+.address-line-hover:hover {
+    color: #a6a6a6;
+}

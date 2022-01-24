@@ -1,0 +1,45 @@
+.retraining-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 4rem;
+    margin-bottom: 2rem;
+}
+
+.retraining-body {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 40%;
+    text-align: start;
+}
+
+.retraining-image {
+    max-width: 89%;
+}
+
+.retraining-buttons-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+
+@media (max-width: 1224px) {
+    .retraining-wrapper {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .retraining-body {
+        max-width: 89%;
+        align-items: center !important;
+        text-align: left;
+    }
+
+    .retraining-buttons-wrapper {
+        justify-content: center;
+    }
+}

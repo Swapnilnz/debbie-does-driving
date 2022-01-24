@@ -1,0 +1,40 @@
+.reviews-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.reviews-masonry {
+    width: 70% !important;
+}
+
+.reviews-card {
+    padding: 2.5rem 2rem;
+    background: rgb(38 53 65);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.38);
+}
+
+.reviews-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+
+.reviews-name {
+    font-weight: bold;
+    color: white;
+}
+
+.reviews-message {
+    margin-top: 1rem;
+    color: #9b9b9b;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 1224px) {
+    .reviews-masonry {
+        width: 90% !important;
+    }
+}

@@ -1,0 +1,32 @@
+.meet-debbie-wrapper {
+    gap: 4rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.meet-debbie-body {
+    max-width: 40%;
+}
+
+.meet-debbie-text {
+    letter-spacing: 0.05rem;
+}
+
+.text-bg {
+    color: white;
+    background-image: linear-gradient(90deg,#f7770f, #8a2c67);
+    padding: 0 4px;
+    border-radius: 3px;
+}
+
+@media (max-width: 1224px) {
+    .meet-debbie-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .meet-debbie-body {
+        max-width: 89%;
+    }
+}

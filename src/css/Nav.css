@@ -1,0 +1,67 @@
+.nav {
+    position: fixed;
+    background: rgb(1 21 41) 22%;
+    box-shadow: 4px 0 10px -3px #010101;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    z-index: 999;
+    transition: top .3s ease;
+    border-bottom: 1px solid #2a2e35;
+    font-size: 1.2rem;
+    height: 5rem;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.nav:hover {
+    top: 0 !important;
+}
+
+.nav-logo-container {
+    min-width: 15vw;
+}
+
+.nav-links {
+    margin: 0 auto;
+    font-weight: 400;
+}
+
+.nav-links-item {
+    color: #b2becd;
+    font-weight: bold;
+    position: relative;
+    height: 4em;
+    max-height: 70px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+    margin: 0 1rem;
+}
+
+.nav-links-item-text {
+    transition: color .3s;
+    flex-direction: row;
+}
+
+.nav-links-item-text:hover {
+    color: #fff;
+}
+
+.profile-logo {
+    min-width: 15vw;
+}
+
+.avatar-img {
+    height: 2em;
+    width: 2em;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        margin-right: 0;
+    }
+}

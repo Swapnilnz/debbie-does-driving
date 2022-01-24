@@ -1,0 +1,50 @@
+.ddc-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 4rem;
+    margin-bottom: 2rem;
+}
+
+.ddc-body {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    max-width: 40%;
+    text-align: end;
+}
+
+.ddc-image {
+    /*max-height: 25rem;*/
+    max-width: 28rem;
+}
+
+.ddc-buttons-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 1rem;
+}
+
+@media (max-width: 1224px) {
+    .ddc-wrapper {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .ddc-body {
+        max-width: 89%;
+        align-items: center !important;
+        text-align: left;
+    }
+
+    .ddc-image {
+        max-width: 20rem;
+    }
+
+    .ddc-buttons-wrapper {
+        justify-content: center;
+    }
+}

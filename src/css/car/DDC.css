@@ -1,0 +1,64 @@
+.car-ddc-body {
+    display: flex;
+    flex-direction: column;
+    max-width: 40%;
+    text-align: end;
+}
+
+.car-price-image {
+    float: right;
+    padding-bottom: 2rem;
+    padding-left: 3rem;
+}
+
+.fade-enter {
+    opacity: 0;
+}
+
+.fade-enter-active {
+    opacity: 1;
+    transition: opacity 300ms;
+}
+
+.fade-exit {
+    opacity: 1;
+}
+
+.fade-exit-active {
+    opacity: 0;
+    transition: opacity 300ms;
+}
+
+.tc-title {
+    color: #f8740c !important;
+    background: rgb(18, 18, 18) linear-gradient(rgba(255, 255, 255, 0.16), rgba(255, 255, 255, 0.16));
+}
+
+.tc-buttons {
+    color: #f8740c !important;
+}
+
+.tc-buttons:hover {
+    text-decoration: none !important;
+    background-color: rgba(144, 202, 249, 0.08) !important;
+}
+
+@media (max-width: 768px) {
+    .car-price-image {
+        float: none;
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 1224px) {
+    .car-ddc-body {
+        max-width: 89%;
+        text-align: center;
+    }
+
+    .center-mobile {
+        align-self: center;
+    }
+
+
+}
