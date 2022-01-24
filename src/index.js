@@ -20,13 +20,13 @@ import FAQ from "./views/FAQ";
 import Car from "./views/Car";
 
 const firebaseConfig = {
-    apiKey: "AIzaSyDjTrfQQhM0pGY5RGWfzDDfyhGp9IL-wf8",
-    authDomain: "debbie-does-driving-dev.firebaseapp.com",
-    projectId: "debbie-does-driving-dev",
-    storageBucket: "debbie-does-driving-dev.appspot.com",
-    messagingSenderId: "721334462823",
-    appId: "1:721334462823:web:aee7724d57768b51caa7c2",
-    measurementId: "G-9LZ4P77YRG"
+    apiKey: "AIzaSyDQ7ZlOAt9gX0CWzI52mgiueyCJkElS1NU",
+    authDomain: "debbie-does-driving.firebaseapp.com",
+    projectId: "debbie-does-driving",
+    storageBucket: "debbie-does-driving.appspot.com",
+    messagingSenderId: "387550847923",
+    appId: "1:387550847923:web:9784521d52dbebb3ae61c6",
+    measurementId: "G-EJ66WNWH5K"
 };
 
 // Initialize Firebase
