@@ -4,14 +4,15 @@ import CardContent from '@mui/material/CardContent';
 import {CardActionArea} from '@mui/material';
 import Typography from '@mui/material/Typography';
 import {HashLink as Link} from 'react-router-hash-link';
+import {motorcycleFullSmall, motorcycleLearnersSmall, motorcycleRestrictedSmall} from "../../utilities/text";
 
 
 function MotorcycleLessons() {
 
     return (
         <div className="is-flex is-flex-direction-column is-align-items-center">
-            <div className="has-text-weight-bold has-text-white mt-5 home-section-header">
-                MOTORCYCLE TRAINING
+            <div className="has-text-weight-bold has-text-white mt-5 home-section-header has-text-centered-mobile mx-3">
+                {'Southland Otago Motorcycle Training (SOMT)'.toUpperCase()}
             </div>
             <div className="home-section-subtitle mb-5">
                 · from start to finish ·
@@ -29,10 +30,7 @@ function MotorcycleLessons() {
                                 </Typography>
                                 <Typography variant="body2" zIndex={2} position={"relative"}
                                             className="mot-lesson-card-p">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab commodi consectetur eum
-                                    ex
-                                    explicabo, hic ipsum iure magni natus, nemo odit perferendis similique. Cupiditate
-                                    doloremque incidunt quae sed veniam voluptatem.
+                                    {motorcycleLearnersSmall}
                                 </Typography>
                             </CardContent>
                         </CardActionArea>
@@ -50,10 +48,7 @@ function MotorcycleLessons() {
                                 </Typography>
                                 <Typography variant="body2" zIndex={2} position={"relative"}
                                             className="mot-lesson-card-p">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab commodi consectetur eum
-                                    ex
-                                    explicabo, hic ipsum iure magni natus, nemo odit perferendis similique. Cupiditate
-                                    doloremque incidunt quae sed veniam voluptatem.
+                                    {motorcycleRestrictedSmall}
                                 </Typography>
                             </CardContent>
                         </CardActionArea>
@@ -71,10 +66,7 @@ function MotorcycleLessons() {
                                 </Typography>
                                 <Typography variant="body2" zIndex={2} position={"relative"}
                                             className="mot-lesson-card-p">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab commodi consectetur eum
-                                    ex
-                                    explicabo, hic ipsum iure magni natus, nemo odit perferendis similique. Cupiditate
-                                    doloremque incidunt quae sed veniam voluptatem.
+                                    {motorcycleFullSmall}
                                 </Typography>
                             </CardContent>
                         </CardActionArea>

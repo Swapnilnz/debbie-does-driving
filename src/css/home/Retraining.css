@@ -26,6 +26,13 @@
     gap: 1rem;
 }
 
+.retraining-text {
+    letter-spacing: 0.05rem;
+    color: #c2c1c1;
+    white-space: pre-wrap;
+    line-height: 1.7;
+}
+
 @media (max-width: 1224px) {
     .retraining-wrapper {
         flex-direction: column;

@@ -5,6 +5,8 @@ import InfoOutlinedIcon from "@mui/icons-material/InfoOutlined";
 import EventTwoToneIcon from "@mui/icons-material/EventTwoTone";
 import {useMediaQuery} from "react-responsive";
 import {HashLink as Link} from 'react-router-hash-link';
+import {insight3} from "../../utilities/text";
+import {Typography} from "@mui/material";
 
 function Retraining() {
 
@@ -15,7 +17,7 @@ function Retraining() {
         <div className="retraining-wrapper">
             {isDesktopOrLaptop &&
                 <div className="p-4 is-flex is-justify-content-center home-image-wrapper retraining-image">
-                    <img loading={"lazy"} src={RetrainingImage} alt={"retraining"}/>
+                    <img loading={"lazy"} src={RetrainingImage} alt={"retraining"} width={400}/>
                 </div>}
             <div className="retraining-body pt-0 pb-4 px-4">
                 <div className="has-text-weight-bold has-text-white home-section-header">
@@ -24,16 +26,9 @@ function Retraining() {
                 <div className="home-section-subtitle">
                     · INSIGHT3 ·
                 </div>
-                <div className="has-text-white mt-5 is-flex-grow-1">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias architecto consequatur earum eveniet
-                    fugit, illo impedit in incidunt ipsum modi molestiae necessitatibus provident quaerat quisquam
-                    saepe, sapiente temporibus ut, veniam!
-                    <br/>
-                    <br/>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aperiam asperiores consequuntur
-                    dolore dolores esse explicabo inventore iure laudantium, maxime neque nobis quo recusandae, rem ut
-                    vel veritatis voluptas voluptate!
-                </div>
+                <Typography className="retraining-text mt-5 is-flex-grow-1">
+                    {insight3.bodySmall}
+                </Typography>
                 <div className="retraining-buttons-wrapper mt-5">
                     <Link to={"/car#retraining"}>
                         <Button variant="contained" size={isDesktopOrLaptop ? 'large' : 'small'}

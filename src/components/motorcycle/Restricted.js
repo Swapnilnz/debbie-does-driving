@@ -4,7 +4,14 @@ import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import EventTwoToneIcon from "@mui/icons-material/EventTwoTone";
 import {Checkbox} from "@mui/material";
-import {useState} from "react";
+import {useState} from "react"
+import Tab from '@mui/material/Tab';
+import TabContext from '@mui/lab/TabContext';
+import TabList from '@mui/lab/TabList';
+import TabPanel from '@mui/lab/TabPanel';
+import Box from '@mui/material/Box';
+import {motorcycleRestrictedLarge} from "../../utilities/text";
+import LocationOnIcon from "@mui/icons-material/LocationOn";
 
 function Restricted() {
     let [link, setLink] = useState('https://booking.setmore.com/scheduleappointment/7ce91070-a226-4451-b4a7-574d47cafe44/services/1c5a3088-f745-4b4c-88c6-19a2e5fb4337')
@@ -17,6 +24,16 @@ function Restricted() {
         }
     }
 
+    const [value1, setValue1] = useState('1');
+    const [value2, setValue2] = useState('1');
+
+    const handleChange1 = (event, newValue) => {
+        setValue1(newValue);
+    };
+
+    const handleChange2 = (event, newValue) => {
+        setValue2(newValue);
+    };
     return (
         <div className="mc-section is-flex is-flex-direction-column pb-5">
             <div className="has-text-weight-bold has-text-white page-header">
@@ -40,26 +57,34 @@ function Restricted() {
                             <p className={"price-tag-purple"}>$150</p>
                         </Typography>
                         <hr className={'full-width my-4 card-hr'}/>
-                        <Typography variant="body2" zIndex={2} position={"relative"} flexGrow={1}
-                                    className="mot-lesson-card-p">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab commodi consectetur eum
-                            ex
-                            explicabo, hic ipsum iure magni natus, nemo odit perferendis similique. Cupiditate
-                            doloremque incidunt quae sed veniam voluptatem.
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab commodi consectetur eum
-                            ex
-                            explicabo, hic ipsum iure magni natus, nemo odit perferendis similique. Cupiditate
-                            doloremque incidunt quae sed veniam voluptatem.
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab commodi consectetur eum
-                            ex
-                            explicabo, hic ipsum iure magni natus, nemo odit perferendis similique. Cupiditate
-                            doloremque incidunt quae sed veniam voluptatem.
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab commodi consectetur eum
-                            ex
-                            explicabo, hic ipsum iure magni natus, nemo odit perferendis similique. Cupiditate
-                            doloremque incidunt quae sed veniam voluptatem.
-                        </Typography>
-
+                        <TabContext value={value1}>
+                            <Box sx={{borderBottom: 1, borderColor: 'divider', zIndex: 2}}>
+                                <TabList onChange={handleChange1} textColor="white"
+                                         indicatorColor="secondary">
+                                    <Tab label="Overview" value="1" className={'is-flex-grow-1'}/>
+                                    <Tab label="What to bring" value="2" className={'is-flex-grow-1'}/>
+                                    <Tab label="Next steps" value="3" className={'is-flex-grow-1'}/>
+                                </TabList>
+                            </Box>
+                            <TabPanel value="1"
+                                      className={'is-flex-grow-1 gap-1 is-flex is-flex-direction-column is-align-items-center'}>
+                                <Typography variant="body1" zIndex={2} position={"relative"} flexGrow={1}
+                                            className="mot-lesson-card-p is-flex gap-1">
+                                    <LocationOnIcon/>
+                                    <a className={'address-line-hover'} target={'_blank'}
+                                       href={'https://goo.gl/maps/bDPDBeu8NHiZs7zY9'} rel="noreferrer">
+                                        82 Moore Road, Lorneville</a>
+                                    <EventTwoToneIcon className={'ml-3'}/>
+                                    1h 30m
+                                </Typography>
+                                <Typography variant="body2" zIndex={2} position={"relative"} flexGrow={1}
+                                            className="mot-lesson-card-p">
+                                    {motorcycleRestrictedLarge}
+                                </Typography>
+                            </TabPanel>
+                            <TabPanel value="2">Item Two</TabPanel>
+                            <TabPanel value="3">Item Three</TabPanel>
+                        </TabContext>
                         <Button variant="contained" size={'large'} style={{zIndex: 2}}
                                 className="orange-button mt-6 mb-5 has-text-weight-bold"
                                 href={''}
@@ -83,25 +108,34 @@ function Restricted() {
                             <p className={"price-tag-purple"}>$180</p>
                         </Typography>
                         <hr className={'full-width my-4 card-hr'}/>
-                        <Typography variant="body2" zIndex={2} position={"relative"} flexGrow={1}
-                                    className="mot-lesson-card-p">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab commodi consectetur eum
-                            ex
-                            explicabo, hic ipsum iure magni natus, nemo odit perferendis similique. Cupiditate
-                            doloremque incidunt quae sed veniam voluptatem.
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab commodi consectetur eum
-                            ex
-                            explicabo, hic ipsum iure magni natus, nemo odit perferendis similique. Cupiditate
-                            doloremque incidunt quae sed veniam voluptatem.
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab commodi consectetur eum
-                            ex
-                            explicabo, hic ipsum iure magni natus, nemo odit perferendis similique. Cupiditate
-                            doloremque incidunt quae sed veniam voluptatem.
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab commodi consectetur eum
-                            ex
-                            explicabo, hic ipsum iure magni natus, nemo odit perferendis similique. Cupiditate
-                            doloremque incidunt quae sed veniam voluptatem.
-                        </Typography>
+                        <TabContext value={value2}>
+                            <Box sx={{borderBottom: 1, borderColor: 'divider', zIndex: 2}}>
+                                <TabList onChange={handleChange2} textColor="white"
+                                         indicatorColor="secondary">
+                                    <Tab label="Overview" value="1" className='tab-header'/>
+                                    <Tab label="What to bring" value="2"/>
+                                    <Tab label="Next steps" value="3"/>
+                                </TabList>
+                            </Box>
+                            <TabPanel value="1"
+                                      className={'is-flex-grow-1 gap-1 is-flex is-flex-direction-column is-align-items-center'}>
+                                <Typography variant="body1" zIndex={2} position={"relative"} flexGrow={1}
+                                            className="mot-lesson-card-p is-flex gap-1">
+                                    <LocationOnIcon/>
+                                    <a className={'address-line-hover'} target={'_blank'}
+                                       href={'https://goo.gl/maps/bDPDBeu8NHiZs7zY9'} rel="noreferrer">
+                                        82 Moore Road, Lorneville</a>
+                                    <EventTwoToneIcon className={'ml-3'}/>
+                                    1h 30m
+                                </Typography>
+                                <Typography variant="body2" zIndex={2} position={"relative"} flexGrow={1}
+                                            className="mot-lesson-card-p">
+
+                                </Typography>
+                            </TabPanel>
+                            <TabPanel value="2" className={'is-flex-grow-1'}>Item Two</TabPanel>
+                            <TabPanel value="3" className={'is-flex-grow-1'}>Item Three</TabPanel>
+                        </TabContext>
                         <div className={'is-flex is-flex-direction-column gap-1 mt-6 mb-4'} style={{zIndex: 2}}>
                             <div className={'is-flex is-flex-direction-row is-align-items-center'}>
                                 <Checkbox style={{zIndex: 2, color: 'white'}} onChange={changeURL}

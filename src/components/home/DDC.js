@@ -5,6 +5,8 @@ import EventTwoToneIcon from "@mui/icons-material/EventTwoTone";
 import InfoOutlinedIcon from '@mui/icons-material/InfoOutlined';
 import {useMediaQuery} from "react-responsive";
 import {HashLink as Link} from 'react-router-hash-link';
+import {ddc} from "../../utilities/text";
+import {Typography} from "@mui/material";
 
 function DDC() {
     const isDesktopOrLaptop = useMediaQuery({query: '(min-width: 1224px)'});
@@ -18,14 +20,9 @@ function DDC() {
                 <div className="home-section-subtitle">
                     · tailgating is not the answer ·
                 </div>
-                <div className="has-text-white mt-5 is-flex-grow-1">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aperiam asperiores consequuntur
-                    dolore dolores esse explicabo inventore iure laudantium, maxime neque nobis quo recusandae, rem ut
-                    vel veritatis voluptas voluptate!
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aperiam asperiores consequuntur
-                    dolore dolores esse explicabo inventore iure laudantium, maxime neque nobis quo recusandae, rem ut
-                    vel veritatis voluptas voluptate!
-                </div>
+                <Typography className="ddc-text mt-5 is-flex-grow-1">
+                    {ddc.bodySmall}
+                </Typography>
                 <div className="ddc-buttons-wrapper mt-5">
                     <Link to={"/car#ddc"}>
                         <Button variant="contained" size={isDesktopOrLaptop ? 'large' : 'small'}
@@ -42,9 +39,12 @@ function DDC() {
                     </Button>
                 </div>
             </div>
-            <div className="p-4 is-flex is-justify-content-center home-image-wrapper">
-                <img className="ddc-image" loading={"lazy"} src={DDCImage} alt={"car"}/>
-            </div>
+            {isDesktopOrLaptop &&
+                <div className="p-4 is-flex is-justify-content-center home-image-wrapper">
+                    <img className="ddc-image" loading={"lazy"} src={DDCImage} alt={"car"} width={300}/>
+                </div>
+            }
+
         </div>
     )
 }

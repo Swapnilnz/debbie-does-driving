@@ -19,6 +19,17 @@ function Footer() {
                 <FacebookRoundedIcon color={"warning"} fontSize={"large"}/>
             </a>
             <p className="footer-copyright">©2021 by Debbie Does Driving</p>
+            <p className='footer-copyright' style={{fontSize: '0.6rem'}}>
+                Website created by
+                <a className={'link mx-1'}
+                   href={'https://www.linkedin.com/in/swapnil-bhagat00/'}
+                   target='_blank' rel="noreferrer"
+                >Swapnil Bhagat</a> and
+                <a className={'link mx-1'}
+                   href={'https://www.linkedin.com/in/raven-townsend-39b39017a/'}
+                   target='_blank' rel="noreferrer"
+                >Raven Townsend</a>
+            </p>
         </div>
     )
 }

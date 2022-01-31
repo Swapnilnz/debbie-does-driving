@@ -34,7 +34,13 @@ function GetInTouch() {
                 MOTORCYCLE TRAINING
             </div>
             <div className="address-line">
-                I come to you, Invercargill
+                <a className={'address-line-hover'} target={'_blank'}
+                   href={'https://goo.gl/maps/bDPDBeu8NHiZs7zY9'} rel="noreferrer">
+                    <p className="is-flex is-flex-direction-row is-align-items-center">
+                        <LocationOn fontSize={"small"} className="mr-1"/>
+                        82 Moore Road, Lorneville, Invercargill 9874
+                    </p>
+                </a>
             </div>
             <br/>
 

@@ -18,3 +18,12 @@
     margin-top: 1rem;
     font-size: 0.7rem;
 }
+
+.link {
+    font-weight: bold;
+    color: #a6a6a6;
+}
+
+.link:hover {
+    color: white;
+}

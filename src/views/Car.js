@@ -4,11 +4,11 @@ import Training from "../components/car/Training";
 
 function Car() {
     return (
-        <div className="pd-7" id="training">
-            <Training/>
-            <div id={"ddc"}/>
-            <hr/>
+        <div className="pd-7" id="ddc">
             <DDC/>
+            <div id={"training"}/>
+            <hr/>
+            <Training/>
             <div id={"retraining"}/>
             <hr/>
             <Retraining/>

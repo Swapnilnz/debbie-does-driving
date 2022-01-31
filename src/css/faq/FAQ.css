@@ -1,9 +1,11 @@
 .faq-accordion {
     background: rgb(38 53 65) !important;
+    margin-bottom: 1rem;
 }
 
 .faq-accordion-text {
     color: #9b9b9b;
+    white-space: pre-wrap;
 }
 
 .faq-body {
