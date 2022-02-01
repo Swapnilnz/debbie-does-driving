@@ -6,6 +6,9 @@ name: Deploy to Firebase Hosting on PR
 jobs:
   build_and_preview:
     if: '${{ github.event.pull_request.head.repo.full_name == github.repository }}'
+    env:
+      REACT_APP_PHONE_NUMBER: 0223544184
+      REACT_APP_EMAIL: debbiedoesdriving@gmail.com
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
