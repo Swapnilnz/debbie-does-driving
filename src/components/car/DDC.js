@@ -15,6 +15,7 @@ import DialogTitle from '@mui/material/DialogTitle';
 import TermsAndConditions from "./TermsAndConditions";
 import {Typography} from "@mui/material";
 import Slide from '@mui/material/Slide';
+import {ddc} from "../../utilities/text";
 
 const Transition = forwardRef(function Transition(props, ref) {
     return <Slide direction="up" ref={ref} {...props} />;
@@ -36,9 +37,7 @@ function DDC() {
     return (
         <div className="ddc-wrapper">
             {isDesktopOrLaptop &&
-                <div className="p-4 is-flex is-justify-content-center home-image-wrapper">
-                    <img className="ddc-image" loading={"lazy"} src={DDCImage} alt={"car"}/>
-                </div>
+                <img width={'600'} className="p-6 home-image-wrapper" loading={"lazy"} src={DDCImage} alt={"car"}/>
             }
             <div
                 className="car-ddc-body pt-0 pb-4 px-4 has-text-centered-mobile">
@@ -51,25 +50,17 @@ function DDC() {
                 <div className="home-section-subtitle mb-5">
                     · tailgating is not the answer ·
                 </div>
-                <div className="has-text-white mt-5">
+                <div className="has-text-white mt-5" style={{whiteSpace: 'pre-wrap'}}>
                     <div className="car-price-image">
                         <img loading={'lazy'} src={Price} height={150} width={150} alt={'price 229'}/>
                     </div>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias architecto consequatur earum eveniet
-                    fugit, illo impedit in incidunt ipsum modi molestiae necessitatibus provident quaerat quisquam
-                    saepe, sapiente temporibus ut, veniam!
-                    <br/>
-                    <br/>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aperiam asperiores consequuntur
-                    dolore dolores esse explicabo inventore iure laudantium, maxime neque nobis quo recusandae, rem ut
-                    vel veritatis voluptas voluptate!
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias architecto consequatur earum eveniet
-                    fugit, illo impedit in incidunt ipsum modi molestiae necessitatibus provident quaerat quisquam
-                    saepe, sapiente temporibus ut, veniam!
+                    <Typography className="ddc-text">
+                        {ddc.body}
+                        <br/>
+                        <em>Note: please book only one time slot, this signs you up for 4 x 2-hour sessions.</em>
+                    </Typography>
                 </div>
                 <Button variant="contained" size={isDesktopOrLaptop ? 'large' : 'small'}
-                    // href={'https://booking.setmore.com/scheduleappointment/7ce91070-a226-4451-b4a7-574d47cafe44/class'}
-                    // target={'_blank'}
                         className="mt-5 orange-button has-text-weight-bold center-mobile"
                         onClick={handleClickOpen}
                         startIcon={<EventTwoToneIcon/>}>

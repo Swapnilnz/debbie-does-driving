@@ -1,6 +1,7 @@
 import '../../css/home/GetInTouch.css'
 import {withStyles} from "@material-ui/core/styles";
 import {LocationOn} from "@mui/icons-material";
+import {ddc} from "../../utilities/text";
 
 const styles = {
     input: {
@@ -22,13 +23,13 @@ function GetInTouch() {
                href="https://www.google.com/maps/place/Adventure+Southland+Limited/@-46.3505345,168.3443628,17z/data=!3m1!4b1!4m5!3m4!1s0xa9d2dc89f80adb79:0x8751bd7a03c88adf!8m2!3d-46.3505345!4d168.3465503"
                target="_blank"
                rel="noopener noreferrer">
-                <p className="is-flex is-flex-direction-row is-align-items-center">
+                <p className="is-flex is-flex-direction-row">
                     <LocationOn fontSize={"small"} className="mr-1"/>
-                    Adventure Southland, Invercargill
+                    {ddc.location}
                 </p>
             </a>
 
-            <br/>
+            <br/><br/>
 
             <div className="align-left home-section-subtitle mb-1">
                 MOTORCYCLE TRAINING

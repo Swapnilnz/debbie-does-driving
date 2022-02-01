@@ -1,5 +1,5 @@
 import '../css/motorcycle/Motorcycle.css';
-import Learners from "../components/motorcycle/Learners";
+import Learners from "../components/motorcycle/learners/Learners";
 import Restricted from "../components/motorcycle/Restricted";
 import Full from "../components/motorcycle/Full";
 import L2 from '../assets/layered-waves-2.svg';

@@ -29,6 +29,11 @@
 
 }
 
+.bhst-accordion {
+    background: rgb(18, 31, 40) !important;
+    margin-bottom: 1rem;
+}
+
 .card-hr {
     z-index: 2;
     border-bottom: 1px dashed #b2becd !important;

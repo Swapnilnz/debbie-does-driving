@@ -12,6 +12,8 @@ import TabPanel from '@mui/lab/TabPanel';
 import Box from '@mui/material/Box';
 import {motorcycleRestrictedLarge} from "../../utilities/text";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
+import Gear from "./restricted/Gear";
+import AccessTimeTwoToneIcon from '@mui/icons-material/AccessTimeTwoTone';
 
 function Restricted() {
     let [link, setLink] = useState('https://booking.setmore.com/scheduleappointment/7ce91070-a226-4451-b4a7-574d47cafe44/services/1c5a3088-f745-4b4c-88c6-19a2e5fb4337')
@@ -61,20 +63,19 @@ function Restricted() {
                             <Box sx={{borderBottom: 1, borderColor: 'divider', zIndex: 2}}>
                                 <TabList onChange={handleChange1} textColor="white"
                                          indicatorColor="secondary">
-                                    <Tab label="Overview" value="1" className={'is-flex-grow-1'}/>
-                                    <Tab label="What to bring" value="2" className={'is-flex-grow-1'}/>
-                                    <Tab label="Next steps" value="3" className={'is-flex-grow-1'}/>
+                                    <Tab label="Overview" value="1" className={'mot-tab-panel'}/>
+                                    <Tab label="Gear" value="2" className={'mot-tab-panel'}/>
+                                    <Tab label="Next steps" value="3" className={'mot-tab-panel'}/>
                                 </TabList>
                             </Box>
-                            <TabPanel value="1"
-                                      className={'is-flex-grow-1 gap-1 is-flex is-flex-direction-column is-align-items-center'}>
+                            <TabPanel className={'mot-tab-panel'} value="1">
                                 <Typography variant="body1" zIndex={2} position={"relative"} flexGrow={1}
-                                            className="mot-lesson-card-p is-flex gap-1">
+                                            className="mot-lesson-card-p is-flex gap-1 is-justify-content-center mb-3">
                                     <LocationOnIcon/>
                                     <a className={'address-line-hover'} target={'_blank'}
                                        href={'https://goo.gl/maps/bDPDBeu8NHiZs7zY9'} rel="noreferrer">
                                         82 Moore Road, Lorneville</a>
-                                    <EventTwoToneIcon className={'ml-3'}/>
+                                    <AccessTimeTwoToneIcon className={'ml-3'}/>
                                     1h 30m
                                 </Typography>
                                 <Typography variant="body2" zIndex={2} position={"relative"} flexGrow={1}
@@ -82,11 +83,13 @@ function Restricted() {
                                     {motorcycleRestrictedLarge}
                                 </Typography>
                             </TabPanel>
-                            <TabPanel value="2">Item Two</TabPanel>
-                            <TabPanel value="3">Item Three</TabPanel>
+                            <TabPanel className={'mot-tab-panel'} value="2">
+                                <Gear/>
+                            </TabPanel>
+                            <TabPanel className={'mot-tab-panel'} value="3">Item Three</TabPanel>
                         </TabContext>
                         <Button variant="contained" size={'large'} style={{zIndex: 2}}
-                                className="orange-button mt-6 mb-5 has-text-weight-bold"
+                                className="orange-button mt-4 mb-5 has-text-weight-bold"
                                 href={''}
                                 target={'_blank'}
                                 startIcon={<EventTwoToneIcon/>}>
@@ -96,7 +99,7 @@ function Restricted() {
                 </Card>
                 <Card className="mc-card-wrapper is-flex">
                     <CardContent
-                        className="mot-lesson-card-body is-flex-grow-1 is-flex is-flex-direction-column is-align-items-center">
+                        className="mot-lesson-card-body mot-tab-panel is-flex is-flex-direction-column is-align-items-center">
                         <div className="mot-lesson-card-gradient-background"/>
                         <Typography gutterBottom fontWeight={"bold"} align={"center"} variant="h5"
                                     component="div"
@@ -113,19 +116,18 @@ function Restricted() {
                                 <TabList onChange={handleChange2} textColor="white"
                                          indicatorColor="secondary">
                                     <Tab label="Overview" value="1" className='tab-header'/>
-                                    <Tab label="What to bring" value="2"/>
+                                    <Tab label="Gear" value="2"/>
                                     <Tab label="Next steps" value="3"/>
                                 </TabList>
                             </Box>
-                            <TabPanel value="1"
-                                      className={'is-flex-grow-1 gap-1 is-flex is-flex-direction-column is-align-items-center'}>
+                            <TabPanel className={'mot-tab-panel'} value="1">
                                 <Typography variant="body1" zIndex={2} position={"relative"} flexGrow={1}
-                                            className="mot-lesson-card-p is-flex gap-1">
+                                            className="mot-lesson-card-p is-flex gap-1 is-justify-content-center mb-3">
                                     <LocationOnIcon/>
                                     <a className={'address-line-hover'} target={'_blank'}
                                        href={'https://goo.gl/maps/bDPDBeu8NHiZs7zY9'} rel="noreferrer">
                                         82 Moore Road, Lorneville</a>
-                                    <EventTwoToneIcon className={'ml-3'}/>
+                                    <AccessTimeTwoToneIcon className={'ml-3'}/>
                                     1h 30m
                                 </Typography>
                                 <Typography variant="body2" zIndex={2} position={"relative"} flexGrow={1}
@@ -133,10 +135,13 @@ function Restricted() {
 
                                 </Typography>
                             </TabPanel>
-                            <TabPanel value="2" className={'is-flex-grow-1'}>Item Two</TabPanel>
-                            <TabPanel value="3" className={'is-flex-grow-1'}>Item Three</TabPanel>
+                            <TabPanel className={'mot-tab-panel'} value="2">
+                                <Gear/>
+                            </TabPanel>
+                            <TabPanel className={'mot-tab-panel'} value="3">Item
+                                Three</TabPanel>
                         </TabContext>
-                        <div className={'is-flex is-flex-direction-column gap-1 mt-6 mb-4'} style={{zIndex: 2}}>
+                        <div className={'is-flex is-flex-direction-column gap-1 mt-4 mb-4'} style={{zIndex: 2}}>
                             <div className={'is-flex is-flex-direction-row is-align-items-center'}>
                                 <Checkbox style={{zIndex: 2, color: 'white'}} onChange={changeURL}
                                           className={'p-0 mr-1'} size="small"/>
