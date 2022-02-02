@@ -10,9 +10,9 @@ import TabContext from '@mui/lab/TabContext';
 import TabList from '@mui/lab/TabList';
 import TabPanel from '@mui/lab/TabPanel';
 import Box from '@mui/material/Box';
-import {motorcycleRestrictedLarge} from "../../utilities/text";
+import {motorcycleRestrictedLarge, restrictedCBTA} from "../../../utilities/text";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
-import Gear from "./restricted/Gear";
+import Gear from "./Gear";
 import AccessTimeTwoToneIcon from '@mui/icons-material/AccessTimeTwoTone';
 
 function Restricted() {
@@ -65,7 +65,6 @@ function Restricted() {
                                          indicatorColor="secondary">
                                     <Tab label="Overview" value="1" className={'mot-tab-panel'}/>
                                     <Tab label="Gear" value="2" className={'mot-tab-panel'}/>
-                                    <Tab label="Next steps" value="3" className={'mot-tab-panel'}/>
                                 </TabList>
                             </Box>
                             <TabPanel className={'mot-tab-panel'} value="1">
@@ -86,7 +85,6 @@ function Restricted() {
                             <TabPanel className={'mot-tab-panel'} value="2">
                                 <Gear/>
                             </TabPanel>
-                            <TabPanel className={'mot-tab-panel'} value="3">Item Three</TabPanel>
                         </TabContext>
                         <Button variant="contained" size={'large'} style={{zIndex: 2}}
                                 className="orange-button mt-4 mb-5 has-text-weight-bold"
@@ -117,7 +115,6 @@ function Restricted() {
                                          indicatorColor="secondary">
                                     <Tab label="Overview" value="1" className='tab-header'/>
                                     <Tab label="Gear" value="2"/>
-                                    <Tab label="Next steps" value="3"/>
                                 </TabList>
                             </Box>
                             <TabPanel className={'mot-tab-panel'} value="1">
@@ -132,14 +129,12 @@ function Restricted() {
                                 </Typography>
                                 <Typography variant="body2" zIndex={2} position={"relative"} flexGrow={1}
                                             className="mot-lesson-card-p">
-
+                                    {restrictedCBTA}
                                 </Typography>
                             </TabPanel>
                             <TabPanel className={'mot-tab-panel'} value="2">
                                 <Gear/>
                             </TabPanel>
-                            <TabPanel className={'mot-tab-panel'} value="3">Item
-                                Three</TabPanel>
                         </TabContext>
                         <div className={'is-flex is-flex-direction-column gap-1 mt-4 mb-4'} style={{zIndex: 2}}>
                             <div className={'is-flex is-flex-direction-row is-align-items-center'}>

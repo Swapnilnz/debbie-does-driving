@@ -36,5 +36,9 @@ export const motorcycleWhatToBring = 'Helmet, Clothing and Footwear – if bring
 export const motorcycleWhatToBringLink = 'https://www.nzta.govt.nz/resources/roadcode/motorcycle-road-code/you-and-your-motorcycle/wearing-the-right-gear'
 export const bhst = ''
 
-export const motorcycleRestrictedLarge = 'For if you’ve got your learners and are ready to take the next step. I can help you get on the road faster by providing top quality Competency-Based Training and Assessment.'
+export const motorcycleRestrictedLarge = 'For if you’ve got your learners and are ready to take the next step. I can help you get on the road faster by providing top quality training. ' +
+    '\n\nYou will be taught safe handling, hazard detection, and positioning techniques. One or more of these lessons will get you prepared for your 6R CBTA.'
+export const restrictedCBTA = 'Take the restricted CBTA if you\'ve held your restricted license for at least 9 months. Once you pass, you\'ll get your certificate to apply for your full.' +
+    ' Note that you must have held your restricted for at least 12 months before applying for your full.' +
+    '\n\nCompleting the CBTA course is the only way you can reduce the required minimum time during your restricted license stage.'
 export const motorcycleFullLarge = 'For if you’ve passed your restricted and want get on the road a confident and skilled rider. I provide professional training and assessment to get your full license.'

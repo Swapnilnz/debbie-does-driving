@@ -34,6 +34,7 @@ const app = initializeApp(firebaseConfig);
 getAnalytics(app);
 getPerformance(app);
 
+
 ReactDOM.render(
     <React.StrictMode>
         <BrowserRouter>

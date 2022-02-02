@@ -1,6 +1,6 @@
 import '../css/motorcycle/Motorcycle.css';
 import Learners from "../components/motorcycle/learners/Learners";
-import Restricted from "../components/motorcycle/Restricted";
+import Restricted from "../components/motorcycle/restricted/Restricted";
 import Full from "../components/motorcycle/Full";
 import L2 from '../assets/layered-waves-2.svg';
 import L3 from '../assets/layered-waves-3.svg';

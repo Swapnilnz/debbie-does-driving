@@ -16,6 +16,8 @@ import TermsAndConditions from "./TermsAndConditions";
 import {Typography} from "@mui/material";
 import Slide from '@mui/material/Slide';
 import {ddc} from "../../utilities/text";
+import LocationOnIcon from "@mui/icons-material/LocationOn";
+import AccessTimeTwoToneIcon from "@mui/icons-material/AccessTimeTwoTone";
 
 const Transition = forwardRef(function Transition(props, ref) {
     return <Slide direction="up" ref={ref} {...props} />;
@@ -50,10 +52,21 @@ function DDC() {
                 <div className="home-section-subtitle mb-5">
                     · tailgating is not the answer ·
                 </div>
-                <div className="has-text-white mt-5" style={{whiteSpace: 'pre-wrap'}}>
+
+                <div className="has-text-white" style={{whiteSpace: 'pre-wrap'}}>
                     <div className="car-price-image">
                         <img loading={'lazy'} src={Price} height={150} width={150} alt={'price 229'}/>
                     </div>
+                    <Typography variant="body1" zIndex={2} position={"relative"} flexGrow={1} fontSize={'medium'}
+                                className="mot-lesson-card-p car-ddc-location is-flex is-flex-direction-column gap-1 mb-3">
+                        <a className={'address-line-hover is-flex is-align-items-center gap-1'} target={'_blank'}
+                           href={'https://g.page/adventure-southland?share'} rel="noreferrer">
+                            <LocationOnIcon fontSize={'medium'}/>
+                            Adventure Southland, Invercargill</a>
+                        <p className={'is-flex is-align-items-center gap-1'}><AccessTimeTwoToneIcon
+                            fontSize={'medium'}/>
+                            4 x 2 hour</p>
+                    </Typography>
                     <Typography className="ddc-text">
                         {ddc.body}
                         <br/>

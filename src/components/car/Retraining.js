@@ -24,7 +24,7 @@ function Retraining() {
                 <div className="home-section-subtitle">
                     · INSIGHT3 ·
                 </div>
-                <div className="has-text-white mt-5 is-flex-grow-1">
+                <div className="has-text-white is-flex-grow-1">
                     <div className="car-price-image">
                         <img loading={'lazy'} src={Price} height={150} width={150} alt={'price 195'}/>
                     </div>

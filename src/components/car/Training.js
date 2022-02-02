@@ -3,6 +3,8 @@ import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import EventTwoToneIcon from "@mui/icons-material/EventTwoTone";
+import LocationOnIcon from "@mui/icons-material/LocationOn";
+import AccessTimeTwoToneIcon from "@mui/icons-material/AccessTimeTwoTone";
 
 function Training() {
     return (
@@ -30,6 +32,15 @@ function Training() {
                         <hr className={'full-width my-4 card-hr'}/>
                         <Typography letterSpacing={1} zIndex={2} className={'pb-2'}>
                             <em>Note: must have 3 months' driving experience on learners</em>
+                        </Typography>
+                        <Typography variant="body1" zIndex={2} position={"relative"} flexGrow={1}
+                                    className="mot-lesson-card-p is-flex gap-1 is-justify-content-center mb-3">
+                            <LocationOnIcon/>
+                            <a className={'address-line-hover'} target={'_blank'}
+                               href={'https://g.page/vtnz-invercargill?share'} rel="noreferrer">
+                                VTNZ Mersey St Invercargill</a>
+                            <AccessTimeTwoToneIcon className={'ml-3'}/>
+                            1 hour
                         </Typography>
                         <Typography variant="body2" zIndex={2} position={"relative"}
                                     className="mot-lesson-card-p" flexGrow={1}>
@@ -74,6 +85,15 @@ function Training() {
                             <p className={"price-tag-purple"}>$70</p>
                         </Typography>
                         <hr className={'full-width my-4 card-hr'}/>
+                        <Typography variant="body1" zIndex={2} position={"relative"} flexGrow={1}
+                                    className="mot-lesson-card-p is-flex gap-1 is-justify-content-center mb-3">
+                            <LocationOnIcon/>
+                            <a className={'address-line-hover'} target={'_blank'}
+                               href={'https://g.page/vtnz-invercargill?share'} rel="noreferrer">
+                                VTNZ Mersey St Invercargill</a>
+                            <AccessTimeTwoToneIcon className={'ml-3'}/>
+                            1 hour
+                        </Typography>
                         <Typography variant="body2" zIndex={2} position={"relative"}
                                     className="mot-lesson-card-p" flexGrow={1}>
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab commodi consectetur eum
