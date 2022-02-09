@@ -11,6 +11,7 @@ import '@fontsource/roboto/500.css';
 import '@fontsource/roboto/700.css';
 import 'bulma/css/bulma.min.css';
 import {BrowserRouter, Redirect, Route, Switch} from "react-router-dom";
+import {CSSTransition, TransitionGroup,} from 'react-transition-group';
 
 import {initializeApp} from "firebase/app";
 import {getAnalytics} from "firebase/analytics";
@@ -39,14 +40,24 @@ ReactDOM.render(
     <React.StrictMode>
         <BrowserRouter>
             <Nav/>
-            <Switch>
-                <Route path="/home" component={Home}/>
-                <Route path="/motorcycle" component={Motorcycle}/>
-                <Route path="/car" component={Car}/>
-                <Route path="/contact" component={Contact}/>
-                <Route path="/faq" component={FAQ}/>
-                <Redirect to="/home"/>
-            </Switch>
+            <Route render={({location}) => (
+                <TransitionGroup>
+                    <CSSTransition
+                        key={location.key}
+                        timeout={300}
+                        classNames="fade"
+                    >
+                        <Switch location={location}>
+                            <Route path="/home" component={Home}/>
+                            <Route path="/motorcycle" component={Motorcycle}/>
+                            <Route path="/car" component={Car}/>
+                            <Route path="/contact" component={Contact}/>
+                            <Route path="/faq" component={FAQ}/>
+                            <Redirect to="/home"/>
+                        </Switch>
+                    </CSSTransition>
+                </TransitionGroup>
+            )}/>
         </BrowserRouter>
         <Footer/>
     </React.StrictMode>,

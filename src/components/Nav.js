@@ -48,7 +48,7 @@ function Nav() {
                     <SportsMotorsportsTwoToneIcon fontSize={"small"} className="mr-1"/>
                     {isNotMobile && 'MOTORCYCLE'}
                 </Link>
-                <Link to="/car#training"
+                <Link to="/car#ddc"
                       className={"nav-links-item nav-links-item-text" + (location.pathname === '/car' ? ' orange-color-text' : '')}
                       aria-label="car">
                     <DriveEtaTwoToneIcon fontSize={"small"} className="mr-1"/>

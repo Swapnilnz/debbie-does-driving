@@ -20,7 +20,7 @@ function Footer() {
             </a>
             <p className="footer-copyright">©2021 by Debbie Does Driving</p>
             <p className='footer-copyright' style={{fontSize: '0.6rem'}}>
-                Website created by
+                Created by
                 <a className={'link mx-1'}
                    href={'https://www.linkedin.com/in/swapnil-bhagat00/'}
                    target='_blank' rel="noreferrer"

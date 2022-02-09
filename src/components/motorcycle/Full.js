@@ -65,7 +65,6 @@ function Full() {
                                          indicatorColor="secondary">
                                     <Tab label="Overview" value="1" className='tab-header'/>
                                     <Tab label="Gear" value="2"/>
-                                    <Tab label="Next steps" value="3"/>
                                 </TabList>
                             </Box>
                             <TabPanel className={'mot-tab-panel'} value="1">
@@ -86,7 +85,6 @@ function Full() {
                             <TabPanel value="2" className={'mot-tab-panel'}>
                                 <Gear/>
                             </TabPanel>
-                            <TabPanel value="3" className={'mot-tab-panel'}>Item Three</TabPanel>
                         </TabContext>
 
                         <Button variant="contained" size={'large'} style={{zIndex: 2}}
@@ -120,7 +118,6 @@ function Full() {
                                          indicatorColor="secondary">
                                     <Tab label="Overview" value="1" className='tab-header'/>
                                     <Tab label="Gear" value="2"/>
-                                    <Tab label="Next steps" value="3"/>
                                 </TabList>
                             </Box>
                             <TabPanel className={'mot-tab-panel'} value="1">
@@ -141,7 +138,6 @@ function Full() {
                             <TabPanel className={'mot-tab-panel'} value="2">
                                 <Gear/>
                             </TabPanel>
-                            <TabPanel value="3" className={'mot-tab-panel'}>Item Three</TabPanel>
                         </TabContext>
                         <div className={'is-flex is-flex-direction-column gap-1 mt-4 mb-4'} style={{zIndex: 2}}>
                             <div className={'is-flex is-flex-direction-row is-align-items-center'}>
