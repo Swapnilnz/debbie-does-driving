@@ -43,3 +43,5 @@ export const restrictedCBTA = 'Take the restricted CBTA if you\'ve held your res
     '\n\nCompleting the CBTA course is the only way you can reduce the required minimum time during your restricted license stage.'
 export const motorcycleFullLarge = 'For if you’ve passed your restricted and want get on the road a confident and skilled rider. I provide professional training and assessment to get your full license.' +
     '\n\nYou will be taught safe handling, hazard detection, and positioning techniques. One or more of these lessons will get you prepared for your 6L CBTA.'
+export const fullCBTA = 'If you have held your restricted license for at least 12 months, and are confident in your safe riding skills, take the full license CBTA.' +
+    '\n\nYou will be assessed on observing, positioning, consideration/courtesy, scanning/mirrors, speed management, head check, and communication. '

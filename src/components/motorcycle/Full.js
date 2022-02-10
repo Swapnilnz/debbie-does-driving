@@ -10,10 +10,11 @@ import TabList from "@mui/lab/TabList";
 import Tab from "@mui/material/Tab";
 import TabPanel from "@mui/lab/TabPanel";
 import TabContext from "@mui/lab/TabContext";
-import {motorcycleFullLarge} from "../../utilities/text";
+import {fullCBTA, motorcycleFullLarge} from "../../utilities/text";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import AccessTimeTwoToneIcon from '@mui/icons-material/AccessTimeTwoTone';
 import Gear from "./restricted/Gear";
+import NZTAGuide from "./NZTAGuide";
 
 function Full() {
     let [link, setLink] = useState('https://booking.setmore.com/scheduleappointment/7ce91070-a226-4451-b4a7-574d47cafe44/services/f1a24c23-ad4d-4087-8f9a-0da31b6a28c9')
@@ -132,7 +133,8 @@ function Full() {
                                 </Typography>
                                 <Typography variant="body2" zIndex={2} position={"relative"} flexGrow={1}
                                             className="mot-lesson-card-p">
-
+                                    {fullCBTA}
+                                    <NZTAGuide/>
                                 </Typography>
                             </TabPanel>
                             <TabPanel className={'mot-tab-panel'} value="2">
@@ -143,7 +145,7 @@ function Full() {
                             <div className={'is-flex is-flex-direction-row is-align-items-center'}>
                                 <Checkbox style={{zIndex: 2, color: 'white'}} className={'p-0 mr-1'}
                                           onChange={changeURL} size="small"/>
-                                <p className={'mot-lesson-card-p has-text-weight-bold'}>I need a motorcycle (+$50)</p>
+                                <p className={'mot-lesson-card-p has-text-weight-bold'}>Borrow a motorcycle (+$50)</p>
                             </div>
                             <Button variant="contained" size={'large'}
                                     style={{zIndex: 2}}
