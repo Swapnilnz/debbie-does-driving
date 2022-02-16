@@ -44,6 +44,12 @@
     background-color: rgba(144, 202, 249, 0.08) !important;
 }
 
+.overflow-y-scroll {
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 1rem;
+}
+
 @media (max-width: 768px) {
     .car-price-image {
         float: none;

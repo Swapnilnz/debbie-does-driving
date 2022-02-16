@@ -78,7 +78,7 @@ function GetInTouch(props) {
                 GET IN TOUCH
             </div>
             <div className="home-section-subtitle mb-5">
-                · GOT A QUESTION? ·
+                · got a question? ·
             </div>
             <form
                 onSubmit={handleSubmit(onSubmit)}

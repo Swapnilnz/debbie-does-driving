@@ -16,7 +16,7 @@ function Reviews() {
                 REVIEWS
             </div>
             <div className="home-section-subtitle mb-5">
-                · DON'T TRUST ME, TRUST THESE GUYS ·
+                · don't trust me, trust these guys ·
             </div>
             <Masonry className="reviews-masonry" columns={isTabletOrMobile ? 1 : 3} spacing={3}>
                 {reviewData.map((review, index) => (

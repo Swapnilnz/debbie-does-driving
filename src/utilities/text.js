@@ -45,3 +45,29 @@ export const motorcycleFullLarge = 'For if you’ve passed your restricted and w
     '\n\nYou will be taught safe handling, hazard detection, and positioning techniques. One or more of these lessons will get you prepared for your 6L CBTA.'
 export const fullCBTA = 'If you have held your restricted license for at least 12 months, and are confident in your safe riding skills, take the full license CBTA.' +
     '\n\nYou will be assessed on observing, positioning, consideration/courtesy, scanning/mirrors, speed management, head check, and communication. '
+
+export const carTrainingRestricted = 'You will already be experienced in the basic skills of ' +
+    'moving your vehicle forward, back, left and right. Ideally you have been in traffic and can score ' +
+    'yourself at least a 5-6/10 for confidence.\n\nYou will need your NZ photo drivers licence and ' +
+    'roadworthy vehicle ready to go with “L” plates up, outside VTNZ, Mersey Street Invercargill.\n\n' +
+    'Your first appointment with Debbie is a 90 minute session, where your driving skills will be ' +
+    'assessed and some training done to sharpen up, not only to help you succeed on test day, but to ' +
+    'keep you safe when you’re alone on 1R. You will also learn more about the vehicle you drive ' +
+    'too. Be prepared to learn and open to taking advice from your professional driving coach who ' +
+    'may ask: 1) what are your tyre pressures; or 2) have you changed a flat tyre yet.'
+
+export const carTrainingFull = 'By this stage you will know more about your capability and ' +
+    'your vehicle’s capability both in town and the country.\n\nMeeting outside VTNZ Invercargill, ' +
+    'Debbie will take you on a 60 minute assessment drive (town only) to gauge driving skills and ' +
+    'hazard awareness, in preparation for your full licence test (town only). This includes building' +
+    'confidence with verbal hazard identification phases (part of the full licence test).'
+
+export const acap = 'Advanced Crash Avoidance Programme\n\nLife saving techniques incorporated into both restricted and ' +
+    'full car licence training. This programme specifically focusses on managing vehicle dynamics in varying conditions,' +
+    ' building awareness of both driver and vehicle capability, to avoid things going wrong. \n'
+
+export const openRoad = 'You will undergo an intensive 60 minute session on the open road, including the effects of ' +
+    'travelling at a higher speed and what you lose with speed, winding roads, 3-stage cornering technique, positioning, ' +
+    'picking a safe gap, hills, gravel, what to look for, where to look, hazard identification / assessment / reaction,' +
+    ' abs/non-abs, handling emergencies.\n\nA valuable experience for any young driver, to build life saving techniques ' +
+    'into muscle memory for life behind the wheel.'

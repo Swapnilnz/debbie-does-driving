@@ -21,14 +21,14 @@ function Retraining() {
                 <div className="has-text-weight-bold has-text-white home-section-header">
                     DRIVER RETRAINING
                 </div>
-                <div className="home-section-subtitle">
+                <div className="home-section-subtitle mb-5">
                     · INSIGHT3 ·
                 </div>
                 <div className="has-text-white is-flex-grow-1">
                     <div className="car-price-image">
                         <img loading={'lazy'} src={Price} height={150} width={150} alt={'price 195'}/>
                     </div>
-                    <Typography className="retraining-text mt-5 is-flex-grow-1">
+                    <Typography className="retraining-text is-flex-grow-1">
                         {insight3.body}
                     </Typography>
                 </div>

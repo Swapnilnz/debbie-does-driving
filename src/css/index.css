@@ -19,6 +19,11 @@ div::-webkit-scrollbar-track { /* Background */
     background: rgba(255, 255, 255, 0);
 }
 
+p::-webkit-scrollbar-track { /* Background */
+    background: rgba(255, 255, 255, 0);
+}
+
+
 ::-webkit-scrollbar-track { /* Background */
     background: #001220;
 }
