@@ -29,9 +29,8 @@ export const motorcycleRestrictedSmall = 'For if you’ve got your learners and 
 export const motorcycleFullSmall = 'For if you’ve passed your restricted and want get on the road a confident and skilled rider. I provide professional training and assessment to get your full license.'
 
 // Motorcycle page
-export const motorcycleLearnersLarge = 'Just starting your journey? I’m here to patiently and passionately teach you the ropes and get you trained up.' +
-    '\n\nFor newcomers, a lesson is the only way to go and is recommended if returning to riding after a while. Once confident, the BHST can be undertaken. Should you need further training, I am happy to discuss.'
-
+export const motorcycleLearnersLarge = 'If you are new to riding you will require motorcycle training to prepare you for BHST. This will be done at your pace, step by step with a patient instructor. As we are all different, how much training you require will depend on you.' +
+    '\n\nFor those returning to riding after a long time, you may benefit from a refresher to re-ignite muscle memory and re-build confidence. Chat with Debbie if you’re unsure whether previous riding experience will get you through BHST. '
 export const motorcycleWhatToBring = 'Helmet, Clothing and Footwear – if bringing your own, ensure it meets NZ compliance standards (https://www.nzta.govt.nz/resources/roadcode/motorcycle-road-code/you-and-your-motorcycle/wearing-the-right-gear)'
 export const motorcycleWhatToBringLink = 'https://www.nzta.govt.nz/resources/roadcode/motorcycle-road-code/you-and-your-motorcycle/wearing-the-right-gear'
 export const bhst = ''

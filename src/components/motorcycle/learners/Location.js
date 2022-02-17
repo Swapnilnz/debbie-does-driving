@@ -13,6 +13,15 @@ function Location() {
                    rel="noreferrer">
                     PGG Wrightson Woolstore, 2 Fox Street</a>
             </Typography>
+            <Typography variant="body2" zIndex={2} position={"relative"} flexGrow={1}
+                        className="mot-lesson-card-p">
+                BHST is held at PGG Wrightson Woolstore, Fox Street Invercargill. Enter driveway beside railway line,
+                follow
+                to end to DDD motorcycle training sign and park on left. Take a set and watch the action. Debbie will
+                come
+                and see you.
+            </Typography>
+            <br/>
             <img className={'p-4 home-image-wrapper'} src={bhstMap} loading={'lazy'}
                  alt={'bhst map'}/>
         </div>

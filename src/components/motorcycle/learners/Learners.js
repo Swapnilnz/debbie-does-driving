@@ -11,7 +11,6 @@ import Tab from "@mui/material/Tab";
 import TabPanel from "@mui/lab/TabPanel";
 import TabContext from "@mui/lab/TabContext";
 import {motorcycleLearnersLarge} from "../../../utilities/text";
-import LocationOnIcon from '@mui/icons-material/LocationOn';
 import Gear from "./Gear";
 import Location from "./Location";
 import BHSTOverview from "./BHSTOverview";
@@ -63,11 +62,6 @@ function Learners() {
                             <TabPanel value="1" className={'mot-tab-panel'}>
                                 <Typography variant="body1" zIndex={2} position={"relative"} flexGrow={1}
                                             className="mot-lesson-card-p mot-location-group mb-3">
-                                    <LocationOnIcon/>
-                                    <a className={'address-line-hover'} target={'_blank'}
-                                       href={'https://goo.gl/maps/Ed4weeVDcWZ4Cfve8'}
-                                       rel="noreferrer">
-                                        PGG Wrightson Woolstore</a>
                                     <AccessTimeTwoToneIcon className={'ml-3'}/>
                                     1 hour
                                 </Typography>

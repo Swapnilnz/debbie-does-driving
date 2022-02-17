@@ -26,7 +26,7 @@
     color: #b2becd;
     transition: color 0.3s ease;
     white-space: pre-wrap;
-
+    text-align: left;
 }
 
 .bhst-accordion {
