@@ -57,9 +57,20 @@ function Full() {
                         </Typography>
                         <Typography component="div" gutterBottom fontWeight={"bold"} align={"center"} variant="h6"
                                     letterSpacing={2} zIndex={2}>
-                            <p className={"price-tag-purple"}>100</p>
+                            <p className={"price-tag-purple"}>$100</p>
                         </Typography>
+
                         <hr className={'full-width my-4 card-hr'}/>
+
+                        <Typography variant="body1" zIndex={2} position={"relative"} flexGrow={1}
+                                    className="mot-lesson-card-p is-flex gap-1  is-justify-content-center mb-3">
+                            <LocationOnIcon/>
+                            <a className={'address-line-hover'} target={'_blank'}
+                               href={'https://goo.gl/maps/bDPDBeu8NHiZs7zY9'} rel="noreferrer">
+                                82 Moore Road, Lorneville</a>
+                            <AccessTimeTwoToneIcon className={'ml-3'}/>
+                            1 hour
+                        </Typography>
                         <TabContext value={value1}>
                             <Box sx={{borderBottom: 1, borderColor: 'divider', zIndex: 2}}>
                                 <TabList onChange={handleChange1} textColor="white"
@@ -69,15 +80,7 @@ function Full() {
                                 </TabList>
                             </Box>
                             <TabPanel className={'mot-tab-panel'} value="1">
-                                <Typography variant="body1" zIndex={2} position={"relative"} flexGrow={1}
-                                            className="mot-lesson-card-p is-flex gap-1  is-justify-content-center mb-3">
-                                    <LocationOnIcon/>
-                                    <a className={'address-line-hover'} target={'_blank'}
-                                       href={'https://goo.gl/maps/bDPDBeu8NHiZs7zY9'} rel="noreferrer">
-                                        82 Moore Road, Lorneville</a>
-                                    <AccessTimeTwoToneIcon className={'ml-3'}/>
-                                    1 hour
-                                </Typography>
+
                                 <Typography variant="body2" zIndex={2} position={"relative"} flexGrow={1}
                                             className="mot-lesson-card-p">
                                     {motorcycleFullLarge}
@@ -113,6 +116,15 @@ function Full() {
                             </Typography>
                         </div>
                         <hr className={'full-width my-4 card-hr'}/>
+                        <Typography variant="body1" zIndex={2} position={"relative"} flexGrow={1}
+                                    className="mot-lesson-card-p is-flex gap-1  is-justify-content-center mb-3">
+                            <LocationOnIcon/>
+                            <a className={'address-line-hover'} target={'_blank'}
+                               href={'https://goo.gl/maps/bDPDBeu8NHiZs7zY9'} rel="noreferrer">
+                                82 Moore Road, Lorneville</a>
+                            <AccessTimeTwoToneIcon className={'ml-3'}/>
+                            1 hour
+                        </Typography>
                         <TabContext value={value2}>
                             <Box sx={{borderBottom: 1, borderColor: 'divider', zIndex: 2}}>
                                 <TabList onChange={handleChange2} textColor="white"
@@ -122,15 +134,6 @@ function Full() {
                                 </TabList>
                             </Box>
                             <TabPanel className={'mot-tab-panel'} value="1">
-                                <Typography variant="body1" zIndex={2} position={"relative"} flexGrow={1}
-                                            className="mot-lesson-card-p is-flex gap-1 is-justify-content-center mb-3">
-                                    <LocationOnIcon/>
-                                    <a className={'address-line-hover'} target={'_blank'}
-                                       href={'https://goo.gl/maps/bDPDBeu8NHiZs7zY9'} rel="noreferrer">
-                                        82 Moore Road, Lorneville</a>
-                                    <AccessTimeTwoToneIcon className={'ml-3'}/>
-                                    1 hour
-                                </Typography>
                                 <Typography variant="body2" zIndex={2} position={"relative"} flexGrow={1}
                                             className="mot-lesson-card-p">
                                     {fullCBTA}

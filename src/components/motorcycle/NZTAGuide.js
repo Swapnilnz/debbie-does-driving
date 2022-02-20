@@ -2,7 +2,7 @@ import InfoTwoToneIcon from '@mui/icons-material/InfoTwoTone';
 
 function NZTAGuide() {
     return (
-        <div className={'is-flex is-flex-direction-row is-align-items-center is-justify-content-center'}>
+        <div className={'is-flex is-flex-direction-row is-align-items-center is-justify-content-center mt-2'}>
             <br/>
             <br/>
             <InfoTwoToneIcon fontSize={'small'} className={'mr-1'}/>

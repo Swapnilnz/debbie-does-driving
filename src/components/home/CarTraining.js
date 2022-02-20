@@ -3,6 +3,7 @@ import Card from "@mui/material/Card";
 import {CardActionArea} from "@mui/material";
 import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
+import {carTrainingFullSmall, carTrainingRestrictedSmall} from "../../utilities/text";
 
 function CarTraining() {
     return (
@@ -27,14 +28,11 @@ function CarTraining() {
                                 <Typography component="div" gutterBottom fontWeight={"bold"} align={"center"}
                                             variant="h6"
                                             letterSpacing={2} zIndex={2}>
-                                    <p className={"price-tag-purple"}>$70</p>
+                                    <p className={"price-tag-purple"}>$100</p>
                                 </Typography>
                                 <Typography variant="body2" zIndex={2} position={"relative"}
                                             className="mot-lesson-card-p">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab commodi consectetur eum
-                                    ex
-                                    explicabo, hic ipsum iure magni natus, nemo odit perferendis similique. Cupiditate
-                                    doloremque incidunt quae sed veniam voluptatem.
+                                    {carTrainingRestrictedSmall}
                                 </Typography>
                             </CardContent>
                         </CardActionArea>
@@ -57,10 +55,7 @@ function CarTraining() {
                                 </Typography>
                                 <Typography variant="body2" zIndex={2} position={"relative"}
                                             className="mot-lesson-card-p">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab commodi consectetur eum
-                                    ex
-                                    explicabo, hic ipsum iure magni natus, nemo odit perferendis similique. Cupiditate
-                                    doloremque incidunt quae sed veniam voluptatem.
+                                    {carTrainingFullSmall}
                                 </Typography>
                             </CardContent>
                         </CardActionArea>

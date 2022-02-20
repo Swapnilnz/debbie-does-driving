@@ -3,16 +3,10 @@ import Accordion from '@mui/material/Accordion';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import AccessTimeTwoToneIcon from '@mui/icons-material/AccessTimeTwoTone';
 
 function BHSTOverview() {
     return (
         <div>
-            <Typography variant="body1" zIndex={2} position={"relative"} flexGrow={1}
-                        className="mot-lesson-card-p is-flex gap-1 is-justify-content-center mb-3">
-                <AccessTimeTwoToneIcon className={'ml-3'}/>
-                1 hour
-            </Typography>
             <Typography variant="body2" zIndex={2} position={"relative"} flexGrow={1}
                         className="mot-lesson-card-p">
                 Before applying for a motorcycle learner licence, you must pass the Basic Handling Skills (BHST).

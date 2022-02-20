@@ -50,6 +50,11 @@ function Learners() {
                             <p className={"price-tag-purple"}>$100</p>
                         </Typography>
                         <hr className={'full-width my-4 card-hr'}/>
+                        <Typography variant="body1" zIndex={2} position={"relative"} flexGrow={1}
+                                    className="mot-lesson-card-p mot-location-group mb-3">
+                            <AccessTimeTwoToneIcon className={'ml-3'}/>
+                            1 hour
+                        </Typography>
                         <TabContext value={value1}>
                             <Box sx={{borderBottom: 1, borderColor: 'divider', zIndex: 2}}>
                                 <TabList onChange={handleChange1} textColor="white"
@@ -60,11 +65,7 @@ function Learners() {
                                 </TabList>
                             </Box>
                             <TabPanel value="1" className={'mot-tab-panel'}>
-                                <Typography variant="body1" zIndex={2} position={"relative"} flexGrow={1}
-                                            className="mot-lesson-card-p mot-location-group mb-3">
-                                    <AccessTimeTwoToneIcon className={'ml-3'}/>
-                                    1 hour
-                                </Typography>
+
                                 <Typography variant="body2" zIndex={2} position={"relative"} flexGrow={1}
                                             className="mot-lesson-card-p">
                                     {motorcycleLearnersLarge}
@@ -102,6 +103,11 @@ function Learners() {
                             <p className={"price-tag-purple"}>$100</p>
                         </Typography>
                         <hr className={'full-width my-4 card-hr'}/>
+                        <Typography variant="body1" zIndex={2} position={"relative"} flexGrow={1}
+                                    className="mot-lesson-card-p is-flex gap-1 is-justify-content-center mb-3">
+                            <AccessTimeTwoToneIcon className={'ml-3'}/>
+                            1 hour
+                        </Typography>
                         <TabContext value={value2}>
                             <Box sx={{borderBottom: 1, borderColor: 'divider', zIndex: 2}}>
                                 <TabList onChange={handleChange2} textColor="white"
