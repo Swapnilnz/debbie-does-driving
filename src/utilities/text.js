@@ -1,9 +1,6 @@
-export const meetDebbie = 'Hi, I’m Debbie, an NZTA qualified motorcycle and car instructor. I am passionate about road safety and am at my best mentoring clients to achieve their riding/driving goals.\n\n' +
-    'I provide a friendly and professional training environment, sharing real-world experience to increase your knowledge and confidence.' +
-    '\n\n' +
-    'With 22+ years front-line New Zealand law enforcement, I am a skilled vehicle crash investigator. ' +
-    'Super patient and knowledgeable, with a bit of humour thrown in, I support clients from A-Z throughout their motorcycle/car journey.\n'
-
+export const meetDebbie = 'Hi, I’m Debbie! NZTA qualified & experienced motorcycle and car instructor, I am passionate about road safety and at my best mentoring clients to achieve their riding/driving goals. ' +
+    '\n\nSuper patient and knowledgeable with a bit of humour thrown in, I provide a friendly and professional environment, supporting clients from A-Z. A skilled serious vehicle crash investigator, I have over 22 years on front-line law enforcement [NZ Police Officer & MOT Motorcycle Traffic Officer].' +
+    '\n\nAlong with 5 years in case management [NZ Corrections] at a local prison, working 1-1 alongside prisoners in planning rehabilitation and reintegration, I bring real-world experience to increase your knowledge, confidence and skills to help keep you alive  behind the wheel. '
 export const insight3 = {
     body: 'This specialised course is researched and designed for first time driving offenders to become safer drivers. It targets the three main contributing factors contributing to fatal and serious injury vehicle crashes in New Zealand: Driver, Vehicle, and Environment.\n\n' +
         'It provides professional driver training, sharing real world crash investigation experience in a supportive and non-judgemental environment to help create safer roads in our community.\n\n' +
