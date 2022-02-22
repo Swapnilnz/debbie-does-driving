@@ -2,9 +2,8 @@ export const meetDebbie = 'Hi, I’m Debbie! NZTA qualified & experienced motorc
     '\n\nSuper patient and knowledgeable with a bit of humour thrown in, I provide a friendly and professional environment, supporting clients from A-Z. A skilled serious vehicle crash investigator, I have over 22 years on front-line law enforcement [NZ Police Officer & MOT Motorcycle Traffic Officer].' +
     '\n\nAlong with 5 years in case management [NZ Corrections] at a local prison, working 1-1 alongside prisoners in planning rehabilitation and reintegration, I bring real-world experience to increase your knowledge, confidence and skills to help keep you alive  behind the wheel. '
 export const insight3 = {
-    body: 'This specialised course is researched and designed for first time driving offenders to become safer drivers. It targets the three main contributing factors contributing to fatal and serious injury vehicle crashes in New Zealand: Driver, Vehicle, and Environment.\n\n' +
-        'It provides professional driver training, sharing real world crash investigation experience in a supportive and non-judgemental environment to help create safer roads in our community.\n\n' +
-        'INSIGHT3 helps driving offenders modify behaviour and attitude behind the wheel in order to deter re-offending.\n',
+    body: 'INSIGHT3 has been specifically designed to help first time driving offenders modify behaviour and attitude behind the wheel, for safer roads in our community.\n\n' +
+        'Targeting the three main factors contributing to fatal and serious injury vehicle crashes in New Zealand: Driver, Vehicle, and Environment, this specialized 1-1 programme is supportive and non-judgemental in assisting driving offenders to make better choices, every time they drive.',
     bodySmall: 'A specialised programme specifically designed for first time driving offenders to become safer drivers in their community. INSIGHT3 targets the three main factors contributing to fatal and serious injury vehicle crashes in New Zealand: Driver, Vehicle, and Environment.'
 }
 
