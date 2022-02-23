@@ -26,7 +26,7 @@ function Training() {
     };
     return (
         <div className="mc-section is-flex is-flex-direction-column pb-5">
-            <div className="has-text-weight-bold has-text-white page-header">
+            <div className="has-text-weight-bold has-text-white home-section-header has-text-centered">
                 CAR TRAINING
             </div>
             <div className="home-section-subtitle">

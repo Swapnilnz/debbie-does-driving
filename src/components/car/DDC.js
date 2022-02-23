@@ -39,12 +39,15 @@ function DDC() {
     return (
         <div className="ddc-wrapper">
             {isDesktopOrLaptop &&
-                <img width={'600'} className="p-6 home-image-wrapper" loading={"lazy"} src={DDCImage} alt={"car"}/>
+                <div
+                    className="p-4 is-flex is-justify-content-center home-image-wrapper retraining-image has-text-centered-mobile">
+                    <img width={'600'} loading={"lazy"} src={DDCImage} alt={"car"}/>
+                </div>
             }
             <div
-                className="car-ddc-body pt-0 pb-4 px-4 has-text-centered-mobile">
+                className="car-ddc-body pt-0 pb-4 px-4 ">
 
-                <div className="has-text-weight-bold has-text-white home-section-header">
+                <div className="has-text-weight-bold has-text-white home-section-header has-text-centered">
                     <p>
                         DEFENSIVE DRIVING
                     </p>
@@ -54,11 +57,11 @@ function DDC() {
                 </div>
 
                 <div className="has-text-white" style={{whiteSpace: 'pre-wrap'}}>
-                    <div className="car-price-image">
+                    <div className="car-price-image has-text-centered-mobile">
                         <img loading={'lazy'} src={Price} height={150} width={150} alt={'price 229'}/>
                     </div>
                     <Typography variant="body1" zIndex={2} position={"relative"} flexGrow={1} fontSize={'medium'}
-                                className="mot-lesson-card-p car-ddc-location is-flex is-flex-direction-column gap-1 mb-3">
+                                className="mot-lesson-card-p car-ddc-location is-flex is-flex-direction-column is-align-items-flex-start gap-1 mb-3 ">
                         <a className={'address-line-hover is-flex is-align-items-center gap-1'} target={'_blank'}
                            href={'https://g.page/adventure-southland?share'} rel="noreferrer">
                             <LocationOnIcon fontSize={'medium'}/>

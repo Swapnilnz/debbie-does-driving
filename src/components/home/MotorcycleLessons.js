@@ -11,7 +11,7 @@ function MotorcycleLessons() {
 
     return (
         <div className="is-flex is-flex-direction-column is-align-items-center">
-            <div className="has-text-weight-bold has-text-white mt-5 home-section-header has-text-centered-mobile mx-3">
+            <div className="has-text-weight-bold has-text-white home-section-header has-text-centered px-2">
                 {'Southland Otago Motorcycle Training (SOMT)'.toUpperCase()}
             </div>
             <div className="home-section-subtitle mb-5">

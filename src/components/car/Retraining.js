@@ -14,18 +14,19 @@ function Retraining() {
     return (
         <div className="retraining-wrapper">
             {isDesktopOrLaptop &&
-                <div className="p-4 is-flex is-justify-content-center home-image-wrapper retraining-image">
+                <div
+                    className="p-4 is-flex is-justify-content-center home-image-wrapper retraining-image has-text-centered-mobile">
                     <img loading={"lazy"} src={RetrainingImage} alt={"retraining"}/>
                 </div>}
-            <div className="retraining-body pt-0 pb-4 px-4 has-text-centered-mobile">
-                <div className="has-text-weight-bold has-text-white home-section-header">
+            <div className="retraining-body pt-0 pb-4 px-4">
+                <div className="has-text-weight-bold has-text-white home-section-header has-text-centered">
                     DRIVER RETRAINING
                 </div>
                 <div className="home-section-subtitle mb-5">
                     · INSIGHT3 ·
                 </div>
                 <div className="has-text-white is-flex-grow-1">
-                    <div className="car-price-image">
+                    <div className="car-price-image has-text-centered">
                         <img loading={'lazy'} src={Price} height={150} width={150} alt={'price 195'}/>
                     </div>
                     <Typography className="retraining-text is-flex-grow-1">
