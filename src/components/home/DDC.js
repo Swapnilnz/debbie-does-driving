@@ -14,7 +14,7 @@ function DDC() {
     return (
         <div className="ddc-wrapper">
             <div className="ddc-body pt-0 pb-4 px-4">
-                <div className="has-text-weight-bold has-text-white home-section-header">
+                <div className="has-text-weight-bold has-text-white home-section-header  has-text-centered">
                     DEFENSIVE DRIVING
                 </div>
                 <div className="home-section-subtitle">

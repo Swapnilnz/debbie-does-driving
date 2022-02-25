@@ -20,7 +20,7 @@ function Retraining() {
                     <img loading={"lazy"} src={RetrainingImage} alt={"retraining"} width={400}/>
                 </div>}
             <div className="retraining-body pt-0 pb-4 px-4">
-                <div className="has-text-weight-bold has-text-white home-section-header">
+                <div className="has-text-weight-bold has-text-white home-section-header has-text-centered">
                     DRIVER RETRAINING
                 </div>
                 <div className="home-section-subtitle">
