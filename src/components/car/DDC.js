@@ -2,7 +2,8 @@ import '../../css/car/DDC.css';
 import Button from "@mui/material/Button";
 import EventTwoToneIcon from "@mui/icons-material/EventTwoTone";
 import DDCImage from "../../assets/ddc.png";
-import Price from '../../assets/229.svg';
+import PriceSVG from '../../assets/229.svg';
+import PricePNG from '../../assets/229.png';
 import {useMediaQuery} from "react-responsive";
 import useMediaQueryMui from '@mui/material/useMediaQuery';
 import {forwardRef, useState} from "react";
@@ -28,7 +29,8 @@ function DDC() {
     const [open, setOpen] = useState(false);
     const theme = useTheme();
     const fullScreen = useMediaQueryMui(theme.breakpoints.down('md'));
-
+    const Price = isDesktopOrLaptop ? PriceSVG : PricePNG;
+    
     const handleClickOpen = () => {
         setOpen(true);
     };

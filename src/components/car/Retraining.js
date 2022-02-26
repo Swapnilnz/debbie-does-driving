@@ -2,14 +2,15 @@ import {useMediaQuery} from "react-responsive";
 import RetrainingImage from "../../assets/retraining.jpg";
 import Button from "@mui/material/Button";
 import EventTwoToneIcon from "@mui/icons-material/EventTwoTone";
-import Price from '../../assets/195.svg';
+import PriceSVG from '../../assets/195.svg';
+import PricePNG from '../../assets/195.png';
 import {Typography} from "@mui/material";
 import {insight3} from "../../utilities/text";
 
 function Retraining() {
 
     const isDesktopOrLaptop = useMediaQuery({query: '(min-width: 1224px)'});
-
+    const Price = isDesktopOrLaptop ? PriceSVG : PricePNG;
 
     return (
         <div className="retraining-wrapper">
