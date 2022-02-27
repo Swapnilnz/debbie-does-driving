@@ -34,7 +34,7 @@ function Retraining() {
                         {insight3.body}
                     </Typography>
                 </div>
-                <Button variant="contained" size={isDesktopOrLaptop ? 'large' : 'small'}
+                <Button variant="contained" size={'large'}
                         href={'https://booking.setmore.com/scheduleappointment/7ce91070-a226-4451-b4a7-574d47cafe44/services/f60ce61c-fb3e-4098-9a9b-2d06d550c294'}
                         target={'_blank'}
                         className="orange-button has-text-weight-bold mt-5" startIcon={<EventTwoToneIcon/>}>

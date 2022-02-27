@@ -17,13 +17,13 @@ import AccessTimeTwoToneIcon from '@mui/icons-material/AccessTimeTwoTone';
 import NZTAGuide from "../NZTAGuide";
 
 function Restricted() {
-    let [link, setLink] = useState('https://booking.setmore.com/scheduleappointment/7ce91070-a226-4451-b4a7-574d47cafe44/services/1c5a3088-f745-4b4c-88c6-19a2e5fb4337')
+    let [link, setLink] = useState('https://booking.setmore.com/scheduleappointment/7ce91070-a226-4451-b4a7-574d47cafe44/services/29299fff-6466-472d-8c2f-2918ec352fdd')
 
     function changeURL(event) {
         if (event.target.checked) {
-            setLink('https://booking.setmore.com/scheduleappointment/7ce91070-a226-4451-b4a7-574d47cafe44/services/29299fff-6466-472d-8c2f-2918ec352fdd');
-        } else {
             setLink('https://booking.setmore.com/scheduleappointment/7ce91070-a226-4451-b4a7-574d47cafe44/services/1c5a3088-f745-4b4c-88c6-19a2e5fb4337');
+        } else {
+            setLink('https://booking.setmore.com/scheduleappointment/7ce91070-a226-4451-b4a7-574d47cafe44/services/29299fff-6466-472d-8c2f-2918ec352fdd');
         }
     }
 
@@ -108,7 +108,7 @@ function Restricted() {
                         </Typography>
                         <Typography component="div" gutterBottom fontWeight={"bold"} align={"center"} variant="h6"
                                     letterSpacing={2} zIndex={2}>
-                            <p className={"price-tag-purple"}>$180</p>
+                            <p className={"price-tag-purple"}>$230</p>
                         </Typography>
                         <hr className={'full-width my-4 card-hr'}/>
                         <Typography variant="body1" zIndex={2} position={"relative"} flexGrow={1}
@@ -144,7 +144,8 @@ function Restricted() {
                             <div className={'is-flex is-flex-direction-row is-align-items-center'}>
                                 <Checkbox style={{zIndex: 2, color: 'white'}} onChange={changeURL}
                                           className={'p-0 mr-1'} size="small"/>
-                                <p className={'mot-lesson-card-p has-text-weight-bold'}>Borrow a motorcycle (+$50)</p>
+                                <p className={'mot-lesson-card-p has-text-weight-bold'}>Bring a motorcycle ($50
+                                    discount)</p>
                             </div>
                             <Button variant="contained" size={'large'}
                                     style={{zIndex: 2}}

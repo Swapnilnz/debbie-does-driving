@@ -17,10 +17,10 @@ import Gear from "./restricted/Gear";
 import NZTAGuide from "./NZTAGuide";
 
 function Full() {
-    let [link, setLink] = useState('https://booking.setmore.com/scheduleappointment/7ce91070-a226-4451-b4a7-574d47cafe44/services/f1a24c23-ad4d-4087-8f9a-0da31b6a28c9')
+    let [link, setLink] = useState('https://booking.setmore.com/scheduleappointment/7ce91070-a226-4451-b4a7-574d47cafe44/services/0b3b9f80-b2c5-416e-9369-0c7112e8a164')
     const [value1, setValue1] = useState('1');
     const [value2, setValue2] = useState('1');
-
+    
     const handleChange1 = (event, newValue) => {
         setValue1(newValue);
     };
@@ -31,9 +31,9 @@ function Full() {
 
     function changeURL(event) {
         if (event.target.checked) {
-            setLink('https://booking.setmore.com/scheduleappointment/7ce91070-a226-4451-b4a7-574d47cafe44/services/0b3b9f80-b2c5-416e-9369-0c7112e8a164');
-        } else {
             setLink('https://booking.setmore.com/scheduleappointment/7ce91070-a226-4451-b4a7-574d47cafe44/services/f1a24c23-ad4d-4087-8f9a-0da31b6a28c9');
+        } else {
+            setLink('https://booking.setmore.com/scheduleappointment/7ce91070-a226-4451-b4a7-574d47cafe44/services/0b3b9f80-b2c5-416e-9369-0c7112e8a164');
         }
     }
 
@@ -112,7 +112,7 @@ function Full() {
                         <div className='is-flex is-flex-direction-row gap-1'>
                             <Typography component="div" gutterBottom fontWeight={"bold"} align={"center"} variant="h6"
                                         letterSpacing={2} zIndex={2}>
-                                <p className={"price-tag-purple"}>$130</p>
+                                <p className={"price-tag-purple"}>$180</p>
                             </Typography>
                         </div>
                         <hr className={'full-width my-4 card-hr'}/>
@@ -148,7 +148,8 @@ function Full() {
                             <div className={'is-flex is-flex-direction-row is-align-items-center'}>
                                 <Checkbox style={{zIndex: 2, color: 'white'}} className={'p-0 mr-1'}
                                           onChange={changeURL} size="small"/>
-                                <p className={'mot-lesson-card-p has-text-weight-bold'}>Borrow a motorcycle (+$50)</p>
+                                <p className={'mot-lesson-card-p has-text-weight-bold'}>Bring a motorcycle ($50
+                                    discount)</p>
                             </div>
                             <Button variant="contained" size={'large'}
                                     style={{zIndex: 2}}

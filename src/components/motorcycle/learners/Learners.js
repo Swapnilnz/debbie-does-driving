@@ -4,7 +4,7 @@ import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import EventTwoToneIcon from "@mui/icons-material/EventTwoTone";
-import {useState} from "react";
+import {forwardRef, useState} from "react";
 import Box from "@mui/material/Box";
 import TabList from "@mui/lab/TabList";
 import Tab from "@mui/material/Tab";
@@ -15,6 +15,17 @@ import Gear from "./Gear";
 import Location from "./Location";
 import BHSTOverview from "./BHSTOverview";
 import AccessTimeTwoToneIcon from '@mui/icons-material/AccessTimeTwoTone';
+import Dialog from '@mui/material/Dialog';
+import DialogActions from '@mui/material/DialogActions';
+import DialogContent from '@mui/material/DialogContent';
+import DialogContentText from '@mui/material/DialogContentText';
+import {useTheme} from '@mui/material/styles';
+import useMediaQueryMui from "@mui/material/useMediaQuery";
+import Slide from "@mui/material/Slide";
+
+const Transition = forwardRef(function Transition(props, ref) {
+    return <Slide direction="up" ref={ref} {...props} />;
+});
 
 function Learners() {
     const [value1, setValue1] = useState('1');
@@ -27,6 +38,19 @@ function Learners() {
     const handleChange2 = (event, newValue) => {
         setValue2(newValue);
     };
+
+    const [open, setOpen] = useState(false);
+    const theme = useTheme();
+    const fullScreen = useMediaQueryMui(theme.breakpoints.down('md'));
+
+    const handleClickOpen = () => {
+        setOpen(true);
+    };
+
+    const handleClose = () => {
+        setOpen(false);
+    };
+
     return (
         <div className="mc-section is-flex is-flex-direction-column pb-5">
             <div className="has-text-weight-bold has-text-white page-header">
@@ -127,16 +151,42 @@ function Learners() {
                                 <Location/>
                             </TabPanel>
                         </TabContext>
-                        <Button variant="contained" size={'large'} style={{zIndex: 2}}
-                                href={'https://booking.setmore.com/scheduleappointment/7ce91070-a226-4451-b4a7-574d47cafe44/services/259109e8-aa54-4cbe-b355-080b5e1028f4'}
-                                target={"_blank"}
-                                className="orange-button mt-4 mb-5 has-text-weight-bold"
+
+                        <Button variant="contained" size={'large'}
+                                className="mt-5 orange-button has-text-weight-bold center-mobile"
+                                onClick={handleClickOpen}
                                 startIcon={<EventTwoToneIcon/>}>
                             Book
                         </Button>
                     </CardContent>
                 </Card>
             </div>
+            <Dialog
+                fullScreen={fullScreen}
+                open={open}
+                TransitionComponent={Transition}
+                onClose={handleClose}
+                aria-labelledby="responsive-dialog-title"
+            >
+
+                <DialogContent className={'tc-title'}>
+                    <DialogContentText color={'white'}>
+                        BHST is only available on Saturdays, please do not book on other days!
+                    </DialogContentText>
+                </DialogContent>
+                <DialogActions className={'tc-title'}>
+                    <Button autoFocus onClick={handleClose} className={'tc-buttons'}>
+                        Cancel
+                    </Button>
+                    <Button
+                        href={'https://booking.setmore.com/scheduleappointment/7ce91070-a226-4451-b4a7-574d47cafe44/services/259109e8-aa54-4cbe-b355-080b5e1028f4'}
+                        onClick={handleClose}
+                        target={"_blank"}
+                        autoFocus className={'tc-buttons'}>
+                        Continue
+                    </Button>
+                </DialogActions>
+            </Dialog>
         </div>
     )
 }

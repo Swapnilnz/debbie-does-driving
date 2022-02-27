@@ -30,7 +30,7 @@ function DDC() {
     const theme = useTheme();
     const fullScreen = useMediaQueryMui(theme.breakpoints.down('md'));
     const Price = isDesktopOrLaptop ? PriceSVG : PricePNG;
-    
+
     const handleClickOpen = () => {
         setOpen(true);
     };
@@ -78,7 +78,7 @@ function DDC() {
                         <em>Note: please book only one time slot, this signs you up for 4 x 2-hour sessions.</em>
                     </Typography>
                 </div>
-                <Button variant="contained" size={isDesktopOrLaptop ? 'large' : 'small'}
+                <Button variant="contained" size={'large'}
                         className="mt-5 orange-button has-text-weight-bold center-mobile"
                         onClick={handleClickOpen}
                         startIcon={<EventTwoToneIcon/>}>
