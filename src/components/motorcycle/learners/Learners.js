@@ -76,7 +76,7 @@ function Learners() {
                         <hr className={'full-width my-4 card-hr'}/>
                         <Typography variant="body1" zIndex={2} position={"relative"} flexGrow={1}
                                     className="mot-lesson-card-p mot-location-group mb-3">
-                            <AccessTimeTwoToneIcon className={'ml-3'}/>
+                            <AccessTimeTwoToneIcon/>
                             1 hour
                         </Typography>
                         <TabContext value={value1}>
@@ -129,7 +129,7 @@ function Learners() {
                         <hr className={'full-width my-4 card-hr'}/>
                         <Typography variant="body1" zIndex={2} position={"relative"} flexGrow={1}
                                     className="mot-lesson-card-p is-flex gap-1 is-justify-content-center mb-3">
-                            <AccessTimeTwoToneIcon className={'ml-3'}/>
+                            <AccessTimeTwoToneIcon/>
                             1 hour
                         </Typography>
                         <TabContext value={value2}>
