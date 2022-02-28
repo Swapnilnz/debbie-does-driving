@@ -19,6 +19,13 @@ import {getPerformance} from "firebase/performance";
 import Motorcycle from "./views/Motorcycle";
 import FAQ from "./views/FAQ";
 import Car from "./views/Car";
+import TagManager from 'react-gtm-module'
+
+const tagManagerArgs = {
+    gtmId: process.env.REACT_APP_GTM,
+}
+
+TagManager.initialize(tagManagerArgs)
 
 const firebaseConfig = {
     apiKey: "AIzaSyDQ7ZlOAt9gX0CWzI52mgiueyCJkElS1NU",

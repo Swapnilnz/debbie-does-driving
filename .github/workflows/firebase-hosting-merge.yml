@@ -11,6 +11,7 @@ jobs:
     env:
       REACT_APP_PHONE_NUMBER: 0223544184
       REACT_APP_EMAIL: debbiedoesdriving@gmail.com
+      REACT_APP_GTM: GTM-TLCBB6R
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
