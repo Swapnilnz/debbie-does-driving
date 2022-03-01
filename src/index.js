@@ -20,6 +20,7 @@ import Motorcycle from "./views/Motorcycle";
 import FAQ from "./views/FAQ";
 import Car from "./views/Car";
 import TagManager from 'react-gtm-module'
+import Page from "./Page";
 
 const tagManagerArgs = {
     gtmId: process.env.REACT_APP_GTM,
@@ -55,11 +56,36 @@ ReactDOM.render(
                         classNames="fade"
                     >
                         <Switch location={location}>
-                            <Route path="/home" component={Home}/>
-                            <Route path="/motorcycle" component={Motorcycle}/>
-                            <Route path="/car" component={Car}/>
-                            <Route path="/contact" component={Contact}/>
-                            <Route path="/faq" component={FAQ}/>
+                            <Route path="/home" render={(props => (
+                                <Page title="Home">
+                                    <Home {...props}/>
+                                </Page>
+                            ))}>
+                            </Route>
+                            <Route path="/motorcycle" render={(props => (
+                                <Page title="Motorcycle">
+                                    <Motorcycle {...props}/>
+                                </Page>
+                            ))}>
+                            </Route>
+                            <Route path="/car" render={(props => (
+                                <Page title="Car">
+                                    <Car {...props}/>
+                                </Page>
+                            ))}>
+                            </Route>
+                            <Route path="/contact" render={(props => (
+                                <Page title="Contact">
+                                    <Contact {...props}/>
+                                </Page>
+                            ))}>
+                            </Route>
+                            <Route path="/faq" render={(props => (
+                                <Page title="FAQ">
+                                    <FAQ {...props}/>
+                                </Page>
+                            ))}>
+                            </Route>
                             <Redirect to="/home"/>
                         </Switch>
                     </CSSTransition>

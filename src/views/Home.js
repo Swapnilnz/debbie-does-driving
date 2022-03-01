@@ -24,6 +24,8 @@ function Home() {
     const L2 = isDesktopOrLaptop ? L2SVG : L2PNG;
     const L4 = isDesktopOrLaptop ? L4SVG : L4PNG;
     const L5 = isDesktopOrLaptop ? L5SVG : L5PNG;
+
+    
     return (
         <div className="home-wrapper" id="debbie">
             <Hero/>
