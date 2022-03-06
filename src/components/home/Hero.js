@@ -5,8 +5,6 @@ import BlurredHeroCropped from "../../assets/blurred_hero_cropped.png";
 import HeroImg from "../../assets/hero.png";
 import BlurredHeroImg from "../../assets/blurred_hero.png";
 import {LogoAndWord} from "../LogoSVG";
-import Button from "@mui/material/Button";
-import EventTwoToneIcon from "@mui/icons-material/EventTwoTone";
 import {useMediaQuery} from "react-responsive";
 
 function Hero() {
@@ -36,14 +34,6 @@ function Hero() {
                     <p>{process.env.REACT_APP_EMAIL}</p>
                     {isDesktopOrLaptop && <p>·</p>}
                     <p>{process.env.REACT_APP_PHONE_NUMBER}</p>
-                </div>
-                <div>
-                    <Button variant="contained" size={'large'}
-                            href={'https://debbiedoesdriving.setmore.com/'}
-                            target="_blank"
-                            className="orange-button mt-4 mb-5 has-text-weight-bold" startIcon={<EventTwoToneIcon/>}>
-                        Book
-                    </Button>
                 </div>
             </div>
         </div>

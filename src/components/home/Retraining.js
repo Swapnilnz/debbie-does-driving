@@ -2,7 +2,6 @@ import '../../css/home/Retraining.css';
 import RetrainingImage from "../../assets/retraining.jpg";
 import Button from "@mui/material/Button";
 import InfoOutlinedIcon from "@mui/icons-material/InfoOutlined";
-import EventTwoToneIcon from "@mui/icons-material/EventTwoTone";
 import {useMediaQuery} from "react-responsive";
 import {HashLink as Link} from 'react-router-hash-link';
 import {insight3} from "../../utilities/text";
@@ -36,12 +35,6 @@ function Retraining() {
                             More Info
                         </Button>
                     </Link>
-                    <Button variant="contained" size={isDesktopOrLaptop ? 'large' : 'small'}
-                            href={'https://booking.setmore.com/scheduleappointment/7ce91070-a226-4451-b4a7-574d47cafe44/services/f60ce61c-fb3e-4098-9a9b-2d06d550c294?source=easyshare'}
-                            target={"_blank"}
-                            className="orange-button has-text-weight-bold" startIcon={<EventTwoToneIcon/>}>
-                        Book
-                    </Button>
                 </div>
             </div>
         </div>

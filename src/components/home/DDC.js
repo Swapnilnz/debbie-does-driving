@@ -1,7 +1,6 @@
 import '../../css/home/DDC.css'
 import DDCImage from '../../assets/ddc.png'
 import Button from "@mui/material/Button";
-import EventTwoToneIcon from "@mui/icons-material/EventTwoTone";
 import InfoOutlinedIcon from '@mui/icons-material/InfoOutlined';
 import {useMediaQuery} from "react-responsive";
 import {HashLink as Link} from 'react-router-hash-link';
@@ -30,13 +29,6 @@ function DDC() {
                             More Info
                         </Button>
                     </Link>
-
-                    <Button variant="contained" size={isDesktopOrLaptop ? 'large' : 'small'}
-                            href={'https://booking.setmore.com/scheduleappointment/7ce91070-a226-4451-b4a7-574d47cafe44/class'}
-                            target={"_blank"}
-                            className="orange-button has-text-weight-bold" startIcon={<EventTwoToneIcon/>}>
-                        Book
-                    </Button>
                 </div>
             </div>
             {isDesktopOrLaptop &&
