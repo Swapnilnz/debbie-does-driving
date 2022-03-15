@@ -27,7 +27,7 @@ const Transition = forwardRef(function Transition(props, ref) {
 function Training() {
     const [value1, setValue1] = useState('1');
     const [value2, setValue2] = useState('1');
-    const [link, setLink] = useState('');
+    const [link] = useState('');
 
     const handleChange1 = (event, newValue) => {
         setValue1(newValue);
@@ -41,14 +41,14 @@ function Training() {
     const theme = useTheme();
     const fullScreen = useMediaQueryMui(theme.breakpoints.down('md'));
 
-    const handleClickOpenRestricted = () => {
-        setLink('https://booking.setmore.com/scheduleappointment/7ce91070-a226-4451-b4a7-574d47cafe44/services/b17c1493-56ed-4da8-8336-08bf8adecec6');
-        setOpen(true);
-    };
-    const handleClickOpenFull = () => {
-        setLink('https://booking.setmore.com/scheduleappointment/7ce91070-a226-4451-b4a7-574d47cafe44/services/d8a678b8-6284-488f-9def-66392c66cacc');
-        setOpen(true);
-    };
+    // const handleClickOpenRestricted = () => {
+    //     setLink('https://booking.setmore.com/scheduleappointment/7ce91070-a226-4451-b4a7-574d47cafe44/services/b17c1493-56ed-4da8-8336-08bf8adecec6');
+    //     setOpen(true);
+    // };
+    // const handleClickOpenFull = () => {
+    //     setLink('https://booking.setmore.com/scheduleappointment/7ce91070-a226-4451-b4a7-574d47cafe44/services/d8a678b8-6284-488f-9def-66392c66cacc');
+    //     setOpen(true);
+    // };
 
     const handleClose = () => {
         setOpen(false);
@@ -118,12 +118,23 @@ function Training() {
                                 </Typography>
                             </TabPanel>
                         </TabContext>
+                        {/*<Button variant="contained" size={'large'}*/}
+                        {/*        className="mt-5 orange-button has-text-weight-bold center-mobile"*/}
+                        {/*        onClick={handleClickOpenRestricted}*/}
+                        {/*        startIcon={<EventTwoToneIcon/>}>*/}
+                        {/*    Book*/}
+                        {/*</Button>*/}
                         <Button variant="contained" size={'large'}
-                                className="mt-5 orange-button has-text-weight-bold center-mobile"
-                                onClick={handleClickOpenRestricted}
+                                disabled={true}
+                                style={{zIndex: 2}}
+                                className="orange-button has-text-weight-bold"
                                 startIcon={<EventTwoToneIcon/>}>
                             Book
                         </Button>
+                        <Typography variant="body2" zIndex={2} position={"relative"} flexGrow={1}
+                                    className="mot-lesson-card-p mt-1">
+                            Sorry, this is currently disabled, please contact Debbie
+                        </Typography>
                     </CardContent>
                 </Card>
                 <Card className="mc-card-wrapper is-flex">
@@ -178,12 +189,23 @@ function Training() {
                                 </Typography>
                             </TabPanel>
                         </TabContext>
+                        {/*<Button variant="contained" size={'large'}*/}
+                        {/*        className="mt-5 orange-button has-text-weight-bold center-mobile"*/}
+                        {/*        onClick={handleClickOpenFull}*/}
+                        {/*        startIcon={<EventTwoToneIcon/>}>*/}
+                        {/*    Book*/}
+                        {/*</Button>*/}
                         <Button variant="contained" size={'large'}
-                                className="mt-5 orange-button has-text-weight-bold center-mobile"
-                                onClick={handleClickOpenFull}
+                                disabled={true}
+                                style={{zIndex: 2}}
+                                className="orange-button has-text-weight-bold"
                                 startIcon={<EventTwoToneIcon/>}>
                             Book
                         </Button>
+                        <Typography variant="body2" zIndex={2} position={"relative"} flexGrow={1}
+                                    className="mot-lesson-card-p mt-1">
+                            Sorry, this is currently disabled, please contact Debbie
+                        </Typography>
                     </CardContent>
                 </Card>
             </div>

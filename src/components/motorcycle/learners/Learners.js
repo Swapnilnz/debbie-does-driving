@@ -22,6 +22,7 @@ import DialogContentText from '@mui/material/DialogContentText';
 import {useTheme} from '@mui/material/styles';
 import useMediaQueryMui from "@mui/material/useMediaQuery";
 import Slide from "@mui/material/Slide";
+import BookButton from "../../BookButton";
 
 const Transition = forwardRef(function Transition(props, ref) {
     return <Slide direction="up" ref={ref} {...props} />;
@@ -43,9 +44,9 @@ function Learners() {
     const theme = useTheme();
     const fullScreen = useMediaQueryMui(theme.breakpoints.down('md'));
 
-    const handleClickOpen = () => {
-        setOpen(true);
-    };
+    // const handleClickOpen = () => {
+    //     setOpen(true);
+    // };
 
     const handleClose = () => {
         setOpen(false);
@@ -103,14 +104,8 @@ function Learners() {
                                 <Location/>
                             </TabPanel>
                         </TabContext>
-
-                        <Button variant="contained" size={'large'} style={{zIndex: 2}}
-                                className="orange-button mt-4 mb-5 has-text-weight-bold"
-                                href={'https://booking.setmore.com/scheduleappointment/7ce91070-a226-4451-b4a7-574d47cafe44/services/74a0bf09-35e0-4395-b030-b28cab734429'}
-                                target={"_blank"}
-                                startIcon={<EventTwoToneIcon/>}>
-                            Book
-                        </Button>
+                        <BookButton
+                            link={'https://booking.setmore.com/scheduleappointment/7ce91070-a226-4451-b4a7-574d47cafe44/services/74a0bf09-35e0-4395-b030-b28cab734429'}/>
                     </CardContent>
                 </Card>
                 <Card className="mc-card-wrapper is-flex">
@@ -152,12 +147,23 @@ function Learners() {
                             </TabPanel>
                         </TabContext>
 
+                        {/*<Button variant="contained" size={'large'}*/}
+                        {/*        className="mt-5 orange-button has-text-weight-bold center-mobile"*/}
+                        {/*        onClick={handleClickOpen}*/}
+                        {/*        startIcon={<EventTwoToneIcon/>}>*/}
+                        {/*    Book*/}
+                        {/*</Button>*/}
                         <Button variant="contained" size={'large'}
-                                className="mt-5 orange-button has-text-weight-bold center-mobile"
-                                onClick={handleClickOpen}
+                                disabled={true}
+                                style={{zIndex: 2}}
+                                className="orange-button has-text-weight-bold"
                                 startIcon={<EventTwoToneIcon/>}>
                             Book
                         </Button>
+                        <Typography variant="body2" zIndex={2} position={"relative"} flexGrow={1}
+                                    className="mot-lesson-card-p mt-1">
+                            Sorry, this is currently disabled, please contact Debbie
+                        </Typography>
                     </CardContent>
                 </Card>
             </div>

@@ -1,8 +1,6 @@
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
-import Button from "@mui/material/Button";
-import EventTwoToneIcon from "@mui/icons-material/EventTwoTone";
 import {Checkbox} from "@mui/material";
 import {useState} from "react"
 import Tab from '@mui/material/Tab';
@@ -15,6 +13,7 @@ import LocationOnIcon from "@mui/icons-material/LocationOn";
 import Gear from "./Gear";
 import AccessTimeTwoToneIcon from '@mui/icons-material/AccessTimeTwoTone';
 import NZTAGuide from "../NZTAGuide";
+import BookButton from "../../BookButton";
 
 function Restricted() {
     let [link, setLink] = useState('https://booking.setmore.com/scheduleappointment/7ce91070-a226-4451-b4a7-574d47cafe44/services/29299fff-6466-472d-8c2f-2918ec352fdd')
@@ -88,13 +87,8 @@ function Restricted() {
                                 <Gear/>
                             </TabPanel>
                         </TabContext>
-                        <Button variant="contained" size={'large'} style={{zIndex: 2}}
-                                className="orange-button mt-4 mb-5 has-text-weight-bold"
-                                href={''}
-                                target={'_blank'}
-                                startIcon={<EventTwoToneIcon/>}>
-                            Book
-                        </Button>
+                        <BookButton
+                            link={'https://booking.setmore.com/scheduleappointment/7ce91070-a226-4451-b4a7-574d47cafe44/services/815cf004-da3f-4cba-95b7-789c4d78f708?source=easyshare'}/>
                     </CardContent>
                 </Card>
                 <Card className="mc-card-wrapper is-flex">
@@ -147,14 +141,7 @@ function Restricted() {
                                 <p className={'mot-lesson-card-p has-text-weight-bold'}>Bring a motorcycle ($50
                                     discount)</p>
                             </div>
-                            <Button variant="contained" size={'large'}
-                                    style={{zIndex: 2}}
-                                    href={link}
-                                    target={'_blank'}
-                                    className="orange-button has-text-weight-bold"
-                                    startIcon={<EventTwoToneIcon/>}>
-                                Book
-                            </Button>
+                            <BookButton link={link}/>
                         </div>
                     </CardContent>
                 </Card>

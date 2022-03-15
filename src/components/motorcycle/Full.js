@@ -1,8 +1,6 @@
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
-import Button from "@mui/material/Button";
-import EventTwoToneIcon from "@mui/icons-material/EventTwoTone";
 import {Checkbox} from "@mui/material";
 import {useState} from "react";
 import Box from "@mui/material/Box";
@@ -15,12 +13,13 @@ import LocationOnIcon from "@mui/icons-material/LocationOn";
 import AccessTimeTwoToneIcon from '@mui/icons-material/AccessTimeTwoTone';
 import Gear from "./restricted/Gear";
 import NZTAGuide from "./NZTAGuide";
+import BookButton from "../BookButton";
 
 function Full() {
     let [link, setLink] = useState('https://booking.setmore.com/scheduleappointment/7ce91070-a226-4451-b4a7-574d47cafe44/services/0b3b9f80-b2c5-416e-9369-0c7112e8a164')
     const [value1, setValue1] = useState('1');
     const [value2, setValue2] = useState('1');
-    
+
     const handleChange1 = (event, newValue) => {
         setValue1(newValue);
     };
@@ -90,14 +89,8 @@ function Full() {
                                 <Gear/>
                             </TabPanel>
                         </TabContext>
-
-                        <Button variant="contained" size={'large'} style={{zIndex: 2}}
-                                className="orange-button mt-4 mb-5 has-text-weight-bold"
-                                href={'https://booking.setmore.com/scheduleappointment/7ce91070-a226-4451-b4a7-574d47cafe44/services/2542e81c-1278-45e2-864c-1da93d38f8d4'}
-                                target={'_blank'}
-                                startIcon={<EventTwoToneIcon/>}>
-                            Book
-                        </Button>
+                        <BookButton
+                            link={'https://booking.setmore.com/scheduleappointment/7ce91070-a226-4451-b4a7-574d47cafe44/services/2542e81c-1278-45e2-864c-1da93d38f8d4'}/>
                     </CardContent>
                 </Card>
                 <Card className="mc-card-wrapper is-flex">
@@ -151,14 +144,7 @@ function Full() {
                                 <p className={'mot-lesson-card-p has-text-weight-bold'}>Bring a motorcycle ($50
                                     discount)</p>
                             </div>
-                            <Button variant="contained" size={'large'}
-                                    style={{zIndex: 2}}
-                                    href={link}
-                                    target={'_blank'}
-                                    className="orange-button has-text-weight-bold"
-                                    startIcon={<EventTwoToneIcon/>}>
-                                Book
-                            </Button>
+                            <BookButton link={link}/>
                         </div>
                     </CardContent>
                 </Card>
