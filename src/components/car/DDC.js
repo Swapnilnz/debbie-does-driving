@@ -19,6 +19,7 @@ import Slide from '@mui/material/Slide';
 import {ddc} from "../../utilities/text";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import AccessTimeTwoToneIcon from "@mui/icons-material/AccessTimeTwoTone";
+import {Alert} from "@mui/lab";
 
 const Transition = forwardRef(function Transition(props, ref) {
     return <Slide direction="up" ref={ref} {...props} />;
@@ -57,7 +58,10 @@ function DDC() {
                 <div className="home-section-subtitle mb-5">
                     · tailgating is not the answer ·
                 </div>
-
+                <Alert className={"full-width"} severity="warning">The cost per person will be increasing
+                    to <strong>$239</strong> from <strong>September
+                        2022</strong></Alert>
+                <br/>
                 <div className="has-text-white" style={{whiteSpace: 'pre-wrap'}}>
                     <div className="car-price-image has-text-centered-mobile">
                         <img loading={'lazy'} src={Price} height={150} width={150} alt={'price 229'}/>
