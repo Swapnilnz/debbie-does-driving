@@ -1,3 +1,11 @@
+# Debbie Does Driving
+
+This repository contains code for a website built for Debbie Does Driving. See the finished product at https://www.debbiedoesdriving.com.
+
+## Contributors
+- Swapnil Bhagat
+- Raven Townsend
+
 # Getting Started
 
 This project was bootstrapped with [Create React Home](https://github.com/facebook/create-react-app).
