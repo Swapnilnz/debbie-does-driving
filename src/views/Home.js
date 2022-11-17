@@ -25,7 +25,7 @@ function Home() {
     const L4 = isDesktopOrLaptop ? L4SVG : L4PNG;
     const L5 = isDesktopOrLaptop ? L5SVG : L5PNG;
 
-    
+
     return (
         <div className="home-wrapper" id="debbie">
             <Hero/>
@@ -38,9 +38,9 @@ function Home() {
             </div>
             <MotorcycleLessons/>
             <hr/>
-            <CarTraining/>
-            <hr/>
             <DDC/>
+            <hr/>
+            <CarTraining/>
             <hr/>
             <Retraining/>
             <div className="spacer">

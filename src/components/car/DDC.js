@@ -2,8 +2,8 @@ import '../../css/car/DDC.css';
 import Button from "@mui/material/Button";
 import EventTwoToneIcon from "@mui/icons-material/EventTwoTone";
 import DDCImage from "../../assets/ddc.png";
-import PriceSVG from '../../assets/229.svg';
-import PricePNG from '../../assets/229.png';
+import PriceSVG from '../../assets/239.svg';
+import PricePNG from '../../assets/239.png';
 import {useMediaQuery} from "react-responsive";
 import useMediaQueryMui from '@mui/material/useMediaQuery';
 import {forwardRef, useState} from "react";
@@ -19,7 +19,6 @@ import Slide from '@mui/material/Slide';
 import {ddc} from "../../utilities/text";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import AccessTimeTwoToneIcon from "@mui/icons-material/AccessTimeTwoTone";
-import {Alert} from "@mui/lab";
 
 const Transition = forwardRef(function Transition(props, ref) {
     return <Slide direction="up" ref={ref} {...props} />;
@@ -58,9 +57,6 @@ function DDC() {
                 <div className="home-section-subtitle mb-5">
                     · tailgating is not the answer ·
                 </div>
-                <Alert className={"full-width"} severity="warning">The cost per person will be increasing
-                    to <strong>$239</strong> from <strong>September
-                        2022</strong></Alert>
                 <br/>
                 <div className="has-text-white" style={{whiteSpace: 'pre-wrap'}}>
                     <div className="car-price-image has-text-centered-mobile">

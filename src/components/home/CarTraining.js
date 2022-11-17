@@ -25,11 +25,11 @@ function CarTraining() {
                                             letterSpacing={2} zIndex={2} position={"relative"}>
                                     RESTRICTED
                                 </Typography>
-                                <Typography component="div" gutterBottom fontWeight={"bold"} align={"center"}
-                                            variant="h6"
-                                            letterSpacing={2} zIndex={2}>
-                                    <p className={"price-tag-purple"}>$100</p>
-                                </Typography>
+                                {/*<Typography component="div" gutterBottom fontWeight={"bold"} align={"center"}*/}
+                                {/*            variant="h6"*/}
+                                {/*            letterSpacing={2} zIndex={2}>*/}
+                                {/*    <p className={"price-tag-purple"}>$100</p>*/}
+                                {/*</Typography>*/}
                                 <Typography variant="body2" zIndex={2} position={"relative"}
                                             className="mot-lesson-card-p">
                                     {carTrainingRestrictedSmall}
@@ -47,11 +47,6 @@ function CarTraining() {
                                             component="div"
                                             letterSpacing={2} zIndex={2} position={"relative"}>
                                     FULL
-                                </Typography>
-                                <Typography component="div" gutterBottom fontWeight={"bold"} align={"center"}
-                                            variant="h6"
-                                            letterSpacing={2} zIndex={2}>
-                                    <p className={"price-tag-purple"}>$70</p>
                                 </Typography>
                                 <Typography variant="body2" zIndex={2} position={"relative"}
                                             className="mot-lesson-card-p">

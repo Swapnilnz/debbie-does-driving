@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <linearGradient gradientUnits="userSpaceOnUse" x1="202.811" y1="152.101" x2="202.811" y2="334.703"
+                        id="gradient-0"
+                        gradientTransform="matrix(-1.794915, -2.004678, 1.961406, -1.756177, 164.406067, 1062.41362)">
+            <stop offset="0" style="stop-color: rgba(247, 119, 15, 1)"/>
+            <stop offset="1" style="stop-color: rgb(175, 72, 137);"/>
+        </linearGradient>
+    </defs>
+    <ellipse style="fill: url(#gradient-0); stroke: rgb(255, 255, 255); stroke-width: 3px;" cx="250" cy="250"
+             rx="245.674" ry="245.674"/>
+    <g transform="matrix(1, 0, 0, 1, 21.127548, 0)">
+        <text style="fill: rgb(238, 238, 238); font-family: Roboto; font-size: 146px; font-weight: 700; letter-spacing: 1.1px; white-space: pre;"
+              x="122.701" y="289.985">239
+        </text>
+        <text style="fill: rgb(238, 238, 238); font-family: Roboto; font-size: 69.9px; font-weight: 700; white-space: pre;"
+              x="80.446" y="241.255">$
+        </text>
+    </g>
+    <text style="fill: rgb(238, 238, 238); font-family: Roboto; font-size: 33px; letter-spacing: 2.6px; white-space: pre;"
+          x="168.171" y="347.239">per person
+    </text>
+</svg>
