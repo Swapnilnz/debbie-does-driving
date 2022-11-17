@@ -18,8 +18,8 @@ function Training() {
     const [value2, setValue2] = useState('1');
     // const [link, setLink] = useState('');
 
-    const restrictedLink = ''
-    const fullLink = 'https://www.google.com'
+    const restrictedLink = 'https://booking.setmore.com/scheduleappointment/7ce91070-a226-4451-b4a7-574d47cafe44/class/0de6cbfa-3a9b-48df-ae5f-ba7434254a1f'
+    const fullLink = 'https://booking.setmore.com/scheduleappointment/7ce91070-a226-4451-b4a7-574d47cafe44/class/237c931b-be69-446e-8248-863a1b3289d1'
 
     const handleChange1 = (event, newValue) => {
         setValue1(newValue);
