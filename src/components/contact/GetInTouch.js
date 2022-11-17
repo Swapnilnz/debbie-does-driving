@@ -3,7 +3,7 @@ import React, {useState} from 'react';
 
 import {Alert, Button, InputAdornment, Snackbar, TextField} from "@mui/material";
 import {withStyles} from "@material-ui/core/styles";
-import {Email, Send} from "@mui/icons-material";
+import {Email, Phone, Send} from "@mui/icons-material";
 import {useMediaQuery} from "react-responsive";
 import {useForm} from "react-hook-form";
 import emailjs from "emailjs-com";
@@ -42,17 +42,21 @@ function GetInTouch(props) {
     const onSubmit = function (data) {
         try {
             const date = Date().toLocaleString().split(" GMT")[0]; // removes the GMT+1300... bit at the end
+
+            console.log(data)
             const message = data.message.replace(/(?:\r\n|\r|\n)/g, '<br>');
             emailjs.send(emailjsService, emailjsTemplateToDebbie, {
                 date: date,
                 name: data.name,
                 email: data.email,
+                number: data.number,
                 message: message,
             });
             emailjs.send(emailjsService, emailjsTemplateToCustomer, {
                 date: date,
                 name: data.name,
                 email: data.email,
+                number: data.number,
                 message: message,
             });
             setSeverity("warning");
@@ -108,6 +112,24 @@ function GetInTouch(props) {
                     focused
                     type={"email"}
                     label="Email"
+                />
+
+                <TextField
+                    fullWidth
+                    {...register("number", {required: true})}
+                    InputProps={{
+                        className: classes.input,
+                        startAdornment: (
+                            <InputAdornment position={"start"}>
+                                <Phone color={"warning"}/>
+                            </InputAdornment>
+                        )
+                    }}
+                    required
+                    color={"warning"}
+                    focused
+                    type={"number"}
+                    label="Phone No."
                 />
                 <TextField
                     {...register("message", {required: true})}
