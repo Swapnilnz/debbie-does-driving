@@ -14,7 +14,6 @@ import L4SVG from '../assets/layered-waves-4.svg';
 import L4PNG from '../assets/layered-waves-4.png';
 import L5SVG from '../assets/layered-waves-5.svg';
 import L5PNG from '../assets/layered-waves-5.png';
-import CarTraining from "../components/home/CarTraining";
 import {useMediaQuery} from "react-responsive";
 
 
@@ -40,8 +39,8 @@ function Home() {
             <hr/>
             <DDC/>
             <hr/>
-            <CarTraining/>
-            <hr/>
+            {/*<CarTraining/>*/}
+            {/*<hr/>*/}
             <Retraining/>
             <div className="spacer">
                 <img loading={'lazy'} src={L4} width={'100%'} alt={'divider'}/>

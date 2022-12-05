@@ -29,22 +29,6 @@ function Training() {
         setValue2(newValue);
     };
 
-    // const [open, setOpen] = useState(false);
-    // const theme = useTheme();
-    // const fullScreen = useMediaQueryMui(theme.breakpoints.down('md'));
-
-    // const handleClickOpenRestricted = () => {
-    //     setLink('https://booking.setmore.com/scheduleappointment/7ce91070-a226-4451-b4a7-574d47cafe44/services/b17c1493-56ed-4da8-8336-08bf8adecec6');
-    // setOpen(true);
-    // };
-    // const handleClickOpenFull = () => {
-    //     setLink('https://booking.setmore.com/scheduleappointment/7ce91070-a226-4451-b4a7-574d47cafe44/services/d8a678b8-6284-488f-9def-66392c66cacc');
-    // setOpen(true);
-    // };
-
-    // const handleClose = () => {
-    //     setOpen(false);
-    // };
     return (
         <div className="mc-section is-flex is-flex-direction-column pb-5">
             <div className="has-text-weight-bold has-text-white home-section-header has-text-centered">
