@@ -44,9 +44,9 @@ function Learners() {
     const theme = useTheme();
     const fullScreen = useMediaQueryMui(theme.breakpoints.down('md'));
 
-    // const handleClickOpen = () => {
-    //     setOpen(true);
-    // };
+    const handleClickOpen = () => {
+        setOpen(true);
+    };
 
     const handleClose = () => {
         setOpen(false);
@@ -105,7 +105,7 @@ function Learners() {
                             </TabPanel>
                         </TabContext>
                         <BookButton
-                            link={'https://booking.setmore.com/scheduleappointment/7ce91070-a226-4451-b4a7-574d47cafe44/services/74a0bf09-35e0-4395-b030-b28cab734429'}/>
+                            link={'https://booking.setmore.com/scheduleappointment/7ce91070-a226-4451-b4a7-574d47cafe44/services/74a0bf09-35e0-4395-b030-b28cab734429?source=settings'}/>
                     </CardContent>
                 </Card>
                 <Card className="mc-card-wrapper is-flex">
@@ -125,7 +125,7 @@ function Learners() {
                         <Typography variant="body1" zIndex={2} position={"relative"} flexGrow={1}
                                     className="mot-lesson-card-p is-flex gap-1 is-justify-content-center mb-3">
                             <AccessTimeTwoToneIcon/>
-                            1 hour
+                            1 hour - SATURDAYS ONLY
                         </Typography>
                         <TabContext value={value2}>
                             <Box sx={{borderBottom: 1, borderColor: 'divider', zIndex: 2}}>
@@ -147,23 +147,23 @@ function Learners() {
                             </TabPanel>
                         </TabContext>
 
-                        {/*<Button variant="contained" size={'large'}*/}
-                        {/*        className="mt-5 orange-button has-text-weight-bold center-mobile"*/}
-                        {/*        onClick={handleClickOpen}*/}
-                        {/*        startIcon={<EventTwoToneIcon/>}>*/}
-                        {/*    Book*/}
-                        {/*</Button>*/}
                         <Button variant="contained" size={'large'}
-                                disabled={true}
-                                style={{zIndex: 2}}
-                                className="orange-button has-text-weight-bold"
+                                className="mt-5 orange-button has-text-weight-bold center-mobile"
+                                onClick={handleClickOpen}
                                 startIcon={<EventTwoToneIcon/>}>
                             Book
                         </Button>
-                        <Typography variant="body2" zIndex={2} position={"relative"} flexGrow={1}
-                                    className="mot-lesson-card-p mt-1">
-                            Sorry, this is currently disabled, please contact Debbie
-                        </Typography>
+                        {/*<Button variant="contained" size={'large'}*/}
+                        {/*        disabled={true}*/}
+                        {/*        style={{zIndex: 2}}*/}
+                        {/*        className="orange-button has-text-weight-bold"*/}
+                        {/*        startIcon={<EventTwoToneIcon/>}>*/}
+                        {/*    Book*/}
+                        {/*</Button>*/}
+                        {/*<Typography variant="body2" zIndex={2} position={"relative"} flexGrow={1}*/}
+                        {/*            className="mot-lesson-card-p mt-1">*/}
+                        {/*    Sorry, this is currently disabled, please contact Debbie*/}
+                        {/*</Typography>*/}
                     </CardContent>
                 </Card>
             </div>

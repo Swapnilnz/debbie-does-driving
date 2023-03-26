@@ -17,7 +17,7 @@ function Location() {
                         className="mot-lesson-card-p">
                 BHST is held at PGG Wrightson Woolstore, Fox Street Invercargill. Enter driveway beside railway line,
                 follow
-                to end to DDD motorcycle training sign and park on left. Take a set and watch the action. Debbie will
+                to end to DDD motorcycle training sign and park on left. Take a seat and watch the action. Debbie will
                 come
                 and see you.
             </Typography>

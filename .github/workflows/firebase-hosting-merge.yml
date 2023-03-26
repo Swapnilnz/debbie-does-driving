@@ -12,10 +12,10 @@ jobs:
       REACT_APP_PHONE_NUMBER: 0223544184
       REACT_APP_EMAIL: debbiedoesdriving@gmail.com
       REACT_APP_GTM: GTM-TLCBB6R
-      DISABLE_BOOKING: true
+      DISABLE_BOOKING: false
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - run: npm ci && npm run build
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
