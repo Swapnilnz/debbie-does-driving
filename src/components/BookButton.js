@@ -7,7 +7,7 @@ function BookButton({link}) {
         <>
             {process.env.REACT_APP_DISABLE_BOOKING === "false" &&
                 <Button variant="contained" size={'large'}
-                        disabled={process.env.REACT_APP_DISABLE_BOOKING}
+                        disabled={false}
                         style={{zIndex: 2}}
                         href={link}
                         target={'_blank'}
@@ -18,7 +18,7 @@ function BookButton({link}) {
             {process.env.REACT_APP_DISABLE_BOOKING === "true" &&
                 <>
                     <Button variant="contained" size={'large'}
-                            disabled={process.env.REACT_APP_DISABLE_BOOKING}
+                            disabled={true}
                             style={{zIndex: 2}}
                             href={link}
                             target={'_blank'}
