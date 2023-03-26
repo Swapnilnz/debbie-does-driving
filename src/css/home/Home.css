@@ -33,6 +33,26 @@
     transition: all .4s ease-in-out !important;
 }
 
+.animated-button {
+    /* ...other styles... */
+    animation-name: float;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translatey(0px);
+    }
+    50% {
+        transform: translatey(-4px);
+    }
+    100% {
+        transform: translatey(0px);
+    }
+}
+
 .orange-button:hover {
     background-position: 100% 0;
     color: white;

@@ -3,7 +3,6 @@ import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
-import EventTwoToneIcon from "@mui/icons-material/EventTwoTone";
 import {forwardRef, useState} from "react";
 import Box from "@mui/material/Box";
 import TabList from "@mui/lab/TabList";
@@ -23,6 +22,8 @@ import {useTheme} from '@mui/material/styles';
 import useMediaQueryMui from "@mui/material/useMediaQuery";
 import Slide from "@mui/material/Slide";
 import BookButton from "../../BookButton";
+import {Link} from "react-router-dom";
+import ContactMailIcon from "@mui/icons-material/ContactMail";
 
 const Transition = forwardRef(function Transition(props, ref) {
     return <Slide direction="up" ref={ref} {...props} />;
@@ -44,9 +45,9 @@ function Learners() {
     const theme = useTheme();
     const fullScreen = useMediaQueryMui(theme.breakpoints.down('md'));
 
-    const handleClickOpen = () => {
-        setOpen(true);
-    };
+    // const handleClickOpen = () => {
+    //     setOpen(true);
+    // };
 
     const handleClose = () => {
         setOpen(false);
@@ -147,23 +148,21 @@ function Learners() {
                             </TabPanel>
                         </TabContext>
 
-                        <Button variant="contained" size={'large'}
-                                className="mt-5 orange-button has-text-weight-bold center-mobile"
-                                onClick={handleClickOpen}
-                                startIcon={<EventTwoToneIcon/>}>
-                            Book
-                        </Button>
                         {/*<Button variant="contained" size={'large'}*/}
-                        {/*        disabled={true}*/}
-                        {/*        style={{zIndex: 2}}*/}
-                        {/*        className="orange-button has-text-weight-bold"*/}
+                        {/*        className="mt-5 orange-button has-text-weight-bold center-mobile"*/}
+                        {/*        onClick={handleClickOpen}*/}
                         {/*        startIcon={<EventTwoToneIcon/>}>*/}
                         {/*    Book*/}
                         {/*</Button>*/}
-                        {/*<Typography variant="body2" zIndex={2} position={"relative"} flexGrow={1}*/}
-                        {/*            className="mot-lesson-card-p mt-1">*/}
-                        {/*    Sorry, this is currently disabled, please contact Debbie*/}
-                        {/*</Typography>*/}
+                        <Link to={"/contact"}>
+                            <Button variant="contained" size={'large'}
+                                    disabled={false}
+                                    style={{zIndex: 2}}
+                                    className="orange-button has-text-weight-bold"
+                                    startIcon={<ContactMailIcon/>}>
+                                Contact
+                            </Button>
+                        </Link>
                     </CardContent>
                 </Card>
             </div>

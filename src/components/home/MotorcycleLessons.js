@@ -32,7 +32,7 @@ function MotorcycleLessons() {
 
 
             <div className={"is-flex is-flex-direction-column is-align-items-center"}>
-                <Typography className="retraining-text mb-5">
+                <Typography className="retraining-text mb-5" style={{width: "72%"}}>
                     Debbie is an experienced and highly skilled motorcycle training instructor based in Invercargill,
                     New Zealand. With her passion for riding and extensive knowledge of motorcycle safety, Debbie offers
                     top-quality motorcycle training to riders of all skill levels. Her training programs are designed to

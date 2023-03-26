@@ -6,6 +6,8 @@ import HeroImg from "../../assets/hero.png";
 import BlurredHeroImg from "../../assets/blurred_hero.png";
 import {LogoAndWord} from "../LogoSVG";
 import {useMediaQuery} from "react-responsive";
+import {Link} from "react-router-dom";
+import Button from "@mui/material/Button";
 
 function Hero() {
     const isDesktopOrLaptop = useMediaQuery({query: '(min-width: 1224px)'});
@@ -35,6 +37,15 @@ function Hero() {
                     {isDesktopOrLaptop && <p>·</p>}
                     <p>{process.env.REACT_APP_PHONE_NUMBER}</p>
                 </div>
+                <Link to={"/contact"}>
+                    <Button variant="contained" size={'large'}
+                            disabled={false}
+                            style={{zIndex: 2}}
+                            className="orange-button has-text-weight-bold animated-button"
+                    >
+                        Get in touch!
+                    </Button>
+                </Link>
             </div>
         </div>
     )
