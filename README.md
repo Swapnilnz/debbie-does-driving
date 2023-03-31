@@ -2,7 +2,6 @@
 
 This is a website for a motorcycle and car training business based in Invercargill, New Zealand: Debbie Does Driving. The website is built using React.js and Material-UI library. It utilises Emailjs and Setmore functionalities to provide a seamless booking experience and easy contact with the main driving instructor, Debbie. The website is hosted on Firebase and is available at www.debbiedoesdriving.com. 
 
-
 ## Features
 
 - Homepage showcasing the business and its services
@@ -41,7 +40,9 @@ The deployed website can be accessed at `https://<your-firebase-project-name>.we
 - React.js - A JavaScript library for building user interfaces.
 - Material-UI - A React UI framework for designing responsive web applications.
 
-## Author
+## Authors
 
-- [Your Name](https://github.com/yourusername)
+- [Swapnil Bhagat](https://github.com/Swapnilnz)
+- [Raven Townsend](https://github.com/raven-townsend-nz)
+
 
