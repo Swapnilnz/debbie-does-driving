@@ -1,6 +1,7 @@
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
+// import {Checkbox} from "@mui/material";
 import {useState} from "react";
 import Box from "@mui/material/Box";
 import TabList from "@mui/lab/TabList";
@@ -34,6 +35,8 @@ function Full() {
             setLink('https://booking.setmore.com/scheduleappointment/7ce91070-a226-4451-b4a7-574d47cafe44/services/0b3b9f80-b2c5-416e-9369-0c7112e8a164');
         }
     }
+
+    console.log(changeURL)
 
     return (
         <div className="mc-section is-flex is-flex-direction-column pb-5">

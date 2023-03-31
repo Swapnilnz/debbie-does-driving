@@ -1,6 +1,7 @@
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
+// import {Checkbox} from "@mui/material";
 import {useState} from "react"
 import Tab from '@mui/material/Tab';
 import TabContext from '@mui/lab/TabContext';
@@ -24,6 +25,8 @@ function Restricted() {
             setLink('https://booking.setmore.com/scheduleappointment/7ce91070-a226-4451-b4a7-574d47cafe44/services/29299fff-6466-472d-8c2f-2918ec352fdd');
         }
     }
+
+    console.log(changeURL)
 
     const [value1, setValue1] = useState('1');
     const [value2, setValue2] = useState('1');
