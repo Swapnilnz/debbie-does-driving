@@ -1,7 +1,6 @@
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
-import {Checkbox} from "@mui/material";
 import {useState} from "react";
 import Box from "@mui/material/Box";
 import TabList from "@mui/lab/TabList";
@@ -137,15 +136,16 @@ function Full() {
                                 <Gear/>
                             </TabPanel>
                         </TabContext>
-                        <div className={'is-flex is-flex-direction-column gap-1 mt-4 mb-4'} style={{zIndex: 2}}>
-                            <div className={'is-flex is-flex-direction-row is-align-items-center'}>
-                                <Checkbox style={{zIndex: 2, color: 'white'}} className={'p-0 mr-1'}
-                                          onChange={changeURL} size="small"/>
-                                <p className={'mot-lesson-card-p has-text-weight-bold'}>Bring a motorcycle ($50
-                                    discount)</p>
-                            </div>
-                            <BookButton link={link}/>
-                        </div>
+                        {/*<div className={'is-flex is-flex-direction-column gap-1 mt-4 mb-4'} style={{zIndex: 2}}>*/}
+                        {/*<div className={'is-flex is-flex-direction-row is-align-items-center'}>*/}
+                        {/*    <Checkbox style={{zIndex: 2, color: 'white'}} className={'p-0 mr-1'}*/}
+                        {/*              onChange={changeURL} size="small"/>*/}
+                        {/*    <p className={'mot-lesson-card-p has-text-weight-bold'}>Bring a motorcycle ($50*/}
+                        {/*        discount)</p>*/}
+                        {/*</div>*/}
+                        {/*</div>*/}
+                        <BookButton link={link}/>
+
                     </CardContent>
                 </Card>
             </div>
