@@ -1,4 +1,6 @@
-# README
+[![My Skills](https://skills.thijs.gg/icons?i=js,html,css,react,firebase)](https://skills.thijs.gg)
+
+# Debbie Does Driving
 
 This is a website for a motorcycle and car training business based in Invercargill, New Zealand: Debbie Does Driving. The website is built using React.js and Material-UI library. It utilises Emailjs and Setmore functionalities to provide a seamless booking experience and easy contact with the main driving instructor, Debbie. The website is hosted on Firebase and is available at www.debbiedoesdriving.com. 
 
