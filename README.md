@@ -41,6 +41,7 @@ The deployed website can be accessed at `https://<your-firebase-project-name>.we
 
 - React.js - A JavaScript library for building user interfaces.
 - Material-UI - A React UI framework for designing responsive web applications.
+- Firebase - Cloud platform by Google that helps set up and run web applications easily.
 
 ## Authors
 
