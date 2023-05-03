@@ -14,7 +14,7 @@ import DialogContent from '@mui/material/DialogContent';
 import DialogContentText from '@mui/material/DialogContentText';
 import DialogTitle from '@mui/material/DialogTitle';
 import TermsAndConditions from "./TermsAndConditions";
-import {Typography} from "@mui/material";
+import {Chip, Typography} from "@mui/material";
 import Slide from '@mui/material/Slide';
 import {ddc} from "../../utilities/text";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
@@ -64,12 +64,26 @@ function DDC() {
                     </div>
                     <Typography variant="body1" zIndex={2} position={"relative"} flexGrow={1} fontSize={'medium'}
                                 className="mot-lesson-card-p car-ddc-location is-flex is-flex-direction-column is-align-items-flex-start gap-1 mb-3 ">
-                        <a className={'address-line-hover is-flex is-align-items-center gap-1'} target={'_blank'}
-                           href={'https://g.page/adventure-southland?share'} rel="noreferrer">
-                            <LocationOnIcon fontSize={'medium'}/>
-                            Adventure Southland, Invercargill</a>
-                        <p className={'is-flex is-align-items-center gap-1'}><AccessTimeTwoToneIcon
-                            fontSize={'medium'}/>
+                        <a target={'_blank'}
+                           href={'https://g.page/adventure-southland?share'} rel="noreferrer" className={"full-width"}>
+                            <Chip icon={<LocationOnIcon style={{color: "white"}}/>}
+                                  label="Invercargill | Adventure Southland"
+                                  target={'_blank'}
+                                  href={'https://g.page/adventure-southland?share'} rel="noreferrer"
+                                  className={"first-chip full-width"}
+                                  clickable/>
+                        </a>
+                        <a target={'_blank'}
+                           href={'https://goo.gl/maps/vUC8wZsexdre28Pa6'} rel="noreferrer" className={"full-width"}>
+                            <Chip icon={<LocationOnIcon/>} label="Gore | Mataura Community Centre" target={'_blank'}
+                                  href={'https://goo.gl/maps/vUC8wZsexdre28Pa6'} rel="noreferrer" color={"secondary"}
+                                  className={"full-width"}
+                                  clickable/>
+                        </a>
+
+                        <p className={'is-flex is-align-items-center is-justify-content-center gap-1 full-width'}>
+                            <AccessTimeTwoToneIcon
+                                fontSize={'medium'}/>
                             4 x 2 hour</p>
                     </Typography>
                     <Typography className="ddc-text">

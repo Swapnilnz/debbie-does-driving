@@ -8,7 +8,8 @@ export const insight3 = {
 }
 
 export const ddc = {
-    location: 'Adventure Southland (810 North Road, Invercargill), in the Green room',
+    location: 'INV @ Adventure Southland (810 North Road, Invercargill), in the Green room',
+    location2: 'GORE @ Mataura Community Centre (2 McQueen Avenue, Mataura)',
     body: 'NZTA approved, the NZ Defensive Driving Course helps car drivers learn A LOT about driving safety and managing risk. ' +
         '\n\n' +
         'Whether attending to learn more about driving safety, for employment reasons or Police/Court/iwi panel directed, DDC has something for everyone and can be attended during any car licence stage.\n\n' +

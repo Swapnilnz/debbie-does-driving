@@ -34,6 +34,14 @@
     line-height: 1.7;
 }
 
+.first-chip {
+    background-color: #f37515 !important;
+    color: white !important;
+}
+
+.first-chip:hover {
+    background-color: #be5c11 !important;
+}
 
 @media (max-width: 1224px) {
     .ddc-wrapper {
