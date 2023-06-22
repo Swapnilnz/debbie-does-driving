@@ -38,6 +38,17 @@ function GetInTouch() {
                     {ddc.location2}
                 </p>
             </a>
+            <br/>
+
+            <a className="address-line-hover"
+               href="https://goo.gl/maps/93vWfJgtZXcubZgy6"
+               target="_blank"
+               rel="noopener noreferrer">
+                <p className="is-flex is-flex-direction-row">
+                    <LocationOn fontSize={"small"} className="mr-1"/>
+                    {ddc.location3}
+                </p>
+            </a>
 
             <br/><br/>
 

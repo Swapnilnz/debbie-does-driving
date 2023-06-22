@@ -73,13 +73,22 @@ function DDC() {
                                   className={"first-chip full-width"}
                                   clickable/>
                         </a>
-                        <a target={'_blank'}
-                           href={'https://goo.gl/maps/vUC8wZsexdre28Pa6'} rel="noreferrer" className={"full-width"}>
-                            <Chip icon={<LocationOnIcon/>} label="Gore | Mataura Community Centre" target={'_blank'}
-                                  href={'https://goo.gl/maps/vUC8wZsexdre28Pa6'} rel="noreferrer" color={"secondary"}
-                                  className={"full-width"}
-                                  clickable/>
-                        </a>
+                        <div className={'gore-chip-wrapper'}>
+                            <a target={'_blank'}
+                            href={'https://goo.gl/maps/vUC8wZsexdre28Pa6'} rel="noreferrer">
+                                <Chip icon={<LocationOnIcon/>} label="Gore | Mataura Community Centre" target={'_blank'}
+                                    href={'https://goo.gl/maps/vUC8wZsexdre28Pa6'} rel="noreferrer" color={"secondary"}
+                                    clickable/>
+                            </a>
+                            <a target={'_blank'}
+                            href={'https://goo.gl/maps/iaPD4mfFfK4yg7Sp7'} 
+                            rel="noreferrer">
+                                <Chip icon={<LocationOnIcon/>} label="Gore | Menzies College Library" target={'_blank'}
+                                    href={'https://goo.gl/maps/iaPD4mfFfK4yg7Sp7'} rel="noreferrer" color={"secondary"}
+                                    clickable/>
+                            </a>
+
+                        </div>
 
                         <p className={'is-flex is-align-items-center is-justify-content-center gap-1 full-width'}>
                             <AccessTimeTwoToneIcon

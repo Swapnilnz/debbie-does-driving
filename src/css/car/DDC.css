@@ -50,6 +50,25 @@
     padding: 1rem;
 }
 
+.gore-chip-wrapper {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.gore-chip-wrapper > a {
+    display: flex;
+    flex-grow: 1;
+}
+.gore-chip-wrapper > a > div {
+    display: flex;
+    flex-grow: 1;
+}
+
 @media (max-width: 768px) {
     .car-price-image {
         float: none;
