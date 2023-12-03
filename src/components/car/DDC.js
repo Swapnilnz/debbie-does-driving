@@ -136,7 +136,7 @@ function DDC() {
                         Disagree
                     </Button>
                     <Button
-                        href={'https://booking.setmore.com/scheduleappointment/7ce91070-a226-4451-b4a7-574d47cafe44/class'}
+                        href={'https://debbiedoesdriving.corsizio.com/'}
                         onClick={handleClose}
                         target={"_blank"}
                         autoFocus className={'tc-buttons'}>
